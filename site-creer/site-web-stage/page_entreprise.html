@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Satge</title>
+</head>
+
+<body>
+
+    <!-- fond écran -->
+    <div class="fond">
+        <img src="image/logo_FDN.png">
+    </div>
+
+    <!-- onglet: Entreprise | Élève -->
+    <div class="onglet">
+        <a href="page_entreprise.html">Entreprise</a>
+        <a href="page_eleve.html">Élève</a>
+    </div>
+
+    <!-- titre -->
+    <span class="titre"><h1>Entreprise</h1></span>
+    
+    <!-- nom utilisateur -->
+    <div class="utilisateur">
+        <h3>Nicolas</h3>
+        <h4>Cosnaud</h4>
+    </div>
+
+    <!-- bouton: ajouter |  modifier | supprimer -->
+    <div class="bouton">
+        <input type="button" value="ajouter" onclick="window.location.href = 'ajouter_entreprise.html'">
+        <input type="button" value="modifier" onclick="window.location.href = 'modifier_entreprise.html'">
+        <input type="button" value="supprimer" onclick="window.location.href = 'supprimer_entreprise.html'">
+    </div>
+
+    <!-- tableau des entreprises générer automatiquement -->
+    <div class="table_entreprise">
+        <table>
+            <tr>
+                <th>Nom de l'entreprise</th>
+                <th>Site web</th>
+                <th>Adresse</th>
+                <th>Ville</th>
+                <th>Adresse mail</th>
+                <th>Nbr de stagiaires déjà pris</th>
+                <th>Ressenti des élèves</th>
+                <th>Nbr de stagiaires pris</th>
+            </tr>
+            <tr>
+                <td>Exemple Entreprise</td>
+                <td><a href="http://www.exemple.com">www.exemple.com</a></td>
+                <td>123 Rue des Exemples</td>
+                <td>Ville 1</td>
+                <td>contact@exemple.com</td>
+                <td>50</td>
+                <td>Très positif, environnement de travail agréable et projet intéressant.</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Entreprise ABC</td>
+                <td><a href="http://www.entrepriseabc.com">www.entrepriseabc.com</a></td>
+                <td>456 Rue de l'ABC</td>
+                <td>Ville 2</td>
+                <td>contact@entrepriseabc.com</td>
+                <td>20</td>
+                <td>Plutôt positif, des défis intéressants et des opportunités de développement.</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Start-up XYZ</td>
+                <td><a href="http://www.startupxyz.com">www.startupxyz.com</a></td>
+                <td>789 Rue de la Start-up</td>
+                <td>Ville 3</td>
+                <td>contact@startupxyz.com</td>
+                <td>5</td>
+                <td>Très positif, ambiance dynamique et collaborative.</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Entreprise EFG</td>
+                <td><a href="http://www.entrepriseefg.com">www.entrepriseefg.com</a></td>
+                <td>246 Rue de l'EFG</td>
+                <td>Ville 4</td>
+                <td>contact@entrepriseefg.com</td>
+                <td>35</td>
+                <td>Mitigé, certains stagiaires ont apprécié l'expérience, d'autres ont trouvé le travail répétitif.
+                </td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Agence de communication LMN</td>
+                <td><a href="http://www.agencelmn.com">www.agencelmn.com</a></td>
+                <td>135 Rue de l'Agence</td>
+                <td>Ville 5</td>
+                <td>contact@agencelmn.com</td>
+                <td>15</td>
+                <td>Très positif, les stagiaires ont eu l'opportunité de travailler sur des projets créatifs et variés.
+                </td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Exemple Entreprise</td>
+                <td><a href="http://www.exemple.com">www.exemple.com</a></td>
+                <td>123 Rue des Exemples</td>
+                <td>Ville 1</td>
+                <td>contact@exemple.com</td>
+                <td>50</td>
+                <td>Très positif, environnement de travail agréable et projet intéressant.</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Entreprise ABC</td>
+                <td><a href="http://www.entrepriseabc.com">www.entrepriseabc.com</a></td>
+                <td>456 Rue de l'ABC</td>
+                <td>Ville 2</td>
+                <td>contact@entrepriseabc.com</td>
+                <td>20</td>
+                <td>Plutôt positif, des défis intéressants et des opportunités de développement.</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Start-up XYZ</td>
+                <td><a href="http://www.startupxyz.com">www.startupxyz.com</a></td>
+                <td>789 Rue de la Start-up</td>
+                <td>Ville 3</td>
+                <td>contact@startupxyz.com</td>
+                <td>5</td>
+                <td>Très positif, ambiance dynamique et collaborative.</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Entreprise EFG</td>
+                <td><a href="http://www.entrepriseefg.com">www.entrepriseefg.com</a></td>
+                <td>246 Rue de l'EFG</td>
+                <td>Ville 4</td>
+                <td>contact@entrepriseefg.com</td>
+                <td>35</td>
+                <td>Mitigé, certains stagiaires ont apprécié l'expérience, d'autres ont trouvé le travail répétitif.
+                </td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Agence de communication LMN</td>
+                <td><a href="http://www.agencelmn.com">www.agencelmn.com</a></td>
+                <td>135 Rue de l'Agence</td>
+                <td>Ville 5</td>
+                <td>contact@agencelmn.com</td>
+                <td>15</td>
+                <td>Très positif, les stagiaires ont eu l'opportunité de travailler sur des projets créatifs et variés.
+                </td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Exemple Entreprise</td>
+                <td><a href="http://www.exemple.com">www.exemple.com</a></td>
+                <td>123 Rue des Exemples</td>
+                <td>Ville 1</td>
+                <td>contact@exemple.com</td>
+                <td>50</td>
+                <td>Très positif, environnement de travail agréable et projet intéressant.</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Entreprise ABC</td>
+                <td><a href="http://www.entrepriseabc.com">www.entrepriseabc.com</a></td>
+                <td>456 Rue de l'ABC</td>
+                <td>Ville 2</td>
+                <td>contact@entrepriseabc.com</td>
+                <td>20</td>
+                <td>Plutôt positif, des défis intéressants et des opportunités de développement.</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Start-up XYZ</td>
+                <td><a href="http://www.startupxyz.com">www.startupxyz.com</a></td>
+                <td>789 Rue de la Start-up</td>
+                <td>Ville 3</td>
+                <td>contact@startupxyz.com</td>
+                <td>5</td>
+                <td>Très positif, ambiance dynamique et collaborative.</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Entreprise EFG</td>
+                <td><a href="http://www.entrepriseefg.com">www.entrepriseefg.com</a></td>
+                <td>246 Rue de l'EFG</td>
+                <td>Ville 4</td>
+                <td>contact@entrepriseefg.com</td>
+                <td>35</td>
+                <td>Mitigé, certains stagiaires ont apprécié l'expérience, d'autres ont trouvé le travail répétitif.
+                </td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Agence de communication LMN</td>
+                <td><a href="http://www.agencelmn.com">www.agencelmn.com</a></td>
+                <td>135 Rue de l'Agence</td>
+                <td>Ville 5</td>
+                <td>contact@agencelmn.com</td>
+                <td>15</td>
+                <td>Très positif, les stagiaires ont eu l'opportunité de travailler sur des projets créatifs et variés.
+                </td>
+                <td>5</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- lien site: Lycéé Fénélon Notre Dame -->
+    <footer>
+        <a href="https://fenelon-notredame.com/"><b>Lycéé Fénélon Notre Dame</b></a>
+    </footer>
+</body>
+
+</html>

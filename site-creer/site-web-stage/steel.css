@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.fond {
+    opacity: 0.4;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.fond img {
+    height: 90vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.authentification {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authentification .saisie {
+    height: 5vh;
+    width: 150%;
+    margin-left: -40%;
+    font-size: 2vh;
+    padding-left: 5%;
+    border: solid 2px gray;
+    z-index: 10;
+}
+
+.authentification .connexion {
+    height: 3.5vh;
+    width: 50%;
+    margin-left: 60%;
+}
+
+.bouton {
+    width: 99%;
+    display: flex;
+    justify-content: end;
+    margin-top: -3%;
+}
+
+.bouton input {
+    margin-right: 1%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+}
+
+.table_entreprise {
+    display: flex;
+    justify-content: center;
+}
+
+.table_entreprise table {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 95%;
+    border-collapse: collapse;
+}
+
+.table_entreprise table th {
+    background-color: lightgray;
+    border-top: solid 1px gray;
+    border-right: solid 1px gray;
+    border-left: none;
+    border-right: none;
+    padding: 0.3%;
+    text-align: center;
+}
+
+.table_entreprise table td {
+    background-color: white;
+    border-top: solid 1px gray;
+    border-right: solid 1px gray;
+    border-left: none;
+    border-right: none;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    padding-right: 0.3%;
+    padding-left: 1%;
+}
+
+.table_eleve {
+    display: flex;
+    justify-content: center;
+}
+
+.table_eleve table {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    width: 60%;
+    border-collapse: collapse;
+}
+
+.table_eleve table th {
+    background-color: lightgray;
+    border-top: solid 1px gray;
+    border-right: solid 1px gray;
+    border-left: none;
+    border-right: none;
+    padding: 0.3%;
+    text-align: center;
+}
+
+.table_eleve table td {
+    background-color: white;
+    border-top: solid 1px gray;
+    border-right: solid 1px gray;
+    border-left: none;
+    border-right: none;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    padding-right: 0.3%;
+    padding-left: 1%;
+}
+
+footer {
+    width: 98%;
+}
+
+footer b {
+    font-size: 1em;
+    display: flex;
+    justify-content: end;
+}
+
+.onglet {
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.onglet a {
+    text-decoration: none;
+    color: black;
+    border: solid 2px grey;
+    border-radius: 10px;
+    background-color: lightgray;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+}
+
+.utilisateur {
+    margin-top: -1%;
+    margin-left: 3%;
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+}
+
+.titre h1 {
+    font-size: 4em;
+}
+
+.ajouter_entreprise {
+    display: flex;
+    align-items: center;
+}
+
+.form_entreprise {
+    margin-left: 7%;
+}
+
+.form_entreprise .saisie_ajout {
+    height: 5vh;
+    width: 100%;
+    font-size: 2vh;
+    padding-left: 5%;
+    margin-top: 5%;
+    border: solid 2px gray;
+}
+
+.fond_droit {
+    position: absolute;
+    width: 60%;
+    right: 5%;
+}
+
+.block_btn {
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.form_entreprise .boutons {
+    height: 3.5vh;
+    width: 30%;
+    margin-right: 3%;
+}
+
+.selection_select {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    z-index: 20;
+    overflow-y: auto;
+}
+
+.selection {
+    height: 5vh;
+    font-size: 2vh;
+    border: solid 2px gray;
+    background-color: white;
+    width: 15%;
+    padding-left: 1%;
+}

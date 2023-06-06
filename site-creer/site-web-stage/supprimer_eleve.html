@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+    <title>Stage</title>
+    <script src="script.js"></script>
+</head>
+
+<body class="ajouter_modifier_supprimer">
+
+    <!-- formulaire modifier un élève -->
+    <form class="formulaire_ajouter_modifier_supprimer">
+
+        <!-- titre -->
+        <h1 class="titre">Supprimer un élève 👨‍🎓</h1>
+
+        <!-- saisie -->
+        <input class="saisie_ajout" readonly="readonly" id="premierElement" type="text" placeholder="Nom élève" /><br />
+        <input class="saisie_ajout" readonly="readonly" type="text" placeholder="Prénom élève" /><br />
+        <input class="saisie_ajout" readonly="readonly" type="text" placeholder="Nombre de stagiaire déja pris" /><br />
+        <input class="saisie_ajout" readonly="readonly" type="text" placeholder="apprentie ou non-apprentie" /><br />
+        <input class="saisie_ajout" type="text" placeholder="Description" /><br />
+
+        <!-- bouton: valider | supprimer -->
+        <div class="block_btn">
+            <input class="boutons" type="submit" value="Valider">
+            <input class="boutons" type="button" value="annuler" onclick="window.location.href='page_eleve.php'">
+        </div>
+    </form>
+
+    <!-- liste des élèves générer automatiquement -->
+    <div class="selection">
+        <select class="listEleve">
+            <option>Selection élève</option>
+            <option>Dupont</option>
+            <option>Martin</option>
+            <option>Leroy</option>
+            <option>Dubois</option>
+            <option>Moreau</option>
+            <option>Laurent</option>
+            <option>Fournier</option>
+            <option>Rousseau</option>
+            <option>Mercier</option>
+            <option>Bonnet</option>
+            <option>Blanc</option>
+            <option>Girard</option>
+            <option>Thomas</option>
+            <option>Roussel</option>
+            <option>Caron</option>
+            <option>Robin</option>
+            <option>Fontaine</option>
+            <option>Morin</option>
+            <option>Leclerc</option>
+            <option>Masson</option>
+        </select><br />
+    </div>
+
+    <!-- image logo Lycéé Fénélon Notre Dame -->
+    <img src="image/logo_FDN.png" class="fond_droit">
+</body>
+
+</html>
