@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+
+/***************************************** menu *****************************************/
+
+.menu {
+    background-image: url('image/fond/background_menu1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: background-image 1s;
+}
+
+.menu .second_fond {
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    transition: opacity 1s ease-out;
+}
+
+.menu #fond_etude {
+    background-image: url('image/fond/etude.jpg');
+    opacity: 0;
+}
+
+.menu #fond_language {
+    background-image: url('image/fond/langage.jpg');
+    opacity: 0;
+}
+
+.menu #fond_programme {
+    background-image: url('image/fond/dev.png');
+    opacity: 0;
+}
+
+.menu #fond_projet {
+    background-image: url('image/fond/projet.jpg');
+    opacity: 0;
+}
+
+.menu .block_menu {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu .block_menu .onglet_menu {
+    background: linear-gradient(15deg, cyan, white, white);
+    border-radius: 20px;
+    padding: 3%;
+    font-size: 230%;
+    transition: 0.3s;
+}
+
+.menu .block_menu .onglet_menu:hover {
+    transform: translateY(-20px);
+}
+
+.menu .block_menu .onglet_menu .onglet_menu_entete {
+    color: black;
+    text-decoration: none;
+}
+
+.menu .block_menu .onglet_menu .onglet_sous_menu {
+    font-size: 70%;
+    color: black;
+    text-decoration: none;
+}
+
+.menu .block_menu .onglet_menu .logo_lien {
+    height: 5vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    z-index: -1;
+}
+
+.menu .block_menu .onglet_menu .ligne_onglet {
+    display: flex;
+    align-items: center;
+}
+
+
+/***************************************** menu *****************************************/

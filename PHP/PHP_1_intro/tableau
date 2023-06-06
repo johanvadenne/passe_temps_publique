@@ -1,0 +1,8 @@
+<?php
+
+$cars = array("Volvo","BMW","Toyota");
+var_dump($cars);
+echo("une $cars[0], une $cars[1], une $cars[2]\n");
+for ($i=0; $i < 3; $i++) { 
+    echo("une $cars[$i], ");
+}

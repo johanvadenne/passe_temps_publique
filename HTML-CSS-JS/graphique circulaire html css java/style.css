@@ -1,0 +1,174 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    min-height: 100vh;
+    background: rgb(48, 4, 48);
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgb(150, 39, 197);
+}
+.container
+{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container .card
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    z-index: 10;
+    margin: 20px 20px 60px;
+}
+.container .card .box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border-radius: 10px;
+}
+.container .card .box .percent
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    z-index: 100;
+}
+.container .card .box .percent .number
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .box .percent .number h2
+{
+    color: white;
+    font-size: 50px;
+}
+.container .card .box .percent .number h2 span
+{
+    font-size: 24px;
+}
+.container .card .text
+{
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 30px 20px 10px;
+    background: red;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 1px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    transition: bottom 0.5s, z-index 0s, transform 0.5s, padding 0.5s;
+    z-index: 1;
+    color: white;
+    transition-delay: 0.5s,0.5s,0s,0.5s;
+}
+.container .card:nth-child(2) .text
+{
+    background: blue;
+}
+.container .card:nth-child(3) .text
+{
+    background: limegreen;
+}
+.container .card:hover .text
+{
+    transition-delay: 0s,0.5s,0.5s,0s;
+    bottom: -70px;
+    z-index: 11;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 30px 20px 10px;
+}
+.container .card .box .percent svg
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.container .card .box .percent svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(0, 0, 0, 0.05);
+    transform: translate(5px,5px);
+    stroke-linecap: round;
+}
+.container .card .box .percent svg circle:nth-child(2)
+{
+    stroke: red;
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 396px;
+}
+.container .card:nth-child(2) .box .percent svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(0, 0, 0, 0.05);
+    transform: translate(5px,5px);
+}
+.container .card:nth-child(2) .box .percent svg circle:nth-child(2)
+{
+    stroke: blue;
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 45px;
+}
+.container .card:nth-child(3) .box .percent svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(0, 0, 0, 0.05);
+    transform: translate(5px,5px);
+}
+.container .card:nth-child(3) .box .percent svg circle:nth-child(2)
+{
+    stroke: limegreen;
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 440px;
+}

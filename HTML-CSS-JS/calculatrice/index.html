@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>horloge</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="calculatrice">
+            <div class="bouttons">
+                <h2 id="valeur"></h2>
+                <span id="clear">Clear</span>
+                <span>/</span>
+                <span>*</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>-</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span id="plus">+</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>0</span>
+                <span>00</span>
+                <span>.</span>
+                <span id="egal">=</span>
+            </div>
+        </div>
+        <script>
+            let buttons = document.querySelector('.bouttons');
+            let btn = document.querySelectorAll('span');
+            let valeur = document.getElementById('valeur');
+
+            for(let i=0; i<btn.length;i++){
+                btn[i].addEventListener("click", function(){
+
+                    if(this.innerHTML=="="){
+                        valeur.innerHTML = eval(valeur.innerHTML);
+                    }else{
+                        if(this.innerHTML=="Clear"){
+                            valeur.innerHTML = "";
+                        }
+                    else{
+                        valeur.innerHTML += this.innerHTML;
+                    }
+                    }
+                })
+            }
+        </script>
+    </body>
+</html>

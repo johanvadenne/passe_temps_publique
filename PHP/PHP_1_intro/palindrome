@@ -1,0 +1,57 @@
+<?php
+
+#saisi
+echo("saisissé un mot\n");
+$palindrome = readline();
+
+#constante
+$alphabet = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "g", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
+
+#variable
+$longeur = strlen($palindrome)-1;
+$longeuralphabet = count($alphabet);
+$boucle = strlen($palindrome) / 2;
+$booleen = true;
+
+$palindrome = strtolower($palindrome);
+
+for ($b=0; $b < $longeur; $b++) { 
+     for ($a=0; $a < $longeuralphabet; $a++) { 
+        if ($palindrome[$b] == $alphabet[$a]) {
+            break;
+        }
+    }
+    $palindrome[$b] = preg_replace($palindrome[$b], "");
+}
+
+echo($palindrome);
+
+##boucle
+#for ($i=0; $i < $boucle; $i++) { 
+#
+#    #je compare la derniere el la premier lettre
+#    if ($palindrome[$i] != $palindrome[$longeur]) {
+#        $booleen = false;
+#        break;
+#    }
+#    $longeur = $longeur - 1;
+#}
+#
+##je dis si c'est un palindrome
+#if ($booleen) {
+#    echo("C'est un palindrome\n");
+#}
+#else
+#{
+#    echo("Ce n'est pas un palindrome\n");
+#}
+#
+##autre façon
+#
+#if (strrev($palindrome) == $palindrome) {
+#    echo("C'est un palindrome\n");
+#}
+#else
+#{
+#    echo("Ce n'est pas un palindrome\n");
+#}

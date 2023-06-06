@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+
+.compteur{
+    width: 5.5%;
+    height: 6vh;
+    background: rgb(255, 102, 0);
+    border: 1px black solid;
+    border-radius: 10px;
+    padding-left: 0.5%;
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 20%;
+    margin-top: 1%;
+}
+
+span{
+    font-family: 'Alfa Slab One', cursive;
+}

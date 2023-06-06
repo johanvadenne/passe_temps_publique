@@ -1,0 +1,24 @@
+<?php
+
+#entrer votre texte
+echo "écrivé votre texte:\n \n";
+$chaine = readline();
+
+#entré la lettre qui sera en majuscule
+echo "\n choisissez un caractère que vous voulez mettre en majuscule dans votre texte: \n";
+$lettre = readline();
+
+#boucle qui change la lettre demander en majuscule
+for ($i=0; $i < strlen($chaine); $i++) { 
+    if ($lettre == $chaine[$i]) {
+        $chaine[$i] = strtoupper($chaine[$i]);
+    }
+}
+echo $chaine;
+
+#entré la deuxième lettres qui sera en majuscule
+echo "\n choisissez un deuxème caractères que vous voulez mettre en majuscule dans votre texte: \n";
+$lettre = readline();
+
+#change la lettre demander en majuscule
+echo str_replace($lettre, strtoupper($lettre), $chaine);

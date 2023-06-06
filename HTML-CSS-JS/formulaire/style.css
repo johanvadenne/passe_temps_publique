@@ -1,0 +1,116 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+::placeholder {
+    opacity: 0.5; /* Firefox */
+  }
+body
+{
+    animation: back 60s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form
+{
+    background: white;
+    border-radius: 50px;
+    width: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border: 10px solid rgba(0, 0, 0, 0.3)
+}
+h1
+{
+    text-align: center;
+    margin: 8%;
+}
+.space_around
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.space_around2
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.space_around2 .center
+{
+    width: 25%;
+    margin: 1%;
+}
+label
+{
+    font-size: 1.2em;
+}
+.space_around .texte_name
+{
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+.space_around .texte_name:focus
+{
+    border: 3px solid rgba(0, 88, 110, 0.2);
+    box-shadow: 0 0 30px rgba(75, 219, 255, 0.6);
+}
+.space_around .center
+{
+    display: flex;
+    justify-content: center;
+}
+.space_around select
+{
+    width: auto;
+    height: 30px;
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+.space_around span input
+{
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    outline: transparent;
+    background: white;
+    padding: 5px;
+}
+@keyframes back {
+    0%
+    {
+        background: lightcoral;
+    }
+    25%
+    {
+        background: lightgreen;
+    }
+    50%
+    {
+        background: lightskyblue;
+    }
+    75%
+    {
+        background: lightgray;
+    }
+    100%
+    {
+        background: lightcoral;
+    }
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+
+
+/***************************************** projet *****************************************/
+
+.projet {
+    background-image: url(image/fond/projet_menu.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.bloc_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.bloc_titre_section {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    position: float;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bloc_titre_section span {
+    position: absolute;
+    margin-left: -1%;
+}
+
+.bloc_section .section {
+    width: 20%;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    display: wrap;
+    justify-content: space-around;
+}
+
+.bloc_section .section .bloc_projet {
+    width: 95%;
+    height: 20vh;
+    background-color: white;
+    border-radius: 20px;
+    margin: 2.5%;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.459);
+    position: relative;
+    transition: box-shadow 0.2s linear;
+}
+
+.bloc_section .section .bloc_projet:hover {
+    cursor: pointer;
+}
+
+.bloc_section .section .bloc_projet .nom_tache {
+    text-align: center;
+    padding-top: 10%;
+    font-size: 2em;
+    user-select: none;
+}
+
+.bloc_section .section .bloc_projet .description_tache {
+    padding: 3%;
+    text-align: center;
+    font-size: 1.2em;
+    user-select: none;
+}
+
+.bloc_section .section .bloc_projet .description_tache a {
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+}
+
+.bloc_section .section .bloc_projet .description_tache a:visited {
+    color: rgb(0, 102, 255);
+}
+
+.bloc_section .section .bloc_projet .description_tache a:hover {
+    color: rgb(0, 174, 255);
+}
+
+
+/***************************************** projet *****************************************/

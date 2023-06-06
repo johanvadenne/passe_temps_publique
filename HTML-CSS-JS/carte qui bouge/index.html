@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>carte qui bouge</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>carte Bronze</h3>
+                    <p>Un accès rapide à vos données, 
+                        un téléchargement encore plus vite, 
+                        et plusiurs réduction sur nos produit.
+                        Durée de l'abonment 3 mois
+                    </p>
+                    <a href="#">Savoir plus</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>carte Argent</h3>
+                    <p>Un accès rapide à vos données, 
+                        un téléchargement encore plus vite, 
+                        et plusiurs réduction sur nos produit.
+                        Durée de l'abonment 6 mois
+                    </p>
+                    <a href="#">Savoir plus</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>carte Or</h3>
+                    <p>Un accès rapide à vos données, 
+                        un téléchargement encore plus vite, 
+                        et plusiurs réduction sur nos produit.
+                        Durée de l'abonment 12 mois
+                    </p>
+                    <a href="#">Savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"),{
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+    </body>
+</html>

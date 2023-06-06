@@ -1,0 +1,28 @@
+<?php
+
+#saisissé un mot
+echo("saisissé un mot\n");
+
+#j'enregistre le mot
+$mot = readline();
+
+#je définie le nombre de fois que mla boucle va tourner
+$boucle = strlen($mot);
+
+#créer une variable
+$mot_inverse = "";
+
+#boucle
+for ($i=0; $i < $boucle; $i++) { 
+    $noucle = $noucle - 1;
+    $mot_inverse[$i] = $mot[$noucle];
+}
+
+#je dis le mot à l'envers
+echo("$mot_inverse\n");
+
+#autre façon
+
+$mot == strrev($mot);
+
+echo("$mot\n");

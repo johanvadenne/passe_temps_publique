@@ -1,0 +1,28 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: linear-gradient(cyan, pink);
+    min-height: 100vh;
+}
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h2 span
+{
+    font-size: 5em;
+    letter-spacing: 30px;
+    filter: blur(10px);
+    transition: 0.2s;
+}
+h2 span:hover
+{
+    filter: blur(0);
+}

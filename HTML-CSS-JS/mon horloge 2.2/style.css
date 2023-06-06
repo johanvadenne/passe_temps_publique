@@ -1,0 +1,278 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+body
+{
+    overflow: hidden;
+    min-height: 100vh;
+}
+section:nth-child(2)
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: 4000%;
+    z-index: -10;
+    animation: oeuvre13fond 600s linear infinite;
+}
+.horloge .clock
+{
+    position: relative;
+    width: 700px;
+    height: 250px;
+    background: rgba(255,255,255, 0.1);
+    border-radius: 15px;
+    z-index: 10;
+    border: 2px solid rgba(255,255,255, 0.1);
+    backdrop-filter: blur(15px);
+}
+.horloge .clock .container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.horloge .clock .container h2
+{
+    font-size: 6em;
+    color: white;
+}
+.horloge .clock .container h2:nth-child(odd)
+{
+    padding: 5px 15px;
+    border-radius: 10px;
+    background: rgba(255,255,255, 0.1);
+    box-shadow: 0 0 20px rgba(255,255,255, 0.2);
+    border: 2px solid rgba(255,255,255,0.1)
+}
+.horloge .clock .container span#ampm
+{
+    position: relative;
+    bottom: -20%;
+    font-size: 3em;
+    color: white;
+    font-weight: 1000;
+    margin: 0 10px;
+}
+#square span
+{
+    position: absolute;
+    pointer-events: none;
+    background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.8));
+    border-radius: 50%;
+    animation: animate 10s linear infinite;
+}
+#bulle:nth-child(1)
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(cyan, limegreen);
+    border-radius: 50%;
+    bottom: 45%;
+    left: 28%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    z-index: 2;
+    animation-delay: -0.4s;
+}
+#bulle:nth-child(2)
+{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(cyan, limegreen);
+    border-radius: 50%;
+    bottom: 20%;
+    left: 35%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: -0.4s;
+    z-index: 1;
+}
+#bulle:nth-child(3)
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(cyan, limegreen);
+    border-radius: 50%;
+    bottom: 55%;
+    left: 28%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    z-index: 3;
+    animation-delay: -0.3s;
+}
+#bulle:nth-child(4)
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(cyan, limegreen);
+    border-radius: 50%;
+    bottom: 59%;
+    left: 31%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: -0.2s;
+    z-index: 1;
+}
+#bulle:nth-child(5)
+{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(yellow, darkred);
+    border-radius: 50%;
+    top: 20%;
+    right: 37%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: 0.1s;
+    z-index: 1;
+}
+#bulle:nth-child(6)
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(yellow, darkred);
+    border-radius: 50%;
+    top: 59%;
+    right: 31%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: 0.3s;
+    z-index: 1;
+}
+#bulle:nth-child(7)
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(yellow, darkred);
+    border-radius: 50%;
+    top: 55%;
+    right: 28%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: 0.2s;
+    z-index: 1;
+}
+#bulle:nth-child(8)
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(yellow, darkred);
+    border-radius: 50%;
+    top: 45%;
+    right: 28%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: 0.1s;
+    z-index: 1;
+}
+#bulle:nth-child(9)
+{
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(cyan, limegreen);
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: -0.5s;
+}
+#bulle:nth-child(10)
+{
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(yellow, darkred);
+    animation: oeuvre13 5s ease-in-out infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(0) translateY(0);
+        opacity: 0;
+    }
+    10%
+    {
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1) translateY(-700%);
+        opacity: 0;
+    }
+}
+@keyframes oeuvre13fond
+{
+    0%,100%
+    {
+        background: cyan;
+    }
+    8.66%,95.23%
+    {
+        background: orange;
+    }
+    15.32%,88.57%
+    {
+        background: tomato;
+    }
+    21.98%,81.91%
+    {
+        background: violet;
+    }
+    28.64%,75.25%
+    {
+        background: blueviolet;
+    }
+    35.3%,68.59%
+    {
+        background: blue;
+    }
+    41.95%,61.93%
+    {
+        background: midnightblue;
+    }
+    48.61%,55.27%
+    {
+        background: black;
+    }
+}
+@keyframes oeuvre13
+{
+    0%,100%
+    {
+        transform: translateY(20px);
+    }
+    50%
+    {
+        transform: translateY(-20px);
+    }
+}
