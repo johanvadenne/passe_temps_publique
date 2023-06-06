@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wolf</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="cour">
+    <header>
+        <a href="index.html"><img src="image/Wolf.jpg" alt="logo loup"></a>
+        <ul>
+            <li><a href="mathsuitenumerique.html">Suite numérique</a></li>
+            <li><a href="congruence.html">Congruence</a></li>
+            <li><a href="base.html">Les bases</a></li>
+            <li><a href="nombre_premier.html">Les nombres premiers</a></li>
+        </ul>
+        <a class="retour" href="math.html">retour</a>
+    </header>
+    <section class="lecon">
+        <div id="teste">
+                <h1 class="titre">Les bases</h1>
+                <h2 class="soustitre">base 10</h2>
+                <p class="texte">15 = 1 * 10<sup>1</sup> + 5 * 10<sup>0</sup></p>
+                <h2 class="soustitre">base 2</h2>
+                <p class="texte">15 = 1111</p>
+                <h2 class="soustitre">base 16</h2>
+                <p class="texte">15 = f</p>
+                <h2 class="soustitre">tableau</h2>
+            <table style="text-align: center;">
+                <tr>
+                    <td>base 10</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>base 2</td>
+                    <td>0001</td>
+                    <td>0010</td>
+                    <td>0011</td>
+                    <td>0100</td>
+                    <td>0101</td>
+                    <td>0110</td>
+                    <td>0111</td>
+                    <td>1000</td>
+                    <td>1001</td>
+                    <td>1010</td>
+                    <td>1011</td>
+                    <td>1100</td>
+                    <td>1101</td>
+                    <td>1110</td>
+                    <td>1111</td>
+                </tr>
+                <tr>
+                    <td>base 16</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+            </table>
+                <h2 class="soustitre">base 10 ==> base 2</h2>
+                <p class="texte">je veux calculer 2865<br>
+                    il faut essayé de soustraire la valeur la plus grande sans aller dans le négatif</p>
+            <table style="text-align: center;">
+                <tr>
+                    <td width="1400px">2048</td>
+                    <td width="1400px">1028</td>
+                    <td width="1400px">512</td>
+                    <td width="1400px">256</td>
+                    <td width="1400px">128</td>
+                    <td width="1400px">64</td>
+                    <td width="1400px">32</td>
+                    <td width="1400px">16</td>
+                    <td width="1400px">8</td>
+                    <td width="1400px">4</td>
+                    <td width="1400px">2</td>
+                    <td width="1400px">1</td>
+                </tr>
+                <tr>
+                    <td width="1400px">1 * 2<sup>11</sup></td>
+                    <td width="1400px">1 * 2<sup>10</sup></td>
+                    <td width="1400px">1 * 2<sup>9</sup></td>
+                    <td width="1400px">1 * 2<sup>8</sup></td>
+                    <td width="1400px">1 * 2<sup>7</sup></td>
+                    <td width="1400px">1 * 2<sup>6</sup></td>
+                    <td width="1400px">1 * 2<sup>5</sup></td>
+                    <td width="1400px">1 * 2<sup>4</sup></td>
+                    <td width="1400px">1 * 2<sup>3</sup></td>
+                    <td width="1400px">1 * 2<sup>2</sup></td>
+                    <td width="1400px">1 * 2<sup>1</sup></td>
+                    <td width="1400px">1 * 2<sup>0</sup></td>
+                </tr>
+                <tr>
+                    <td>2865 - 2048</td>
+                    <td>x</td>
+                    <td>817 - 512</td>
+                    <td>305 - 256</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>49 - 32</td>
+                    <td>17 - 16</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>1 - 1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+            </table>
+                <p class="texte">formule écrite : 1 * 2<sup>11</sup> + 0 * 2<sup>10</sup> + 1 * 2<sup>9</sup> + 1 *
+                    2<sup>8</sup> + 0 * 2<sup>7</sup> + 0 * 2<sup>6</sup> + 1 * 2<sup>5</sup> + 1 * 2<sup>4</sup> + 0 *
+                    2<sup>3</sup> + 0 * 2<sup>2</sup> + 0 * 2<sup>1</sup> + 1 * 2<sup>0</sup><br>
+                    formule simplifié 1 : 1 * 2<sup>11</sup> + 1 * 2<sup>9</sup> + 1 * 2<sup>8</sup> + 1 * 2<sup>5</sup>
+                    + 1 * 2<sup>4</sup> + 1 * 2<sup>0</sup><br>
+                    formule simplifié 2 : 2028 + 512 + 256 + 32 + 16 + 1<br><br>
+                    pour 1,75:</p>
+                <table style="text-align: center;">
+                    <tr>
+                        <td width="1400px">1</td>
+                        <td width="1400px">0,5</td>
+                        <td width="1400px">0,25</td>
+                        <td width="1400px">0,125</td>
+                    </tr>
+                    <tr>
+                        <td width="1400px">1 * 2<sup>-0</sup></td>
+                        <td width="1400px">1 * 2<sup>-1</sup></td>
+                        <td width="1400px">1 * 2<sup>-2</sup></td>
+                        <td width="1400px">1 * 2<sup>-3</sup></td>
+                    </tr>
+                    <tr>
+                        <td>1 - 1,75</td>
+                        <td>0,75 - 0,5</td>
+                        <td>0,25 - 0,25</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+                <p class="texte">pour 1,75:<br>
+                    formule écrite : 1 * 2<sup>0</sup> + 0 * 2<sup>-1</sup> + 1 * 2<sup>-2</sup> + 1 *
+                    2<sup>-3</sup><br>
+                    formule simplifié 1 : 1 * 2<sup>0</sup> + 1 * 2<sup>-1</sup> + 1 * 2<sup>-2</sup><br>
+                    formule simplifié 2 : 1 + 0,5 + 0,25<br><br></p>
+                <h2 class="soustitre">base 10 ==> base 16</h2>
+                <p class="texte">je veux calculer 54862<br>
+                    il faut essayé de soustraire la valeur la plus grande sans aller dans le négatif (comme : base 10
+                    ==> base 2)</p>
+            <table style="text-align: center;">
+                <tr>
+                    <td width="1400px">1048576</td>
+                    <td width="1400px">65536</td>
+                    <td width="1400px">4096</td>
+                    <td width="1400px">256</td>
+                    <td width="1400px">16</td>
+                    <td width="1400px">1</td>
+                </tr>
+                <tr>
+                    <td width="1400px">16<sup>5</sup></td>
+                    <td width="1400px">16<sup>4</sup></td>
+                    <td width="1400px">16<sup>3</sup></td>
+                    <td width="1400px">16<sup>2</sup></td>
+                    <td width="1400px">16<sup>1</sup></td>
+                    <td width="1400px">16<sup>0</sup></td>
+                </tr>
+                <tr>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>54862 / 4096 ≈ 13,39<br>
+                        13 * 4096 = 53248<br>
+                        54862 - 53248 = 1614
+                        13 * 16<sup>3</sup></td>
+                    <td>1614 / 256 ≈ 6,30<br>
+                        6 * 256 = 1536<br>
+                        1614 - 1536 = 78<br>
+                        6 * 16<sup>2</sup></td>
+                    <td>78 / 16 = 4,875<br>
+                        4 * 16 = 64<br>
+                        78 - 64 = 14<br>
+                        4 * 16 <sup>1</sup></td>
+                    <td>14 * 16<sup>0</sup></td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>D</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>E</td>
+                </tr>
+            </table>
+            <p class="texte">pour 1,75:<br>
+                formule simplifié : 13 * 16<sup>3</sup> + 6 * 16<sup>2</sup> + 4 * 16<sup>1</sup> + 14 * 16<sup>0</sup>
+                = D64E<br><br>
+                pour les nombres à virgule c'est le même système que 10 ==> base 16</p>
+                <h2 class="soustitre">base 2 ==> base 10</h2>
+            <p class="texte">je veux calculer 101110101,11<br>
+                pour cela on peut créer un tableau</p>
+            <table style="text-align: center;">
+                <tr>
+                <tr>
+                    <td width="1400px">1 * 2<sup>8</sup></td>
+                    <td width="1400px">1 * 2<sup>7</sup></td>
+                    <td width="1400px">1 * 2<sup>6</sup></td>
+                    <td width="1400px">1 * 2<sup>5</sup></td>
+                    <td width="1400px">1 * 2<sup>4</sup></td>
+                    <td width="1400px">1 * 2<sup>3</sup></td>
+                    <td width="1400px">1 * 2<sup>2</sup></td>
+                    <td width="1400px">1 * 2<sup>1</sup></td>
+                    <td width="1400px">1 * 2<sup>0</sup></td>
+                    <td width="1400px">1 * 2<sup>-1</sup></td>
+                    <td width="1400px">1 * 2<sup>-2</sup></td>
+                </tr>
+                <td width="1400px">256</td>
+                <td width="1400px">128</td>
+                <td width="1400px">64</td>
+                <td width="1400px">32</td>
+                <td width="1400px">16</td>
+                <td width="1400px">8</td>
+                <td width="1400px">4</td>
+                <td width="1400px">2</td>
+                <td width="1400px">1</td>
+                <td width="1400px">0,5</td>
+                <td width="1400px">0,25</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <p class="texte">formule : 256 + 64 + 32 + 16 + 4 + 1 + 0,5 + 0,75 = 373,75</p>
+                <h2 class="soustitre">base 2 ==> base 16</h2>
+            <p class="texte">si je veux calcuer 100110111101,11<br>
+                a partir de la virgule je prend 4 chiffre binnaire et je le convertie en base de 16</p>
+            <table style="text-align: center;">
+                <tr>
+                    <td width="1400px">1001</td>
+                    <td width="1400px">1011</td>
+                    <td width="1400px">1101</td>
+                    <td width="1400px">,</td>
+                    <td width="1400px">1100</td>
+                </tr>
+                <tr>
+                    <td width="1400px">9</td>
+                    <td width="1400px">11</td>
+                    <td width="1400px">13</td>
+                    <td width="1400px">,</td>
+                    <td width="1400px">12</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>B</td>
+                    <td>D</td>
+                    <td>,</td>
+                    <td>C</td>
+                </tr>
+            </table>
+            <p class="texte">résultat : 9BD,C</p>
+                <h2 class="soustitre">base 16 ==> base 2</h2>
+            <p class="texte">je veux calculuer 9BD,C<br>
+                il faut faire la procédure inverse de base 2 ==> base 16</p>
+            <table style="text-align: center;">
+                <tr>
+                    <td>9</td>
+                    <td>B</td>
+                    <td>D</td>
+                    <td>,</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td width="1400px">9</td>
+                    <td width="1400px">11</td>
+                    <td width="1400px">13</td>
+                    <td width="1400px">,</td>
+                    <td width="1400px">12</td>
+                </tr>
+                <tr>
+                    <td width="1400px">1001</td>
+                    <td width="1400px">1011</td>
+                    <td width="1400px">1101</td>
+                    <td width="1400px">,</td>
+                    <td width="1400px">1100</td>
+                </tr>
+            </table>
+            <p class="texte">résultat : 100110111101,11</p>
+                <h2 class="soustitre">base 16 ==> base 10</h2>
+            <p class="texte">je veux calculuer 9BD,C</p>
+            <table style="text-align: center;">
+                <tr>
+                    <td>9</td>
+                    <td>B</td>
+                    <td>D</td>
+                    <td>,</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td width="1400px">9</td>
+                    <td width="1400px">11</td>
+                    <td width="1400px">13</td>
+                    <td width="1400px">,</td>
+                    <td width="1400px">12</td>
+                </tr>
+                <tr>
+                    <td width="1400px">9 * 16<sub>2</sub></td>
+                    <td width="1400px">11 * 16<sub>1</sub></td>
+                    <td width="1400px">13 * 16<sub>0</sub></td>
+                    <td width="1400px">,</td>
+                    <td width="1400px">12 * 16<sub>-1</sub></td>
+                </tr>
+            </table>
+            <p class="texte">
+                formule 1: 9 * 16<sup>2</sup> + 11 * 16<sup>1</sup> + 13 * 16<sup>0</sup> + 12 * 16<sup>-1</sup><br>
+                formule 2: 2304 + 176 + 13 + 0,75 = 2493,75
+            </p>
+            <h2 class="soustitre">addition base 2 et base 10</h2>
+            <p class="texte">
+                <b>base 2</b><br> 
+                1 + 1 = 10<br> 
+                111 + 1 = 1000<br> 
+                1101110 + 10011010 = 1111000<br><br>
+                <b>base 16</b><br> 
+                1 + 1 = 2<br> 
+                5 + 6 = B<br> 
+                B + C = 17<br>
+                15C8D + DE58F = F320C
+            </p>
+            <span class="liendoc">
+                <a class="liendoc" href="document cour/math/les bases" target="_blank">Voir document et exercice</a>
+            </span>
+            <span class="liendoc">
+                <a class="liendoc" href="document cour/math/manuel/SIGMA_BTS_SIO_2015_OK.pdf" target="_blank">Voir
+                    manuel</a>
+            </span>
+        </div>
+    </section>
+</body>
+
+</html>

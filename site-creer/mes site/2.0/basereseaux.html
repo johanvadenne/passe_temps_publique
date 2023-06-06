@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wolf</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="cour">
+    <header id="math">
+        <a href="index.html"><img src="image/Wolf.jpg" alt="logo loup"></a>
+        <ul>
+            <li><a href="basereseaux.html">Base réseaux</a></li>
+            <li><a href="#">Cisco packet tracer</a></li>
+            <li><a href="#">en cours...</a></li>
+        </ul>
+        <a class="retour" href="reseaux.html">retour</a>
+    </header>
+    <section class="lecon">
+        <div id="teste">
+            <span>
+                <h1 class="titre">Réseaux</h1>
+            </span>
+            <span>
+                <p class="texte">Un réseaux est composée de plusieurs appareils <br>
+                    qui sont connecté entre eux, pour les identifiés chaque appareils <br>
+                    détient une adresse IP.
+                </p>
+            </span>
+            <span>
+                <h2 class="soustitre">IP</h2>
+            </span>
+            <span>
+                <p class="texte">
+                    IP qui veut dire Internet Protocol, est un moyen de <br>
+                    reconnaitre l'appareil dans le réseaux afin de lui transmettre ou <br>
+                    envoyé les données qui demande. L'IP est constitué d'une suite de chiffre, il y a :<br><br>
+                    IPV4:<br>
+                    L'IPV4 est constitué de 4 octets, il se renouvelle souvent pour éviter <br>
+                    les problèmes (on appelle ça des adresse dynamique), <br>
+                    car il y a pas assée d'adresse IPV4 pour toutes les personnes dans le monde.<br>
+                    Exemple d'IPV4: 192.168.23.5<br><br>
+                    IPV6:<br>
+                    L'IPV6 est constitué de 16 octets, cette adresse est fixe elle ne change <br>
+                    pas comparé à l'IPV4, car elle est unique.<br>
+                    Exemple d'IPV6: 2001:0db8:0000:85a3:0000:0000:ac1f:8001<br><br>
+                    Pour connaitre son adresse IP, il faut lancer l'invite de commande et taper <br>
+                    ipconfig, et pour linux ifconfig.<br><br>
+                    Il y a deux types IP :<br><br>
+                    Les IP privées: ce sont des adresses fourni par un router, ce router permet de <br>
+                    faire le lien entre le réseaux privée et le réseau public.<br>
+                    Ces adresse sont utilisé dans des entreprises, écoles, maison...<br><br>
+                    Les IP publics: ce sont des adresses qui circule dans le monde entier, est sont <br>
+                    accessible à travers internet.</p>
+            </span>
+            <span>
+                <h2 class="soustitre">Binaire</h2>
+            </span>
+            <span>
+                <p class="texte">
+                    Un nombre binaire est un chiffre 0 ou 1, 1 bit représente 1 chiffre binaire<br>
+                    et 1 octet représente 8 bits.<br><br>
+                    conversion binaire:<br><br>
+                    1 octet = 256
+                </p>
+            </span>
+            <table>
+                <tr>
+                    <td>  1  </td>
+                    <td>  1  </td>
+                    <td>  1  </td>
+                    <td>  1  </td>
+                    <td>  1  </td>
+                    <td>  1  </td>
+                    <td>  1  </td>
+                    <td>  1  </td>
+                </tr>
+                <tr>
+                    <td>  1</td>
+                    <td>  2</td>
+                    <td>  4</td>
+                    <td>  8</td>
+                    <td> 16</td>
+                    <td> 32</td>
+                    <td> 64</td>
+                    <td>128</td>
+                </tr>
+            </table>
+            <br><br>
+            <table>
+                <tr>
+                    <td colspan="8">192</td>
+                    <td colspan="8">168</td>
+                    <td colspan="8">23</td>
+                    <td colspan="8">5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <br>
+            <span>
+                <p class="texte">
+                    192.168.23.5 = 11000000.10101000.01000111.00000101<br><br>
+                </p>
+            </span>
+            <span>
+                <h2 class="soustitre">passerelle</h2>
+            </span>
+            <span>
+            <p class="texte">une passerelle est le nom générique d'un dispositif permettant de relier deux réseaux <br>
+                informatiques de types différents, par exemple un réseau local et le réseau Internet.</p>
+            </span>
+            <span>
+                <h2 class="soustitre">masque de sous réseaux</h2>
+            </span>
+            <p class="texte">Un sous-réseau est une subdivision logique d'un réseau de taille plus importante. <br>
+                Le masque de sous-réseau permet de distinguer la partie de l'adresse commune à tous les appareils <br>
+                du sous-réseau et celle qui varie d'un appareil à l'autre. Un sous-réseau correspond typiquement à <br>
+                un réseau local sous-jacent.<br><br>
+                Exemple :<br><br>
+                un masque de sous réseaux : /24 = 255.255.255.0<br>
+                peut contenir 256 IP, elle est plus utilisée dans des maison.
+            </p>
+                
+            <table>
+                <tr>
+                    <td colspan="3">partie <br>fixe</td>
+                    <td>partie <br>dynamique</td>
+                </tr>
+                <tr>
+                    <td>  192  </td>
+                    <td>  168  </td>
+                    <td>  23  </td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>255</td>
+                    <td>255</td>
+                    <td>255</td>
+                    <td>0</td>
+                </tr>
+            </table>
+                <p class="texte">un masque de sous réseaux : /16 = 255.255.0.0<br>
+                peut contenir que 65 536, elle est plus utilisée dans de moyenne entreprise ou de moyenne école. IP</p>
+                <table>
+                    <tr>
+                        <td colspan="2">partie <br>fixe</td>
+                        <td colspan="2">partie <br>dynamique</td>
+                    </tr>
+                    <tr>
+                        <td>  192  </td>
+                        <td>  168  </td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>255</td>
+                        <td>255</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+                <p class="texte">un masque de sous réseaux : /8 = 255.0.0.0<br>
+                peut contenir que 16 777 216 IP, elle est plus utilisée dans de grande entreprise</p>
+                <table>
+                    <tr>
+                        <td>partie <br>fixe</td>
+                        <td colspan="3">partie <br>dynamique</td>
+                    </tr>
+                    <tr>
+                        <td>192</td>
+                        <td>  0  </td>
+                        <td>  0  </td>
+                        <td>  0  </td>
+                    </tr>
+                    <tr>
+                        <td>255</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            <span>
+                <h2 class="soustitre">DHCP</h2>
+            </span>
+            <span>
+                <p class="texte">Le protocole DHCP (Dynamic Host Configuration Protocol) est un <br>
+                    protocole client/serveur qui fournit automatiquement une adresse IP et d'autres <br>
+                    informations de configuration associées, telles que le masque de sous-réseau et la <br>
+                    passerelle par défaut.<br>
+                    Le DHCP aura une pool d'adresse définit, une pool d'adresse c'est un nombre d'IP qu'on <br>
+                    autorise au DHCP de fournir.<br><br>
+                    Exemple :<br><br>
+                    je lui définit une pool entre : 192.168.0.0 à 192.168.1.0<br>
+                    cela veut dire que mon DHCP peut fournir 257 adresse IP.<br>
+                    On peut attribué plusieurs pool d'adresse si on le veut.
+                </p>
+            </span>
+            <span>
+                <h2 class="soustitre">DNS</h2>
+            </span>
+            <span>
+            <p class="texte">Le Domain Name System ou DNS est un service informatique qui traduit<br>
+                les noms de domaine Internet en adresse IP ou autres enregistrements.<br>
+                Lorsque vous aller recherché google.fr sur internet, la machine ne comprend pas.<br>
+                donc pour cela le DNS va associé une adresse IP à google.fr, et quand vous allez<br>
+                chercher google.fr le DNS traduit afin de comprendre votre recherche et vous envoyer<br>
+                le site que vous avez demandé.
+            </p>
+            </span>
+            <span class="liendoc">
+                <a class="liendoc" href="document cour/reseaux/" target="_blank">Voir document et exercice</a>
+            </span>
+        </div>
+    </section>
+</body>
+
+</html>

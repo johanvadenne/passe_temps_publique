@@ -1,0 +1,75 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: black;
+}
+body#blender
+{
+    background-image: url("image/blender.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body#programme
+{
+    background-image: url("image/programme.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.entete
+{
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(white,transparent);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.entete a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+}
+.block
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.block .box a
+{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.block .box
+{
+    width: 100px;
+    height: 100px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 16px;
+    transition: 0.3s;
+    box-shadow: 0 0 120px rgb(255, 255, 255);
+}
+.block .box:hover
+{
+    transform: translateY(-20px)
+}
+.animation .video
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+}

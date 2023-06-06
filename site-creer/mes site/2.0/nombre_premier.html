@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wolf</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="cour">
+    <header>
+        <a href="index.html"><img src="image/Wolf.jpg" alt="logo loup"></a>
+        <ul>
+            <li><a href="congruence.html">Congruence</a></li>
+            <li><a href="base.html">Les bases</a></li>
+            <li><a href="nombre_premier.html">Les nombres premiers</a></li>
+            <li><a href="rappelmath.html">rappel</a></li>
+        </ul>
+        <a class="retour" href="math.html">retour</a>
+    </header>
+    <section class="lecon">
+        <div>
+            <h2 class="soustitre">Les nombres premiers</h2>
+            <p class="texte">
+                Un nombre premier est un nombre qui est divisible par 1 et lui-même. (0 et 1 ne sont pas des nombres premiers)<br>
+                nombre premier : 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97<br><br>
+                Pour savoir si un nombre est divisible par :<br>
+                2 : le nombre est pair (44, 956, 5678)<br>
+                3 : on additionne tous les chiffres du nombre pour savoir si le résultat est divisible par 3 (5868 5+8+6+8=27 27/3=9)<br>
+                4 : on regarde les 2 derniers chiffres si il sont divisible par 4 (54<b>24</b> 24/4=6)<br>
+                5 : le nombre se termine par 0 ou 5<br>
+                9 : comme le 3, mais cette fois ci il faut que le résultat soit divisible par 9 (657 6+5+7=18 18/9=2)<br><br>
+                Calculer un nombre pour savoir si c'est un nombre premier, on commence par:<br>
+                calculer sa racine (√481 = 21.93)<br>
+                puis je regarde si il est divisible par tous les chiffres premiers jusqu'à 21 (21.93 ≈ 21)<br>
+                2 : le nombre n'est pas paire<br>
+                3 : 4 + 8 + 1 = 13 le nombre n'est pas divisible par 3<br>
+                5 : le nombre ne termine pas par 0 ou par 5<br>
+                7 : 481 / 7 = 68.7142857143 le nombre n'est pas divisible par 7<br>
+                11 : 481 / 11 = 43.7272727273 le nombre n'est pas divisible par 11<br>
+                13 : 481 / 13 = 37 le nombre est divisible par 13
+            </p>
+            <h2 class="soustitre">Les diviseurs premiers</h2>
+            <p class="texte">
+                Pour trouver les diviseurs premier d'un nombre on le divise par le plus petit nombre premier jusqu'au plus grand, si le résultat est entier c'est bon, mais si le résultat est décimal ça ne marche pas.<br>
+                Exemple avec le nombre 150:<br><br>
+                150 / 2<br>
+                75 / 3<br>
+                15 / 5<br>
+                5 / 5<br>
+                1<br>
+                150 = 2 * 3 * 5<sup>2</sup><br><br>
+                Après avoir trouvé les diviseurs premiers de 150 on peut trouver tous ces diviseurs.<br>
+                Pour décomposer 150 on peut utiliser un arbre.<br>
+                Exemple:</p>
+                <table>
+                    <tr>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px">5<sup>0</sup></td>
+                        <td style="border: none;" width="25px">=</td>
+                        <td style="border: none;" width="100px">1</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px">3<sup>0</sup></td>
+                        <td style="border: none;" width="100px">5<sup>1</sup></td>
+                        <td style="border: none;" width="25px">=</td>
+                        <td style="border: none;" width="100px">5</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px">5<sup>2</sup></td>
+                        <td style="border: none;" width="25px">=</td>
+                        <td style="border: none;" width="100px">25</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px">2<sup>0</sup></td>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px"></td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px">5<sup>0</sup></td>
+                        <td style="border: none;" width="25px">=</td>
+                        <td style="border: none;" width="100px">3</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px">3<sup>1</sup></td>
+                        <td style="border: none;" width="100px">5<sup>1</sup></td>
+                        <td style="border: none;" width="25px">=</td>
+                        <td style="border: none;" width="100px">15</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px">5<sup>2</sup></td>
+                        <td style="border: none;" width="25px">=</td>
+                        <td style="border: none;" width="100px">75</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px" height="30px"></td>
+                        <td style="border: none;" width="100px" height="30px"></td>
+                        <td style="border: none;" width="100px" height="30px"></td>
+                        <td style="border: none;" width="100px"></td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px">5<sup>0</sup></td>
+                        <td style="border: none;" width="25px">=</td>
+                        <td style="border: none;" width="100px">2</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px">3<sup>0</sup></td>
+                        <td style="border: none;" width="100px">5<sup>1</sup></td>
+                        <td style="border: none;" width="25px">=</td>
+                        <td style="border: none;" width="100px">10</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px">5<sup>2</sup></td>
+                        <td style="border: none;" width="25px">=</td>
+                        <td style="border: none;" width="100px">50</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px">2<sup>1</sup></td>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px"></td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px">5<sup>0</sup></td>
+                        <td style="border: none;" width="25px">=</td>
+                        <td style="border: none;" width="100px">6</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px">3<sup>1</sup></td>
+                        <td style="border: none;" width="100px">5<sup>1</sup></td>
+                        <td style="border: none;" width="25px">=</td>
+                        <td style="border: none;" width="100px">30</td>
+                    </tr>
+                    <tr>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px"></td>
+                        <td style="border: none;" width="100px">5<sup>2</sup></td>
+                        <td style="border: none;" width="25px">=</td>
+                        <td style="border: none;" width="100px">150</td>
+                    </tr>
+                </table>
+                <p class="texte">
+                    150 = 1 + 5 + 25 + 3 + 15 + 75 + 2 + 10 + 50 + 6 + 30 + 150
+                </p>
+            <span class="liendoc">
+                <a class="liendoc" href="document cour/math/manuel/SIGMA_BTS_SIO_2015_OK.pdf" target="_blank">Voir manuel</a>
+            </span>
+        </div>
+    </section>
+</body>
+
+</html>

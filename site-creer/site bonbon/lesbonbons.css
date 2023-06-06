@@ -1,0 +1,123 @@
+/*fond d'écran*/
+body
+{
+    background-image: url("fondbonbon.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/* taille de la navigation */
+#fenetre
+{
+	width: 19%;
+}
+/* taille et position du texte*/
+p
+{
+    font-size: 2em;
+    text-align:center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/* taille et position du titre*/
+h1
+{
+    font: 4em "Fira Sans";
+    text-align:center;
+}
+/*questionnaire*/
+fieldset p
+{
+    margin-bottom: 5em;
+}
+/*placement de texte*/
+#types
+{
+    display: flex;
+    justify-content: space-around;
+}
+/*placement du quiz*/
+#quiz
+{
+    width: 20%;
+    margin: auto;
+
+}
+/*coleur du texte des réponses*/
+#reponse
+{
+    color: rgb(0, 255, 0);
+}
+/*la page de navigation*/
+nav
+{
+	margin: 0px;
+	background-image: url("fondbonbon.png");
+	border: 5px #ffa500 groove;
+}
+/*la page du menu*/
+#menu
+{
+    border: 1em groove #ffa500;
+    background: white;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    margin-left: 15em;
+	margin-right: 15em;
+}
+/*placement et modification de l'image*/
+#menu img
+{
+ 	width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* lissemnet des bord & placement */
+#menu-demo2 li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0px 0px;
+}
+
+/* placement des onglet & bordure*/
+#menu-demo2{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+
+/* dégrader de couleur des onglet */
+#menu-demo2 li:first-child{
+background-image:linear-gradient(to bottom, #00ccff 0%, #000000 100%);
+}
+#menu-demo2 li:nth-child(2){
+background-image:linear-gradient(to bottom, #00ccff 0%, #000000 100%);
+}
+#menu-demo2 li:nth-child(3){
+background-image:linear-gradient(to bottom, #00ccff 0%, #000000 100%);
+}
+#menu-demo2 li:nth-child(4){
+background-image:linear-gradient(to bottom, #00ccff 0%, #000000 100%);
+}
+#menu-demo2 li:last-child{
+background-image:linear-gradient(to bottom, #00ccff 0%, #000000 100%);
+}
+
+/* couleurs des onglet */
+#menu-demo2 a{
+    text-decoration:none;
+    display:block;
+    padding:8px 32px;
+    color:#fff;
+    font-family:arial;
+    }
+    #menu-demo2 ul a{
+    padding:8px 0;
+    }
+    #menu-demo2 li:hover a{
+    color:#f39c12;
+    }

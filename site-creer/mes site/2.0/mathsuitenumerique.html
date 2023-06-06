@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wolf</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="cour">
+    <header>
+        <a href="index.html"><img src="image/Wolf.jpg" alt="logo loup"></a>
+        <ul>
+            <li><a href="mathsuitenumerique.html">Suite numérique</a></li>
+            <li><a href="congruence.html">Congruence</a></li>
+            <li><a href="base.html">Les bases</a></li>
+            <li><a href="nombre_premier.html">Les nombres premiers</a></li>
+        </ul>
+        <a class="retour" href="math.html">retour</a>
+    </header>
+    <section class="lecon">
+        <div id="teste">
+            <span>
+                <h1 class="titre">Les suites numériques</h1>
+            </span>
+            <span>
+                <h3 class="texte">Une suite numérique (Un) est une succession de termes Un où n est un entier naturel.
+                    <br>
+                    Voici un exemple de suite numérique:<br><br>
+                    3 , 6 , 9 , 12, 15, ..., 30, 33, 36, 39, 42, 45, ...<br>
+                    U₀, U₁, U₂, U₃, U₄, ..., U₉,U₁₀,U₁₁,U₁₂,U₁₃,U₁₄, ...<br><br>
+                    U₀ est appelé le (terme initial). U₀ = 3
+                </h3>
+            </span>
+            <span>
+                <h2 class="soustitre">Forme explicite</h2>
+            </span>
+            <span>
+                <h3 class="texte">Une suite est définie de manière explicite lorsque l'on connaît directement la valeur
+                    de<br>
+                    n'importe quel terme Un en fonction de n.<br>
+                    Voici un exemple:<br><br>
+                    Un = 3 + n3<br>
+                    U₀ = 3 + 0 + 3 = 3<br>
+                    U₁ = 3 + 1 + 3 = 6<br>
+                    U₉ = 3 + 9 + 3 = 30<br><br></h3>
+            </span>
+            <span>
+                <h2 class="soustitre">Forme par récurrence</h2>
+            </span>
+            <span>
+                <h3 class="texte">Lorsqu'une suite est définie par récurrence, on ne peut pas calculer directement la
+                    valeur du terme Un <br>
+                    en fonction de n. On sait uniquement calculer la valeur du terme Un en fonction de celui qui
+                    précède.<br>
+                    Voici un exemple:<br><br>
+                    3 , 10, 31, 94, 283, ..., 68 890, 206 671, 620 014, 1 860 043, 5 580 130, 16 740 391, ...<br>
+                    U₀ , U₁ , U₂ , U₃ , U₄ , ...,    U₉   ,   U₁₀    ,     U₁₁     ,      U₁₂      ,      U₁₃      ,      U₁₄      , ...<br><br>
+                    Un = Un₋₁ * 3 + 1<br>
+                    U₁ = U₀ * 3 + 1 = 3 * 3 + 3 = 10<br>
+                    U₂ = U₁ * 3 + 1 = 10 * 3 + 3 = 31<br>
+                    U₁₀ = U₉ * 3 + 1 = 68 890 * 3 + 1 = 206 671<br><br></h3>
+            </span>
+            <span>
+                <h2 class="soustitre">arithmétique</h2>
+            </span>
+            <span>
+                <h3 class="texte">Une suite arithmétique est une suite avec laquelle on addition le prochain terme par la raison (r).<br><br>
+                Voici un exemple :<br><br>
+                Si la raison r = 9 et U₀ = 1<br>
+                U₁ = U₀ + 9 = 1 + 9 = 10<br>
+                U₂ = U₁ + 9 = 9 + 9 = 19<br>
+                U₃ = U₂ + 9 = 18 + 9 = 28<br><br>
+                Si je veux calculer directement un terme sans connaitre le précédent, je fais : <br><br>
+                Un = U₀ + 9n<br>
+                U₁₀ = 1 + 9 * 10 = 91</h3>
+            </span>
+            <span>
+                <h2 class="soustitre">géométrique</h2>
+            </span>
+            <h3 class="texte">Une suite géométrique est une suite avec laquelle on multiplie le prochain terme par la raison (r).<br><br>
+            Voici un exemple :<br><br>
+            Si la raison r = 9 et U₀ = 1<br>
+            U₁ = U₀ * 9 = 1 * 9 = 9<br>
+            U₂ = U₁ * 9 = 9 * 9 = 81<br>
+            U₃ = U₂ * 9 = 18 * 9 = 929<br><br>
+            Si je veux calculer directement un terme sans connaitre le précédent, je fais : <br><br>
+            Un = U₀ + 9ᴺ<br>
+            U₁₀ = 1 + 9ᴺ = 3 486 784 401</h3>
+        </span>
+        </div>
+    </section>
+</body>
+
+</html>

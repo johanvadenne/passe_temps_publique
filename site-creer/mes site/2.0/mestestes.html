@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wolf</title>
+    <link rel="stylesheet" type="text/css" href="mestestes.css">
+</head>
+
+<body id="informatique">
+    <header>
+        <a href="index.html"><img src="image/Wolf.jpg" alt="logo loup"></a>
+        <ul>
+            <li><a href="mesprogrammes.html">mes programmes</a></li>
+            <li><a href="mestestes.html">mes testes</a></li>
+        </ul>
+    </header>
+    <section class="mestestes">
+        <div class="teste1">
+            <div>
+                <button onclick="this.innerHTML = typeof teste1x">teste-1</button>
+                <p id="teste1-1"></p>
+                <button onclick="this.innerHTML = typeof teste1y">teste-2</button>
+                <p id="teste1-2"></p>
+                <button onclick="this.innerHTML = typeof teste1z">teste-3</button>
+                <p id="teste1-3"></p>
+            </div>
+            <script>
+                let teste1x = 1457;
+                let teste1y = 'teste1-2';
+
+                document.getElementById('teste1-1').innerHTML = teste1x;
+                document.getElementById('teste1-2').innerHTML = teste1y;
+                document.getElementById('teste1-3').innerHTML = teste1z;
+            </script>
+        </div>
+        <div class="teste2">
+            <div>
+                <p id="teste2-1">7</p>
+                <button onclick="this.innerHTML = y">teste2-1</button>
+            </div>
+            <script>
+                let x = document.getElementById("teste2-1").innerHTML;
+                let y = Number(x) + 5
+            </script>
+        </div>
+        <div class="teste3">
+            <div>
+                <button onclick="this.innerHTML= ('teste reussie')">teste</button>
+            </div>
+        </div>
+        <div class="teste4">
+            <section>
+                <div>
+                    <button onclick="un()">1</button>
+                    <button onclick="deux()">2</button>
+                    <button onclick="trois()">3</button>
+                    <button onclick="plus()">+</button>
+                </div>
+                <div>
+                    <button onclick="quatre()">4</button>
+                    <button onclick="cinq()">5</button>
+                    <button onclick="six()">6</button>
+                    <button onclick="moin()">-</button>
+                </div>
+                <div>
+                    <button onclick="sept()">7</button>
+                    <button onclick="huit()">8</button>
+                    <button onclick="neuf()">9</button>
+                    <button onclick="fois()">*</button>
+                </div>
+                <div>
+                    <button onclick="plus()"></button>
+                    <button onclick="zero()">0</button>
+                    <button onclick="calc()">=</button>
+                    <button onclick="divise()">/</button>
+                </div>
+                <div>
+                    <p id="teste4-1"></p>
+                </div>
+                <div>
+                    <p id="teste4-2"></p>
+                </div>
+        </div>
+
+    <script>
+        const teste4calcul = [];
+
+        let teste4nombre = teste4calcul.length;
+
+        function un() {
+            teste4calcul.push('1');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function deux() {
+            teste4calcul.push('2');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function trois() {
+            teste4calcul.push('3');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function quatre() {
+            teste4calcul.push('4');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function cinq() {
+            teste4calcul.push('5');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function six() {
+            teste4calcul.push('6');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function sept() {
+            teste4calcul.push('7');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function huit() {
+            teste4calcul.push('8');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function neuf() {
+            teste4calcul.push('9');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function zero() {
+            teste4calcul.push('0');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function plus() {
+            teste4calcul.push('+');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function moin() {
+            teste4calcul.push('-');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function fois() {
+            teste4calcul.push('*');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+        function divise() {
+            teste4calcul.push('/');
+            document.getElementById("teste4-1").innerHTML = teste4calcul;
+        }
+
+        let teste4resultat = document.getElementById("teste4-2").innerHTML;
+        let teste4i = -1;
+
+        function calc() {
+            do {
+                teste4i++;
+                teste4resultat += teste4calcul[teste4i];
+                document.getElementById('teste4-2').innerHTML = teste4resultat;
+            } while (teste4i < teste4nombre);
+        }
+
+    </script>
+    <section class="teste5">
+        <div>
+            <div>
+                <p>qu'elle est ton sport préféré?</p>
+                <button onclick=" teste5[0] = this.innerHTML">le foot</button>
+                <button onclick=" teste5[0] = this.innerHTML">le tennis</button>
+                <button onclick=" teste5[0] = this.innerHTML">le hand</button>
+                <button onclick=" teste5[0] = this.innerHTML">la dance</button>
+                <button onclick=" teste5[0] = this.innerHTML">la musculation</button>
+                <button onclick=" teste5[0] = this.innerHTML">la athletisme</button>
+                <button onclick=" teste5[0] = this.innerHTML">le sport de combat</button>
+            </div>
+            <div>
+                <p>qu'elle est ta couleur préféré?</p>
+                <button onclick=" teste5[1] = this.innerHTML">le rouge</button>
+                <button onclick=" teste5[1] = this.innerHTML">le jaune</button>
+                <button onclick=" teste5[1] = this.innerHTML">le bleu</button>
+                <button onclick=" teste5[1] = this.innerHTML">le vert</button>
+                <button onclick=" teste5[1] = this.innerHTML">le rose</button>
+                <button onclick=" teste5[1] = this.innerHTML">le noire</button>
+                <button onclick=" teste5[1] = this.innerHTML">l'orange</button>
+                <button onclick=" teste5[1] = this.innerHTML">le violet</button>
+                <button onclick=" teste5[1] = this.innerHTML">le marron</button>
+                <button onclick=" teste5[1] = this.innerHTML">le blanc</button>
+                <button onclick=" teste5[1] = this.innerHTML">le gris</button>
+            </div>
+            <div>
+                <p>qu'elle est ton type de musique préféré?</p>
+                <button onclick=" teste5[2] = this.innerHTML">le POP</button>
+                <button onclick=" teste5[2] = this.innerHTML">le RAP</button>
+                <button onclick=" teste5[2] = this.innerHTML">la musique classic</button>
+                <button onclick=" teste5[2] = this.innerHTML">le rock</button>
+                <button onclick=" teste5[2] = this.innerHTML">l'instrumentale</button>
+                <button onclick=" teste5[2] = this.innerHTML">l'electro</button>
+                <button onclick=" teste5[2] = this.innerHTML">le jazz</button>
+            </div>
+            <div>
+                <button
+                    onclick="document.getElementById('teste5-1').innerHTML = 'ton sport préféré est ' + teste5[0] + ', ta couleur préféré est ' + teste5[1] + ', ta musique préféré est ' + teste5[2] + '.'">résultat</button>
+            </div>
+            <p id="teste5-1"></p>
+    </section>
+    <script>
+        const teste5 = [];
+    </script>
+    </div>
+    </section>
+</body>
+
+</html>

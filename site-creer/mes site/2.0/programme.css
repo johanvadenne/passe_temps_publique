@@ -1,0 +1,1229 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(60, 60, 60) #000;
+}
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid rgb(60, 60, 60);
+}
+/* Works on Chrome, Edge, and Safari */
+body#informatique
+{
+    background-image: url('image/fondinformatique.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+}
+header
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7),transparent);
+    backdrop-filter: blur(1px);
+    padding-bottom: 1%;
+}
+header img
+{
+    position: absolute;
+    border-radius: 50%;
+    width: 5%;
+    margin-left: 2%;
+}
+header ul
+{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+header ul li
+{
+    font-size: 2em;
+    padding: 1%;
+}
+header ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+.chefoeuvre
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chefoeuvre xmp
+{
+    color: white;
+}
+.chefoeuvre .code .oeuvre7 h1
+{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background: linear-gradient(white,white,transparent);
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.chefoeuvre .code
+{
+    display: flex;
+    justify-content: space-around;
+}
+.chefoeuvre .code .csshtml
+{
+    background-color: rgb(31, 31, 31);
+    border-radius: 16px;
+    margin: 20px;
+}
+.chefoeuvre .code .csshtml 
+{
+    color: white;
+}
+.chefoeuvre .code .csshtml .fenetre
+{
+    overflow: auto;
+    height: 300px;
+    width: 600px;
+}
+.chefoeuvre .code .csshtmljs
+{
+    background-color: rgb(31, 31, 31);
+    border-radius: 16px;
+    margin: 20px;
+}
+.chefoeuvre .code .csshtmljs
+{
+    color: white;
+}
+.chefoeuvre .code .csshtmljs .fenetre
+{
+    overflow: auto;
+    height: 300px;
+    width: 400px;
+}
+.oeuvre11
+{
+    margin-top: 100vh;
+}
+/* panneau lumineux "chef oeuvre"*/
+
+.chefoeuvre .oeuvre1 .box
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20%;
+}
+.chefoeuvre .oeuvre1 .box::after
+{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,rgb(255, 0, 0));
+    animation: animate1 4s linear infinite;
+    animation-delay: -2s;
+}
+
+.chefoeuvre .oeuvre1 .box::before
+{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,orange);
+    animation: animate1 4s linear infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.chefoeuvre .oeuvre1 .box span
+{
+    position: absolute;
+    inset: 5px;
+    border-radius: 20px;
+    background: black;
+    z-index: 1;
+
+}
+.chefoeuvre .oeuvre1 .box img
+{
+    z-index: 2;
+    width: 250px;
+    height: 250px;
+}
+/* fin du panneau lumineux "chef oeuvre"*/
+
+/* point lumineux "chef d'oeuvre"*/
+.oeuvre2 section
+{
+    position: relative;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    animation: changeColor 5s linear infinite;
+    padding: 5%;
+}
+@keyframes changeColor
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+.oeuvre2 span
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.oeuvre2 span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 26, 255);
+    transform: scale(0.1);
+    box-shadow: 0 0 10px rgb(0, 26, 255),
+                0 0 20px rgb(0, 26, 255),
+                0 0 40px rgb(0, 26, 255),
+                0 0 60px rgb(0, 26, 255),
+                0 0 80px rgb(0, 26, 255),
+                0 0 100px rgb(0, 26, 255);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 2s;
+}
+.oeuvre2 span:hover::before
+{
+    transform: scale(1);
+    transition: 0s;
+}
+/* fin des points lumineux "chef d'oeuvre"*/
+
+.chefoeuvre .oeuvre3
+{
+    padding-top: 5%;
+    padding-bottom: 20%;
+}
+/* cube tournant "chef d'oeuvre"*/
+.oeuvre3 .cube
+{
+    position: absolute;
+    left: 20%;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate3 4s linear infinite;
+}
+@keyframes animate3
+{
+    0%
+    {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%
+    {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+.oeuvre3 .cube div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.oeuvre3 .cube div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#00ec00);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+}
+.oeuvre3 .top
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    transform: rotateX(90deg) translateZ(75px);
+}
+.oeuvre3 .top::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0f0;
+    transform: translateZ(-190px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(0,255,0,0.2),
+    0 0 200px rgba(0,255,0,0.4),
+    0 0 300px rgba(0,255,0,0.6),
+    0 0 400px rgba(0,255,0,0.8),
+    0 0 500px rgba(0,255,0.1);
+}
+
+.oeuvre3 .cube2
+{
+    position: absolute;
+    left: 40%;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate3 4s linear infinite;
+}
+.oeuvre3 .cube2 div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.oeuvre3 .cube2 div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image/logo.jpg');
+    background-position: center;
+    background-size: 99%;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+}
+.oeuvre3 .top2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 99%;
+    transform: rotateX(90deg) translateZ(75px);
+}
+.oeuvre3 .top2::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 100, 0);
+    transform: translateZ(-190px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgb(150, 100, 0),
+    0 0 200px rgba(175, 100, 0.4),
+    0 0 150px rgba(200, 100, 0.6),
+    0 0 400px rgba(225, 100, 0.8),
+    0 0 500px rgba(255, 100, 0,1);
+}
+
+.oeuvre3 .cube3
+{
+    position: absolute;
+    left: 60%;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate3 4s linear infinite;
+}
+.oeuvre3 .cube3 div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.oeuvre3 .cube3 div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image/logo1.jpg');
+    background-position: center;
+    background-size: 99%;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+}
+.oeuvre3 .top3
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image/logo1.jpg');
+    background-position: center;
+    background-size: 99%;
+    transform: rotateX(90deg) translateZ(75px);
+}
+.oeuvre3 .top3::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 100, 0);
+    transform: translateZ(-190px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgb(150, 100, 0),
+    0 0 200px rgba(175, 100, 0.4),
+    0 0 150px rgba(200, 100, 0.6),
+    0 0 400px rgba(225, 100, 0.8),
+    0 0 500px rgba(255, 100, 0,1);
+}
+
+.oeuvre3 .cube4
+{
+    position: absolute;
+    left: 80%;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate3 4s linear infinite;
+}
+.oeuvre3 .cube4 div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.oeuvre3 .cube4 div span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#151515,#ff0000);
+    background-size: 99%;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+}
+.oeuvre3 .top4
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #151515;
+    background-size: 99%;
+    transform: rotateX(90deg) translateZ(75px);
+}
+.oeuvre3 .top4::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515,#ff0000);
+    transform: translateZ(-190px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgb(150, 0, 0),
+    0 0 200px rgb(175, 0, 0),
+    0 0 150px rgb(200, 1, 1),
+    0 0 400px rgb(225, 1, 1),
+    0 0 500px rgb(255, 0, 0);
+}
+/*fin cube tournant "chef d'oeuvre"*/
+
+/* panneau lumineux "chef d'oeuvre"*/
+.oeuvre4 .container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+.oeuvre4 .container .box
+{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+.oeuvre4 .oeuvre8 .container .box:hover
+{
+    transform: translateY(-20px)
+}
+.oeuvre4 .container .box::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, orange, red);
+}
+.oeuvre4 .container .box::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, orange, red);
+    filter: blur(30px);
+}
+.oeuvre4 .container .box:nth-child(2)::before,
+.oeuvre4 .container .box:nth-child(2)::after
+{
+    background: linear-gradient(135deg, blue, red);
+}
+.oeuvre4 .container .box:nth-child(3)::before,
+.oeuvre4 .container .box:nth-child(3)::after
+{
+    background: linear-gradient(180deg, green, yellow);
+}
+.oeuvre4 .container .box span
+{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgb(0, 0, 0,0.6);
+    z-index: 2;
+}
+.oeuvre4 .container .box span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+.oeuvre4 .container .box .content
+{
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+.oeuvre4 .container .box .content h2
+{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: white;
+}
+.oeuvre4 .container .box .content p
+{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: white;
+    line-height: 1.4em;
+}
+.oeuvre4 .container .box .content a
+{
+    display: inline-block;
+    font-size: 1.1em;
+    color: black;
+    background: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+/* fin des panneaux lumineux "chef d'oeuvre"*/
+.oeuvre5
+{
+    margin-top: 8%;
+    margin-bottom: 12%;
+}
+/* loading "chef oeuvre"*/
+.oeuvre5 .container
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.oeuvre5 .container .ring
+{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white transparent;
+    border-top: 4px solid red;
+    animation: animate5 4s linear infinite;
+}
+@keyframes animate5
+{
+    0%
+    {
+        rotate: 0deg;
+    }
+    100%
+    {
+        rotate: 360deg;
+    }
+}
+.oeuvre5 .container .ring:nth-child(1)::before
+{
+    content: '';
+    position: absolute;
+    top: 45px;
+    right: -10px;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    background: red;
+    box-shadow: 0 0 5px #24ecff33,
+    0 0 10px #24ecff22,
+    0 0 20px #24ecff11,
+    0 0 20px #24ecff,
+    0 0 50px #24ecff;
+}
+.oeuvre5 .container .ring:nth-child(2)::before
+{
+    content: '';
+    position: absolute;
+    top: 70px;
+    right: -10px;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    background: white;
+    box-shadow: 0 0 5px #24ecff33,
+    0 0 10px #24ecff22,
+    0 0 20px #24ecff11,
+    0 0 20px #24ecff,
+    0 0 50px #24ecff;
+}
+.oeuvre5 .container .ring:nth-child(3)::before
+{
+    content: '';
+    position: absolute;
+    top: 95px;
+    right: -10px;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    background: blue;
+    box-shadow: 0 0 5px #24ecff33,
+    0 0 10px #24ecff22,
+    0 0 20px #24ecff11,
+    0 0 20px #24ecff,
+    0 0 50px #24ecff;
+}
+.oeuvre5 .container .ring:nth-child(2)
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-top: 4px solid white;
+}
+.oeuvre5 .container .ring:nth-child(3)
+{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-top: 4px solid blue;
+}
+.oeuvre5 .container p
+{
+    position: absolute;
+    color: white;
+    font-family: consolas;
+    font-size: 1.5em;
+    bottom: -200px;
+    letter-spacing: 0.15em;
+}
+/* fin loading "chef oeuvre"*/
+/* scale */
+.oeuvre6 .contenant
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.oeuvre6 .contenant .rond:nth-child(1)
+{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    border-radius: 50%;
+    box-shadow:0 0 10px rgb(0, 0, 200),
+    0 0 30px rgb(0, 0, 150),
+    0 0 50px rgb(0, 0, 100),
+    0 0 70px rgb(0, 0, 50);
+    animation: scale 2s infinite linear;
+}
+.oeuvre6 .contenant .rond:nth-child(2)
+{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    box-shadow:0 0 10px rgb(200, 200, 200),
+    0 0 30px rgb(150, 150, 150),
+    0 0 50px rgb(100, 100, 100),
+    0 0 70px rgb(50, 50, 50);
+    animation: scale 2s infinite linear;
+    animation-delay: 0.66s;
+}
+.oeuvre6 .contenant .rond:nth-child(3)
+{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    box-shadow:0 0 10px rgb(200, 0, 0),
+    0 0 30px rgb(150, 0, 0),
+    0 0 50px rgb(100, 0, 0),
+    0 0 70px rgb(50, 0, 0);
+    animation: scale 2s infinite linear;
+    animation-delay: 1.32s;
+}
+@keyframes scale
+{
+    0%
+    {
+        transform: scale(0.1);
+    }
+    5%
+    {
+        transform: scale(0.15);
+    }
+    45%
+    {
+        transform: scale(0.95);
+    }
+    50%
+    {
+        transform: scale(1);
+    }
+    55%
+    {
+        transform: scale(0.95);
+    }
+    95%
+    {
+        transform: scale(0.15);
+    }
+    100%
+    {
+        transform: scale(0.1);
+    }
+}
+/* fin scale */
+/* neon */
+.oeuvre7 h1
+{
+    color: #111;
+    font-size: 16em;
+}
+.oeuvre7 h1 span
+{
+    display: table-cell;
+    animation: neon 1.75s linear infinite;
+}
+.oeuvre7 h1 span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+.oeuvre7 h1 span:nth-child(2)
+{
+    animation-delay: 0.25s;
+}
+.oeuvre7 h1 span:nth-child(3)
+{
+    animation-delay: 0.5s;
+}
+.oeuvre7 h1 span:nth-child(4)
+{
+    animation-delay: 0.75s;
+}
+.oeuvre7 h1 span:nth-child(5)
+{
+    animation-delay: 1s;
+}
+.oeuvre7 h1 span:nth-child(6)
+{
+    animation-delay: 1.25s;
+}
+.oeuvre7 h1 span:nth-child(7)
+{
+    animation-delay: 1.5s;
+}
+@keyframes neon
+{
+    0%,100%
+    {
+        color: aqua;
+        filter: blur(2px);
+        text-shadow: 0 0 20px rgb(0, 126, 126),
+                     0 0 200px aqua;
+    }
+    5%,95%
+    {
+        color: black;
+        filter: blur(0px);
+    }
+}
+/* neon */
+/* carte qui bouge avec la souris */
+.oeuvre8 .container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.oeuvre8 .container .card
+{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+.oeuvre8 .container .card .content
+{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.oeuvre8 .container .card:hover .content
+{
+    
+    transform: translateY(0px);
+    opacity: 1;
+}
+.oeuvre8 .container .card .content h2
+{
+    position: absolute;
+    top: -100px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+.oeuvre8 .container .card .content h3
+{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+
+}
+.oeuvre8 .container .card .content p
+{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+}
+.oeuvre8 .container .card .content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* fin de carte qui bouge evec la souris */
+/* boutton on off */
+.oeuvre9 .center
+{
+    transform: translate(-50%,-50%);
+    margin: 100px;
+    transform: scale(3);
+}
+input[type="checkbox"]
+{
+    position: relative;
+    width: 120px;
+    height: 40px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, #000);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px rgb(55, 55, 55), 0 0 0 5px rgb(65, 65, 65), inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+input:checked[type="checkbox"]
+{
+    background: linear-gradient(0deg,cyan, rgb(0, 200, 200));
+    box-shadow: 0 0 2px rgb(0, 100, 100), 0 0 0 4px rgb(55, 55, 55), 0 0 0 5px rgb(65, 65, 65), inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+input[type="checkbox"]:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(0deg, #000, #333);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #000;
+    transform: scale(0.98,0.96);
+    transition: 0.5s;
+}
+input:checked[type="checkbox"]:before
+{
+    left: 40px;
+}
+input[type="checkbox"]:after
+{
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 65px;
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(0deg, rgb(200,200,200), rgb(0, 0, 0));
+    border-radius: 50%;
+    transition: 0.5s;
+}
+input:checked[type="checkbox"]:after
+{
+    background: rgb(0, 200, 200);
+    left: 105px;
+    box-shadow: 0 0 5px cyan, 0 0 15px cyan;
+}
+/* fin boutton on off */
+/*début du programme "boutton coloré"*/
+.oeuvre10
+{
+    margin: 8%;
+    transform: scale(3);
+}
+.oeuvre10 a
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, blue, hotpink, yellow, cyan, blue);
+    border-radius: 30px;
+    background-size: 400%;
+    z-index: 1;
+}
+.oeuvre10 a:hover
+{
+    animation: oeuvre10 8s linear infinite;
+}
+@keyframes oeuvre10
+{
+    0%
+    {
+        background-position: 0%;
+    }
+    100%
+    {
+        background-position: 400%;
+    }
+}
+.oeuvre10 a:before
+{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    background: linear-gradient(90deg, blue, hotpink, yellow, cyan, blue);
+    border-radius: 40px;
+    background-size: 400%;
+    filter: blur(20px);
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+.oeuvre10 a:hover:before
+{
+    opacity: 1;
+    animation: animate 8s linear infinite;
+}
+/*fin du programme "boutton coloré"*/
+/*début du programme "carré volant"*/
+.oeuvre11 carrevolant
+{
+    height: 100vh;
+}
+.oeuvre11 span
+{
+    position: absolute;
+    pointer-events: none;
+    background: rgb(255, 255, 255);
+    animation: oeuvre11 5s linear infinite;
+    bottom: -1000;
+}
+@keyframes oeuvre11
+{
+    0%
+    {
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10%
+    {
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
+}
+/*fin du programme "carré volant"*/
+/*début du programme "graphique cercle"*/
+.oeuvre12 .container
+{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.oeuvre12 .container .card
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    z-index: 10;
+    margin: 20px 20px 60px;
+}
+.oeuvre12 .container .card .box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border-radius: 10px;
+}
+.oeuvre12 .container .card .box .percent
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    z-index: 100;
+}
+.oeuvre12 .container .card .box .percent .number
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.oeuvre12 .container .card .box .percent .number h2
+{
+    color: white;
+    font-size: 50px;
+}
+.oeuvre12 .container .card .box .percent .number h2 span
+{
+    font-size: 24px;
+}
+.oeuvre12 .container .card .text
+{
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 30px 20px 10px;
+    background: red;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 1px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    transition: bottom 0.5s, z-index 0s, transform 0.5s, padding 0.5s;
+    z-index: 1;
+    color: white;
+    transition-delay: 0.5s,0.5s,0s,0.5s;
+}
+.oeuvre12 .container .card:nth-child(2) .text
+{
+    background: blue;
+}
+.oeuvre12 .container .card:nth-child(3) .text
+{
+    background: limegreen;
+}
+.oeuvre12 .container .card:hover .text
+{
+    transition-delay: 0s,0.5s,0.5s,0s;
+    bottom: -70px;
+    z-index: 11;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 30px 20px 10px;
+}
+.oeuvre12 .container .card .box .percent svg
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.oeuvre12 .container .card .box .percent svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(0, 0, 0, 0.05);
+    transform: translate(5px,5px);
+    stroke-linecap: round;
+}
+.oeuvre12 .container .card .box .percent svg circle:nth-child(2)
+{
+    stroke: red;
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 374px;
+}
+.oeuvre12 .container .card:nth-child(2) .box .percent svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(0, 0, 0, 0.05);
+    transform: translate(5px,5px);
+}
+.oeuvre12 .container .card:nth-child(2) .box .percent svg circle:nth-child(2)
+{
+    stroke: blue;
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 88px;
+}
+.oeuvre12 .container .card:nth-child(3) .box .percent svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(0, 0, 0, 0.05);
+    transform: translate(5px,5px);
+}
+.oeuvre12 .container .card:nth-child(3) .box .percent svg circle:nth-child(2)
+{
+    stroke: limegreen;
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 428px;
+}
+/*fin du programme "graphique cercle"*/

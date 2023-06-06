@@ -1,0 +1,787 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(60, 60, 60) #000;
+}
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid rgb(60, 60, 60);
+}
+/* Works on Chrome, Edge, and Safari */
+
+/* fond décran body */
+body
+{
+    min-height: 100vh;
+    background-image: url('image/fondecran.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body#informatique
+{
+    height: 100vh;
+    background-image: url('image/fondinformatique.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body#cour
+{
+    min-height: 100vh;
+    background-image: url('image/fondecrancour.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* fond décran body */
+
+/* entete */
+header
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7),transparent);
+    backdrop-filter: blur(2px);
+    padding-bottom: 1%;
+}
+header img
+{
+    position: absolute;
+    border-radius: 50%;
+    width: 5%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+header ul
+{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-left: 4%;
+}
+header ul li
+{
+    font-size: 2em;
+    padding: 1%;
+}
+header ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+/* entete */
+
+/* horloge (index.html) */
+.horloge
+{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horloge .clock
+{
+    position: relative;
+    width: 700px;
+    height: 250px;
+    background: rgba(255,255,255, 0.1);
+    border-radius: 15px;
+    z-index: 10;
+    border: 2px solid rgba(255,255,255, 0.1);
+    backdrop-filter: blur(5px);
+}
+.horloge .clock .container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.horloge .clock .container h2
+{
+    font-size: 6em;
+    color: white;
+}
+.horloge .clock .container h2:nth-child(odd)
+{
+    padding: 5px 15px;
+    border-radius: 10px;
+    background: rgba(255,255,255, 0.1);
+    box-shadow: 0 0 20px rgba(255,255,255, 0.2);
+    border: 2px solid rgba(255,255,255,0.1)
+}
+.horloge .clock .container span#ampm
+{
+    position: relative;
+    bottom: -20%;
+    font-size: 3em;
+    color: white;
+    font-weight: 1000;
+    margin: 0 10px;
+}
+#square span
+{
+    position: absolute;
+    pointer-events: none;
+    background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.8));
+    border-radius: 50%;
+    animation: animate 10s linear infinite;
+}
+#bulle:nth-child(1)
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(cyan, limegreen);
+    border-radius: 50%;
+    bottom: 45%;
+    left: 28%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    z-index: 2;
+    animation-delay: -0.4s;
+}
+#bulle:nth-child(2)
+{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(cyan, limegreen);
+    border-radius: 50%;
+    bottom: 20%;
+    left: 35%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: -0.4s;
+    z-index: 1;
+}
+#bulle:nth-child(3)
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(cyan, limegreen);
+    border-radius: 50%;
+    bottom: 55%;
+    left: 28%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    z-index: 3;
+    animation-delay: -0.3s;
+}
+#bulle:nth-child(4)
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(cyan, limegreen);
+    border-radius: 50%;
+    bottom: 59%;
+    left: 31%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: -0.2s;
+    z-index: 1;
+}
+#bulle:nth-child(5)
+{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(yellow, darkred);
+    border-radius: 50%;
+    top: 20%;
+    right: 37%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: 0.1s;
+    z-index: 1;
+}
+#bulle:nth-child(6)
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(yellow, darkred);
+    border-radius: 50%;
+    top: 59%;
+    right: 31%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: 0.3s;
+    z-index: 1;
+}
+#bulle:nth-child(7)
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(yellow, darkred);
+    border-radius: 50%;
+    top: 55%;
+    right: 28%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: 0.2s;
+    z-index: 1;
+}
+#bulle:nth-child(8)
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(yellow, darkred);
+    border-radius: 50%;
+    top: 45%;
+    right: 28%;
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: 0.1s;
+    z-index: 1;
+}
+#bulle:nth-child(9)
+{
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(cyan, limegreen);
+    animation: oeuvre13 5s ease-in-out infinite;
+    animation-delay: -0.5s;
+}
+#bulle:nth-child(10)
+{
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(yellow, darkred);
+    animation: oeuvre13 5s ease-in-out infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(0) translateY(0);
+        opacity: 0;
+    }
+    10%
+    {
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1) translateY(-700%);
+        opacity: 0;
+    }
+}
+@keyframes oeuvre13
+{
+    0%,100%
+    {
+        transform: translateY(20px);
+    }
+    50%
+    {
+        transform: translateY(-20px);
+    }
+}
+/* horloge (index.html) */
+
+/* cour */
+.btssioslam .matiere a img
+{
+    border-radius: 150px;
+    height: 12em;
+    padding: 2em;
+}
+.btssioslam .matiere
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 90vh;
+}
+.btssioslam .matiere a img:hover
+{
+    opacity: 0.8;
+}
+.lecon .chapitre a
+{
+    color: white;
+    text-decoration: none;
+    margin: 1em;
+    font-size: 2em;
+}
+.lecon .chapitre a:hover
+{
+    color: rgb(255, 208, 0);
+}
+.informatique .bloc a img
+{
+    border-radius: 150px;
+    height: 12em;
+    padding: 4em;
+}
+.informatique .bloc
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.informatique .bloc a img:hover
+{
+    opacity: 0.8;
+}
+.lecon
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.lecon .titre 
+{
+    text-align: center;
+    margin: 2%;
+    font-size: 3em;
+}
+.lecon div
+{
+    background: rgba(255,255,255, 0.2);
+    padding: 2%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    width: 70%;
+}
+.lecon .soustitre
+{
+    text-align: center;
+    margin: 2%;
+    font-size: 2em;
+}
+.lecon .texte
+{
+    margin: 2%;
+    font-size: 1.5em;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: 550;
+}
+.lecon table
+{
+    margin: auto;
+}
+.lecon table td
+{
+    border: 1px solid;
+    font-size: 1.5em;
+    vertical-align:top;
+}
+.lecon .liste
+{
+    margin: 2%;
+    font-size: 1.5em;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: 550;
+}
+.retour
+{
+    position: absolute;
+    font-size: 2em;
+    background: white;
+    color: black;
+    border-radius: 100px;
+    padding: 0.5em;
+    text-decoration: none;
+    top: 4em;
+    left: 1em;
+    box-shadow: 0 0 20px white;
+}
+.lecon table
+{
+    border-collapse: collapse;
+}
+.lecon span .liendoc
+{
+    background: white;
+    padding: 1em;
+    margin: 2em;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+.lecon .liendoc
+{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.lecon .code
+{
+    display: flex;
+    justify-content: center;
+}
+.lecon .code code
+{
+    background: black;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 25px;
+}
+.lecon .code h1
+{
+    text-align: center;
+    background: grey;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 0.2em;
+}
+#cour header a:hover
+{
+    color: orange;
+}
+/* cour */
+
+/* developpement choix du language */
+.informatique .bloc2
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.informatique .bloc2 img
+{
+    height: 12em;
+}
+.informatique .bloc2 .rond
+{
+    width: 12em;
+    height: 12em;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+.informatique .bloc2 span
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    transition: 0.5s;
+}
+.informatique .bloc2 span:nth-child(1),
+.informatique .bloc2 span:nth-child(2),
+.informatique .bloc2 span:nth-child(3)
+{
+    margin-top: 5%;
+}
+.informatique .bloc2 span:hover
+{
+    transform: translateY(-25px);
+}
+/* developpement choix du language */
+
+
+/* language html (révisoon)*/
+.langage
+{
+    display: flex;
+    justify-content: center;
+}
+.langage .cadre
+{
+    width: 75%;
+    background: rgba(255,255,255, 0.3);
+    margin-top: 5%;
+    border-radius: 15px;
+    padding-bottom: 4em;
+    margin-bottom: 4em;
+    backdrop-filter: blur(10px);
+}
+.langage .cadre .titre1
+{
+    text-align: center;
+    padding: 4%;
+    font-size: 4em;
+}
+.langage .cadre .titre2
+{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 6%;
+    font-size: 3em;
+}
+.langage .cadre .titre3
+{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    font-size: 2.5em;
+}
+.langage .cadre .blocscript
+{
+    display: flex;
+    justify-content: space-around;
+}
+.langage .cadre .blocscript .script
+{
+    width: 40%;
+    height: 50vh;
+    background: black;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: white;
+    margin-bottom: 6%;
+    overflow: auto;
+}
+.langage .cadre .blocscript .page
+{
+    width: 40%;
+    max-height: 70vh;
+    background: white;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-bottom: 1%;
+    margin-bottom: 6%;
+    overflow: auto;
+}
+.langage .cadre .blocscript .page ul,
+.langage .cadre .blocscript .page ol,
+.langage .cadre .blocscript .page dl
+{
+    padding-left: 45px;
+}
+.langage .cadre .blocscript .page dd
+{
+    padding-left: 50px;
+}
+.langage .cadre .blocscript .page .titre4
+{
+    transform: translateY(-47px);
+    font-size: 2.5em;
+    text-align: center;
+    background: rgba(255,255,255, 0.2);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    width: 40%;
+}
+.langage .cadre .blocscript .script .titre4
+{
+    transform: translateY(-47px);
+    font-size: 2.5em;
+    text-align: center;
+    background: rgba(255,255,255, 0.2);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    width: 40%;
+}
+.langage .cadre .blocscript .script xmp
+{
+    font-size: 1.2em;
+    color: steelblue;
+    margin-top: 2em;
+    margin-left: 5%;
+}
+.langage .cadre .paragraphe
+{
+    color: black;
+    font-size: 1.7em;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 6%;
+}
+.langage .cadre .paragraphe code
+{
+    color: rgb(255, 91, 91);
+    background: rgba(0, 0, 0, 0.3);
+}
+.langage .cadre .paragraphe .css
+{
+    color: orange;
+    background: rgba(0, 0, 0, 0.3);
+}
+ul#paragraphelistehtml code
+{
+    color: rgb(255, 91, 91);
+    background: rgba(0, 0, 0, 0.3);
+}
+ul#paragraphelistehtml
+{
+    font-size: 1.5em;
+    margin-top: -4%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 6%;
+}
+.tableauhtml, th, td {
+    border:1px solid black;
+}
+.tableauhtml tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+.chapitrehtml
+{
+    padding-left: 10%;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.chapitrehtml a
+{
+    text-decoration: none;
+    color: #000;
+}
+.chapitrehtml a:hover
+{
+    color: rgb(0, 197, 148);
+}
+.chapitrehtml li:hover
+{
+    color: rgb(0, 150, 112);
+}
+/* language html (révisoon)*/
+
+/* language css (révision) */
+
+.langage .cadre .blocscript .script .titre4-css,
+.langage .cadre .blocscript .script .titre4-html
+{
+    transform: translateY(-47px);
+    font-size: 2.5em;
+    text-align: center;
+    background: rgba(255,255,255, 0.2);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    width: 19.5%;
+    cursor: pointer;
+}
+.langage .cadre .blocscript .script .titre4-css:hover,
+.langage .cadre .blocscript .script .titre4-html:hover
+{
+    background: rgba(255,255,255, 0.5);
+}
+.langage .cadre .blocscript .script .titre4-css
+{
+    left: 25.5%;
+}
+.langage .cadre .blocscript .script-css xmp
+{
+    font-size: 1.2em;
+    color: orange;
+    margin-top: 2em;
+    margin-left: 5%;
+}
+.langage .cadre .blocscript .script-css
+{
+    position: absolute;
+    width: 40%;
+    background: rgb(11, 0, 37);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: white;
+    margin-bottom: 6%;
+    overflow: auto;
+    left: 5%;
+    height: 50vh;
+    z-index: -1;
+}
+input[type=button]
+{
+    border: none;
+}
+
+.langage .cadre .blocscript .page_1
+{
+    width: 40%;
+    max-height: 70vh;
+    background: lightblue;
+    background-image: url('image/css.png');
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-bottom: 1%;
+    margin-bottom: 6%;
+    overflow: auto;
+}
+.langage .cadre .blocscript .titre4
+{
+    transform: translateY(-47px);
+    font-size: 2.5em;
+    text-align: center;
+    background: rgba(255,255,255, 0.2);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    width: 40%;
+}
+
+/* fin language css (révision) */
+
+/* language SQL (révision) */
+
+.langage .cadre .blocscript .sql_tableau
+{
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+.langage .cadre .paragraphe .sql_code
+{
+    color: black;
+    background: rgba(255,255,255, 0.2);
+}
+/* fin language SQL (révision) */
+
+/* couleur class */
+
+.red
+{
+    color: red;
+}
+.green
+{
+    color: green;
+}
+.blue
+{
+    color: blue;
+}
+.fuchsia
+{
+    color: fuchsia;
+}
+
+/* couleur id */
+
+#violet
+{
+    color: violet;
+}
+#cyan
+{
+    color: cyan;
+}
+
+/* fin couleur class */

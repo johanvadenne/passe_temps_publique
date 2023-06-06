@@ -1,0 +1,2618 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Wolf</title>
+        <link rel="stylesheet" type="text/css" href="programme.css">
+    </head>
+    <body id="informatique">
+        <header>
+            <a href="index.html"><img src="image/Wolf.jpg" alt="logo loup"></a>
+            <ul>
+                <li><a href="informatique.html">informatique</a></li>
+                <li><a href="cours.html">cours</a></li>
+                <li><a href="blender.html">blender</a></li>
+            </ul>
+        </header>
+    <div class="chefoeuvre">
+        <div class="oeuvre1">
+            <div class="box">
+                <span></span>
+                <img src="image/logo.jpg">
+            </div>
+
+        </div>
+        <div class="code">
+            <div class="csshtml">
+                <h1>HTML</h1>
+                <div class="fenetre">
+                    <xmp>
+    <html>
+    <head>
+        <title>panneau multicolor</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <span></span>
+            <img src="logo.jpg">
+        </div>
+    </body>
+    </html>
+                    </xmp>
+                </div>
+            </div>
+            <div class="csshtml">
+                <h1>CSS</h1>
+                <div class="fenetre">
+                    <xmp>
+    @import
+    url('https://fonts.googleapis.com/css?family=Poppins:100,2000,300,400,500,600,700,800,900');
+    *
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+    .chefoeuvre .oeuvre1 .box
+    {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20%;
+    }
+    .chefoeuvre .oeuvre1 .box::after
+    {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,rgb(255, 0, 0));
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+    }
+    .chefoeuvre .oeuvre1 .box::before
+    {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,orange);
+    animation: animate 4s linear infinite;
+    }
+    @keyframes animate
+    {
+    0%
+    {
+    transform: rotate(0deg);
+    }
+    100%
+    {
+    transform: rotate(360deg);
+    }
+    }
+    .chefoeuvre .oeuvre1 .box span
+    {
+    position: absolute;
+    inset: 5px;
+    border-radius: 20px;
+    background: black;
+    z-index: 1;
+    }
+    .chefoeuvre .oeuvre1 .box img
+    {
+    z-index: 2;
+    width: 250px;
+    height: 250px;
+    }
+                    </xmp>
+                </div>
+            </div>
+        </div>
+        <div class="oeuvre2">
+            <section>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </section>
+        </div>
+        <div class="code">
+            <div class="csshtml">
+                <h1>HTML</h1>
+                <div class="fenetre">
+                    <xmp>
+    <html>
+        <head>
+            <title>point lumineux</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+        </head>
+        <body>
+            <section>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </section>
+        </body>
+    </html>
+                    </xmp>
+                </div>
+            </div>
+            <div class="csshtml">
+                <h1>CSS</h1>
+                <div class="fenetre">
+                    <xmp>
+    *
+    {
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+    }
+    section
+    {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    animation: changeColor 5s linear infinite;
+    }
+    @keyframes changeColor
+    {
+    0%
+    {
+    filter: hue-rotate(0deg);
+    }
+    100%
+    {
+    filter: hue-rotate(360deg);
+    }
+    }
+    span
+    {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
+    }
+    span::before
+    {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 26, 255);
+    transform: scale(0.1);
+    box-shadow: 0 0 10px rgb(0, 26, 255),
+    0 0 20px rgb(0, 26, 255),
+    0 0 40px rgb(0, 26, 255),
+    0 0 60px rgb(0, 26, 255),
+    0 0 80px rgb(0, 26, 255),
+    0 0 100px rgb(0, 26, 255);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 2s;
+     }
+    span:hover::before
+    {
+    transform: scale(1);
+    transition: 0s;
+    }
+                    </xmp>
+                </div>
+            </div>
+        </div>
+        <div class="oeuvre3">
+            <div class="cube">
+                <div class="top"></div>
+                <div>
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+            <div class="cube2">
+                <div class="top2"></div>
+                <div>
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+            <div class="cube3">
+                <div class="top3"></div>
+                <div>
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+            <div class="cube4">
+                <div class="top4"></div>
+                <div>
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+        </div>
+        <div class="code">
+            <div class="csshtml">
+                <h1>HTML</h1>
+                <div class="fenetre">
+                    <xmp>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>cube lumineux</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div class="cube">
+                <div class="top"></div>
+                <div>
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+            <div class="cube2">
+                <div class="top2"></div>
+                <div>
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+            <div class="cube3">
+                <div class="top3"></div>
+                <div>
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+            <div class="cube4">
+                <div class="top4"></div>
+                <div>
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+        </body>
+    </html>
+                    </xmp>
+                </div>
+            </div>
+            <div class="csshtml">
+                <h1>CSS</h1>
+                <div class="fenetre">
+                    <xmp>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #050505;
+    }
+    .cube
+    {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        width: 150px;
+        height: 150px;
+        transform-style: preserve-3d;
+        transform: rotateX(-30deg);
+        animation: animate 4s linear infinite;
+    }
+    @keyframes animate
+    {
+        0%
+        {
+            transform: rotateX(-30deg) rotateY(0deg);
+        }
+        100%
+        {
+            transform: rotateX(-30deg) rotateY(360deg);
+        }
+    }
+    .cube div
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+    }
+    .cube div span
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#151515,#00ec00);
+        transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+    }
+    .top
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #222;
+        transform: rotateX(90deg) translateZ(75px);
+    }
+    .top::before
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0f0;
+        transform: translateZ(-190px);
+        filter: blur(20px);
+        box-shadow: 0 0 120px rgba(0,255,0,0.2),
+        0 0 200px rgba(0,255,0,0.4),
+        0 0 300px rgba(0,255,0,0.6),
+        0 0 400px rgba(0,255,0,0.8),
+        0 0 500px rgba(0,255,0.1);
+    }
+    
+    .cube2
+    {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        width: 150px;
+        height: 150px;
+        transform-style: preserve-3d;
+        transform: rotateX(-30deg);
+        animation: animate 4s linear infinite;
+    }
+    .cube2 div
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+    }
+    .cube2 div span
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('logo.jpg');
+        background-position: center;
+        background-size: 99%;
+        transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+    }
+    .top2
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: 99%;
+        transform: rotateX(90deg) translateZ(75px);
+    }
+    .top2::before
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 100, 0);
+        transform: translateZ(-190px);
+        filter: blur(20px);
+        box-shadow: 0 0 120px rgb(150, 100, 0),
+        0 0 200px rgba(175, 100, 0.4),
+        0 0 150px rgba(200, 100, 0.6),
+        0 0 400px rgba(225, 100, 0.8),
+        0 0 500px rgba(255, 100, 0,1);
+    }
+    
+    .cube3
+    {
+        position: absolute;
+        top: 40%;
+        left: 80%;
+        width: 150px;
+        height: 150px;
+        transform-style: preserve-3d;
+        transform: rotateX(-30deg);
+        animation: animate 4s linear infinite;
+    }
+    .cube3 div
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+    }
+    .cube3 div span
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('logo1.jpg');
+        background-position: center;
+        background-size: 99%;
+        transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+    }
+    .top3
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('logo1.jpg');
+        background-position: center;
+        background-size: 99%;
+        transform: rotateX(90deg) translateZ(75px);
+    }
+    .top3::before
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 100, 0);
+        transform: translateZ(-190px);
+        filter: blur(20px);
+        box-shadow: 0 0 120px rgb(150, 100, 0),
+        0 0 200px rgba(175, 100, 0.4),
+        0 0 150px rgba(200, 100, 0.6),
+        0 0 400px rgba(225, 100, 0.8),
+        0 0 500px rgba(255, 100, 0,1);
+    }
+    
+    .cube4
+    {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        width: 150px;
+        height: 150px;
+        transform-style: preserve-3d;
+        transform: rotateX(-30deg);
+        animation: animate 4s linear infinite;
+    }
+    .cube4 div
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+    }
+    .cube4 div span
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:linear-gradient(#151515,#ff0000);
+        background-size: 99%;
+        transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+    }
+    .top4
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #151515;
+        background-size: 99%;
+        transform: rotateX(90deg) translateZ(75px);
+    }
+    .top4::before
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#151515,#ff0000);
+        transform: translateZ(-190px);
+        filter: blur(20px);
+        box-shadow: 0 0 120px rgb(150, 0, 0),
+        0 0 200px rgb(175, 0, 0),
+        0 0 150px rgb(200, 1, 1),
+        0 0 400px rgb(225, 1, 1),
+        0 0 500px rgb(255, 0, 0);
+    }
+                    </xmp>
+                </div>
+            </div>
+        </div>
+        <div class="oeuvre4">
+            <div class="container">
+                <div class="box">
+                    <span></span>
+                    <div class="content"><h2>carte Bronze</h2>
+                    <p>Un accès rapide à vos données, 
+                        un téléchargement encore plus vite, 
+                        et plusiurs réduction sur nos produit.
+                        Durée de l'abonment 3 mois</p>
+                        <a href="#">Savoir plus</a></div>
+                    
+                </div>
+                <div class="box">
+                    <span></span>
+                    <div class="content"><h2>carte argent</h2>
+                    <p>Un accès rapide à vos données, 
+                        un téléchargement encore plus vite, 
+                        et plusiurs réduction sur nos produit.
+                        Durée de l'abonment 6 mois</p>
+                        <a href="#">Savoir plus</a></div>
+                    
+                </div>
+                <div class="box">
+                    <span></span>
+                    <div class="content"><h2>carte or</h2>
+                    <p>Un accès rapide à vos données, 
+                        un téléchargement encore plus vite, 
+                        et plusiurs réduction sur nos produit.
+                        Durée de l'abonment 12 mois</p>
+                        <a href="#">Savoir plus</a></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="code">
+            <div class="csshtml">
+                <h1>HTML</h1>
+                <div class="fenetre">
+                    <xmp>
+    <html>
+        <head>
+            <title>panneau multicolor</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+        </head>
+        <body>
+            <div class="container">
+                <div class="box">
+                    <span></span>
+                    <div class="content"><h2>carte Bronze</h2>
+                    <p>Un accès rapide à vos données, 
+                        un téléchargement encore plus vite, 
+                        et plusiurs réduction sur nos produit.
+                        Durée de l'abonment 3 mois</p>
+                        <a href="#">Savoir plus</a></div>
+                    
+                </div>
+                <div class="box">
+                    <span></span>
+                    <div class="content"><h2>carte argent</h2>
+                    <p>Un accès rapide à vos données, 
+                        un téléchargement encore plus vite, 
+                        et plusiurs réduction sur nos produit.
+                        Durée de l'abonment 6 mois</p>
+                        <a href="#">Savoir plus</a></div>
+                    
+                </div>
+                <div class="box">
+                    <span></span>
+                    <div class="content"><h2>carte or</h2>
+                    <p>Un accès rapide à vos données, 
+                        un téléchargement encore plus vite, 
+                        et plusiurs réduction sur nos produit.
+                        Durée de l'abonment 12 mois</p>
+                        <a href="#">Savoir plus</a></div>
+                    
+                </div>
+            </div>
+        </body>
+    </html>
+                    </xmp>
+                </div>
+            </div>
+            <div class="csshtml">
+                <h1>CSS</h1>
+                <div class="fenetre">
+                    <xmp>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: consolas;
+    }
+    body
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: black;
+    }
+    .container
+    {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        flex-wrap: wrap;
+    }
+    .container .box
+    {
+        position: relative;
+        width: 320px;
+        height: 400px;
+        color: white;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 30px;
+        transition: 0.5s;
+    }
+    .container .box:hover
+    {
+        transform: translateY(-20px)
+    }
+    .container .box::before
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, orange, red);
+    }
+    .container .box::after
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, orange, red);
+        filter: blur(30px);
+    }
+    .container .box:nth-child(2)::before,
+    .container .box:nth-child(2)::after
+    {
+        background: linear-gradient(135deg, blue, red);
+    }
+    .container .box:nth-child(3)::before,
+    .container .box:nth-child(3)::after
+    {
+        background: linear-gradient(180deg, green, yellow);
+    }
+    .container .box span
+    {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+        background: rgb(0, 0, 0,0.6);
+        z-index: 2;
+    }
+    .container .box span::before
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    .container .box .content
+    {
+        position: relative;
+        z-index: 10;
+        padding: 20px 40px;
+    }
+    .container .box .content h2
+    {
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .container .box .content p
+    {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        color: white;
+        line-height: 1.4em;
+    }
+    .container .box .content a
+    {
+        display: inline-block;
+        font-size: 1.1em;
+        color: black;
+        background: white;
+        padding: 10px;
+        text-decoration: none;
+        font-weight: 700;
+    }
+                    </xmp>
+                </div>
+            </div>
+        </div>
+        <div class="oeuvre5">
+            <div class="container">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <p>loading...</p>
+            </div>
+        </div>
+        <div class="code">
+            <div class="csshtml">
+                <h1>HTML</h1>
+                <div class="fenetre">
+                    <xmp>
+                        <html>
+    <head>
+        <title>loading</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <p>loading...</p>
+        </div>
+    </body>
+</html>
+                    </xmp>
+                </div>
+            </div>
+            <div class="csshtml">
+                <h1>CSS</h1>
+                <div class="fenetre">
+                    <xmp>
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .ring
+{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white transparent;
+    border-top: 4px solid red;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        rotate: 0deg;
+    }
+    100%
+    {
+        rotate: 360deg;
+    }
+}
+.container .ring:nth-child(1)::before
+{
+    content: '';
+    position: absolute;
+    top: 45px;
+    right: -10px;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    background: red;
+    box-shadow: 0 0 5px #24ecff33,
+    0 0 10px #24ecff22,
+    0 0 20px #24ecff11,
+    0 0 20px #24ecff,
+    0 0 50px #24ecff;
+}
+.container .ring:nth-child(2)::before
+{
+    content: '';
+    position: absolute;
+    top: 70px;
+    right: -10px;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    background: white;
+    box-shadow: 0 0 5px #24ecff33,
+    0 0 10px #24ecff22,
+    0 0 20px #24ecff11,
+    0 0 20px #24ecff,
+    0 0 50px #24ecff;
+}
+.container .ring:nth-child(3)::before
+{
+    content: '';
+    position: absolute;
+    top: 95px;
+    right: -10px;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    background: blue;
+    box-shadow: 0 0 5px #24ecff33,
+    0 0 10px #24ecff22,
+    0 0 20px #24ecff11,
+    0 0 20px #24ecff,
+    0 0 50px #24ecff;
+}
+.container .ring:nth-child(2)
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-top: 4px solid white;
+}
+.container .ring:nth-child(3)
+{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-top: 4px solid blue;
+}
+.container p
+{
+    position: absolute;
+    color: white;
+    font-family: consolas;
+    font-size: 1.5em;
+    bottom: -200px;
+    letter-spacing: 0.15em;
+}
+                    </xmp>
+                </div>
+            </div>
+        </div>
+        <div class="oeuvre6">
+            <div class="contenant">
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+            </div>
+        </div>
+        <div class="code">
+            <div class="csshtml">
+                <h1>HTML</h1>
+                <div class="fenetre">
+                    <xmp>
+                        <html>
+                            <head>
+                                <title>panneau multicolor</title>
+                                <link rel="stylesheet" type="text/css" href="style.css">
+                            </head>
+                            <body>
+                                <div class="contenant">
+                                    <div class="rond"></div>
+                                    <div class="rond"></div>
+                                    <div class="rond"></div>
+                                </div>
+                            </body>
+                        </html>
+                    </xmp>
+                </div>
+            </div>
+            <div class="csshtml">
+                <h1>CSS</h1>
+                <div class="fenetre">
+                    <xmp>
+*
+                        {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        body
+                        {
+                            background: black;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            min-height: 100vh;
+                        }
+                        .contenant
+                        {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 100%;
+                        }
+                        .contenant .rond:nth-child(1)
+                        {
+                            width: 100px;
+                            height: 100px;
+                            background: blue;
+                            border-radius: 50%;
+                            box-shadow:0 0 10px rgb(0, 0, 200),
+                            0 0 30px rgb(0, 0, 150),
+                            0 0 50px rgb(0, 0, 100),
+                            0 0 70px rgb(0, 0, 50);
+                            animation: animate 2s infinite linear;
+                        }.contenant .rond:nth-child(2)
+                        {
+                            width: 100px;
+                            height: 100px;
+                            background: white;
+                            border-radius: 50%;
+                            box-shadow:0 0 10px rgb(200, 200, 200),
+                            0 0 30px rgb(150, 150, 150),
+                            0 0 50px rgb(100, 100, 100),
+                            0 0 70px rgb(50, 50, 50);
+                            animation: animate 2s infinite linear;
+                            animation-delay: 0.66s;
+                        }.contenant .rond:nth-child(3)
+                        {
+                            width: 100px;
+                            height: 100px;
+                            background: red;
+                            border-radius: 50%;
+                            box-shadow:0 0 10px rgb(200, 0, 0),
+                            0 0 30px rgb(150, 0, 0),
+                            0 0 50px rgb(100, 0, 0),
+                            0 0 70px rgb(50, 0, 0);
+                            animation: animate 2s infinite linear;
+                            animation-delay: 1.32s;
+                        }
+                        @keyframes animate
+                        {
+                            0%
+                            {
+                                transform: scale(0.1);
+                            }
+                            5%
+                            {
+                                transform: scale(0.15);
+                            }
+                            45%
+                            {
+                                transform: scale(0.95);
+                            }
+                            50%
+                            {
+                                transform: scale(1);
+                            }
+                            55%
+                            {
+                                transform: scale(0.95);
+                            }
+                            95%
+                            {
+                                transform: scale(0.15);
+                            }
+                            100%
+                            {
+                                transform: scale(0.1);
+                            }
+                        }
+                    </xmp>
+                </div>
+            </div>
+        </div>
+        <div id="#bonjour" class="oeuvre7">   
+        <h1>
+            <span>b</span>
+            <span>o</span>
+            <span>n</span>
+            <span>j</span>
+            <span>o</span>
+            <span>u</span>
+            <span>r</span>
+        </h1>
+        </div>
+        <div class="code">
+            <div class="csshtml">
+                <h1>HTML</h1>
+                <div class="fenetre">
+                    <xmp>
+                        <html>
+    <head>
+        <title>panneau multicolor</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>
+            <span>b</span>
+            <span>o</span>
+            <span>n</span>
+            <span>j</span>
+            <span>o</span>
+            <span>u</span>
+            <span>r</span>
+        </h1>
+    </body>
+</html>
+                    </xmp>
+                </div>
+            </div>
+            <div class="csshtml">
+                <h1>CSS</h1>
+                <div class="fenetre">
+                    <xmp>
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+}
+h1
+{
+    color: #111;
+    font-size: 16em;
+}
+h1 span
+{
+    display: table-cell;
+    animation: animate 1.75s linear infinite;
+}
+h1 span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+h1 span:nth-child(2)
+{
+    animation-delay: 0.25s;
+}
+h1 span:nth-child(3)
+{
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(4)
+{
+    animation-delay: 0.75s;
+}
+h1 span:nth-child(5)
+{
+    animation-delay: 1s;
+}
+h1 span:nth-child(6)
+{
+    animation-delay: 1.25s;
+}
+h1 span:nth-child(7)
+{
+    animation-delay: 1.5s;
+}
+@keyframes animate
+{
+    0%,100%
+    {
+        color: aqua;
+        filter: blur(2px);
+        text-shadow: 0 0 20px rgb(0, 126, 126),
+                     0 0 200px aqua;
+    }
+    5%,95%
+    {
+        color: black;
+        filter: blur(0px);
+    }
+}
+                    </xmp>
+                </div>
+            </div>
+        </div>
+        <div class="oeuvre8">
+            <div class="container">
+                <div class="card">
+                    <div class="content">
+                        <h2>01</h2>
+                        <h3>carte Bronze</h3>
+                        <p>Un accès rapide à vos données, 
+                            un téléchargement encore plus vite, 
+                            et plusiurs réduction sur nos produit.
+                            Durée de l'abonment 3 mois
+                        </p>
+                        <a href="#">Savoir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2>02</h2>
+                        <h3>carte Argent</h3>
+                        <p>Un accès rapide à vos données, 
+                            un téléchargement encore plus vite, 
+                            et plusiurs réduction sur nos produit.
+                            Durée de l'abonment 6 mois
+                        </p>
+                        <a href="#">Savoir plus</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2>03</h2>
+                        <h3>carte Or</h3>
+                        <p>Un accès rapide à vos données, 
+                            un téléchargement encore plus vite, 
+                            et plusiurs réduction sur nos produit.
+                            Durée de l'abonment 12 mois
+                        </p>
+                        <a href="#">Savoir plus</a>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="vanilla-tilt.js"></script>
+            <script>
+                VanillaTilt.init(document.querySelectorAll(".card"),{
+                    max: 25,
+                    speed: 400,
+                    glare: true,
+                    "max-glare": 1,
+                });
+            </script>
+        </div>
+        <div class="code">
+            <div class="csshtmljs">
+                <h1>HTML</h1>
+                <div class="fenetre">
+                    <xmp>
+                        <html>
+    <head>
+        <title>carte qui bouge</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>carte Bronze</h3>
+                    <p>Un accès rapide à vos données, 
+                        un téléchargement encore plus vite, 
+                        et plusiurs réduction sur nos produit.
+                        Durée de l'abonment 3 mois
+                    </p>
+                    <a href="#">Savoir plus</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>carte Argent</h3>
+                    <p>Un accès rapide à vos données, 
+                        un téléchargement encore plus vite, 
+                        et plusiurs réduction sur nos produit.
+                        Durée de l'abonment 6 mois
+                    </p>
+                    <a href="#">Savoir plus</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>carte Or</h3>
+                    <p>Un accès rapide à vos données, 
+                        un téléchargement encore plus vite, 
+                        et plusiurs réduction sur nos produit.
+                        Durée de l'abonment 12 mois
+                    </p>
+                    <a href="#">Savoir plus</a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".card"),{
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
+    </body>
+</html>
+                    </xmp>
+                </div>
+            </div>
+            <div class="csshtmljs">
+                <h1>CSS</h1>
+                <div class="fenetre">
+                    <xmp>
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+body::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(red, rgb(255, 0, 255));
+    clip-path: circle(40% at right 70%);
+}
+
+body::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(blue,purple);
+    clip-path: circle(30% at 10% 10%);
+}
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.container .card
+{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+.container .card .content
+{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .card:hover .content
+{
+    
+    transform: translateY(0px);
+    opacity: 1;
+}
+.container .card .content h2
+{
+    position: absolute;
+    top: -100px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+.container .card .content h3
+{
+    font-size: 1.8em;
+    color: white;
+    z-index: 1;
+
+}
+.container .card .content p
+{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+}
+.container .card .content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+                    </xmp>
+                </div>
+            </div>
+            <div class="csshtmljs">
+                <h1>JS</h1>
+                <div class="fenetre">
+                    <xmp>
+var VanillaTilt = (function () {
+    'use strict';
+    
+    /**
+     * Created by Sergiu Șandor (micku7zu) on 1/27/2017.
+     * Original idea: https://github.com/gijsroge/tilt.js
+     * MIT License.
+     * Version 1.7.2
+     */
+    
+    class VanillaTilt {
+      constructor(element, settings = {}) {
+        if (!(element instanceof Node)) {
+          throw ("Can't initialize VanillaTilt because " + element + " is not a Node.");
+        }
+    
+        this.width = null;
+        this.height = null;
+        this.clientWidth = null;
+        this.clientHeight = null;
+        this.left = null;
+        this.top = null;
+    
+        // for Gyroscope sampling
+        this.gammazero = null;
+        this.betazero = null;
+        this.lastgammazero = null;
+        this.lastbetazero = null;
+    
+        this.transitionTimeout = null;
+        this.updateCall = null;
+        this.event = null;
+    
+        this.updateBind = this.update.bind(this);
+        this.resetBind = this.reset.bind(this);
+    
+        this.element = element;
+        this.settings = this.extendSettings(settings);
+    
+        this.reverse = this.settings.reverse ? -1 : 1;
+        this.glare = VanillaTilt.isSettingTrue(this.settings.glare);
+        this.glarePrerender = VanillaTilt.isSettingTrue(this.settings["glare-prerender"]);
+        this.fullPageListening = VanillaTilt.isSettingTrue(this.settings["full-page-listening"]);
+        this.gyroscope = VanillaTilt.isSettingTrue(this.settings.gyroscope);
+        this.gyroscopeSamples = this.settings.gyroscopeSamples;
+    
+        this.elementListener = this.getElementListener();
+    
+        if (this.glare) {
+          this.prepareGlare();
+        }
+    
+        if (this.fullPageListening) {
+          this.updateClientSize();
+        }
+    
+        this.addEventListeners();
+        this.reset();
+        this.updateInitialPosition();
+      }
+    
+      static isSettingTrue(setting) {
+        return setting === "" || setting === true || setting === 1;
+      }
+    
+      /**
+       * Method returns element what will be listen mouse events
+       * @return {Node}
+       */
+      getElementListener() {
+        if (this.fullPageListening) {
+          return window.document;
+        }
+    
+        if (typeof this.settings["mouse-event-element"] === "string") {
+          const mouseEventElement = document.querySelector(this.settings["mouse-event-element"]);
+    
+          if (mouseEventElement) {
+            return mouseEventElement;
+          }
+        }
+    
+        if (this.settings["mouse-event-element"] instanceof Node) {
+          return this.settings["mouse-event-element"];
+        }
+    
+        return this.element;
+      }
+    
+      /**
+       * Method set listen methods for this.elementListener
+       * @return {Node}
+       */
+      addEventListeners() {
+        this.onMouseEnterBind = this.onMouseEnter.bind(this);
+        this.onMouseMoveBind = this.onMouseMove.bind(this);
+        this.onMouseLeaveBind = this.onMouseLeave.bind(this);
+        this.onWindowResizeBind = this.onWindowResize.bind(this);
+        this.onDeviceOrientationBind = this.onDeviceOrientation.bind(this);
+    
+        this.elementListener.addEventListener("mouseenter", this.onMouseEnterBind);
+        this.elementListener.addEventListener("mouseleave", this.onMouseLeaveBind);
+        this.elementListener.addEventListener("mousemove", this.onMouseMoveBind);
+    
+        if (this.glare || this.fullPageListening) {
+          window.addEventListener("resize", this.onWindowResizeBind);
+        }
+    
+        if (this.gyroscope) {
+          window.addEventListener("deviceorientation", this.onDeviceOrientationBind);
+        }
+      }
+    
+      /**
+       * Method remove event listeners from current this.elementListener
+       */
+      removeEventListeners() {
+        this.elementListener.removeEventListener("mouseenter", this.onMouseEnterBind);
+        this.elementListener.removeEventListener("mouseleave", this.onMouseLeaveBind);
+        this.elementListener.removeEventListener("mousemove", this.onMouseMoveBind);
+    
+        if (this.gyroscope) {
+          window.removeEventListener("deviceorientation", this.onDeviceOrientationBind);
+        }
+    
+        if (this.glare || this.fullPageListening) {
+          window.removeEventListener("resize", this.onWindowResizeBind);
+        }
+      }
+    
+      destroy() {
+        clearTimeout(this.transitionTimeout);
+        if (this.updateCall !== null) {
+          cancelAnimationFrame(this.updateCall);
+        }
+    
+        this.reset();
+    
+        this.removeEventListeners();
+        this.element.vanillaTilt = null;
+        delete this.element.vanillaTilt;
+    
+        this.element = null;
+      }
+    
+      onDeviceOrientation(event) {
+        if (event.gamma === null || event.beta === null) {
+          return;
+        }
+    
+        this.updateElementPosition();
+    
+        if (this.gyroscopeSamples > 0) {
+          this.lastgammazero = this.gammazero;
+          this.lastbetazero = this.betazero;
+    
+          if (this.gammazero === null) {
+            this.gammazero = event.gamma;
+            this.betazero = event.beta;
+          } else {
+            this.gammazero = (event.gamma + this.lastgammazero) / 2;
+            this.betazero = (event.beta + this.lastbetazero) / 2;
+          }
+    
+          this.gyroscopeSamples -= 1;
+        }
+    
+        const totalAngleX = this.settings.gyroscopeMaxAngleX - this.settings.gyroscopeMinAngleX;
+        const totalAngleY = this.settings.gyroscopeMaxAngleY - this.settings.gyroscopeMinAngleY;
+    
+        const degreesPerPixelX = totalAngleX / this.width;
+        const degreesPerPixelY = totalAngleY / this.height;
+    
+        const angleX = event.gamma - (this.settings.gyroscopeMinAngleX + this.gammazero);
+        const angleY = event.beta - (this.settings.gyroscopeMinAngleY + this.betazero);
+    
+        const posX = angleX / degreesPerPixelX;
+        const posY = angleY / degreesPerPixelY;
+    
+        if (this.updateCall !== null) {
+          cancelAnimationFrame(this.updateCall);
+        }
+    
+        this.event = {
+          clientX: posX + this.left,
+          clientY: posY + this.top,
+        };
+    
+        this.updateCall = requestAnimationFrame(this.updateBind);
+      }
+    
+      onMouseEnter() {
+        this.updateElementPosition();
+        this.element.style.willChange = "transform";
+        this.setTransition();
+      }
+    
+      onMouseMove(event) {
+        if (this.updateCall !== null) {
+          cancelAnimationFrame(this.updateCall);
+        }
+    
+        this.event = event;
+        this.updateCall = requestAnimationFrame(this.updateBind);
+      }
+    
+      onMouseLeave() {
+        this.setTransition();
+    
+        if (this.settings.reset) {
+          requestAnimationFrame(this.resetBind);
+        }
+      }
+    
+      reset() {
+        this.event = {
+          clientX: this.left + this.width / 2,
+          clientY: this.top + this.height / 2
+        };
+    
+        if (this.element && this.element.style) {
+          this.element.style.transform = `perspective(${this.settings.perspective}px) ` +
+            `rotateX(0deg) ` +
+            `rotateY(0deg) ` +
+            `scale3d(1, 1, 1)`;
+        }
+    
+        this.resetGlare();
+      }
+    
+      resetGlare() {
+        if (this.glare) {
+          this.glareElement.style.transform = "rotate(180deg) translate(-50%, -50%)";
+          this.glareElement.style.opacity = "0";
+        }
+      }
+    
+      updateInitialPosition() {
+        if (this.settings.startX === 0 && this.settings.startY === 0) {
+          return;
+        }
+    
+        this.onMouseEnter();
+    
+        if (this.fullPageListening) {
+          this.event = {
+            clientX: (this.settings.startX + this.settings.max) / (2 * this.settings.max) * this.clientWidth,
+            clientY: (this.settings.startY + this.settings.max) / (2 * this.settings.max) * this.clientHeight
+          };
+        } else {
+          this.event = {
+            clientX: this.left + ((this.settings.startX + this.settings.max) / (2 * this.settings.max) * this.width),
+            clientY: this.top + ((this.settings.startY + this.settings.max) / (2 * this.settings.max) * this.height)
+          };
+        }
+    
+    
+        let backupScale = this.settings.scale;
+        this.settings.scale = 1;
+        this.update();
+        this.settings.scale = backupScale;
+        this.resetGlare();
+      }
+    
+      getValues() {
+        let x, y;
+    
+        if (this.fullPageListening) {
+          x = this.event.clientX / this.clientWidth;
+          y = this.event.clientY / this.clientHeight;
+        } else {
+          x = (this.event.clientX - this.left) / this.width;
+          y = (this.event.clientY - this.top) / this.height;
+        }
+    
+        x = Math.min(Math.max(x, 0), 1);
+        y = Math.min(Math.max(y, 0), 1);
+    
+        let tiltX = (this.reverse * (this.settings.max - x * this.settings.max * 2)).toFixed(2);
+        let tiltY = (this.reverse * (y * this.settings.max * 2 - this.settings.max)).toFixed(2);
+        let angle = Math.atan2(this.event.clientX - (this.left + this.width / 2), -(this.event.clientY - (this.top + this.height / 2))) * (180 / Math.PI);
+    
+        return {
+          tiltX: tiltX,
+          tiltY: tiltY,
+          percentageX: x * 100,
+          percentageY: y * 100,
+          angle: angle
+        };
+      }
+    
+      updateElementPosition() {
+        let rect = this.element.getBoundingClientRect();
+    
+        this.width = this.element.offsetWidth;
+        this.height = this.element.offsetHeight;
+        this.left = rect.left;
+        this.top = rect.top;
+      }
+    
+      update() {
+        let values = this.getValues();
+    
+        this.element.style.transform = "perspective(" + this.settings.perspective + "px) " +
+          "rotateX(" + (this.settings.axis === "x" ? 0 : values.tiltY) + "deg) " +
+          "rotateY(" + (this.settings.axis === "y" ? 0 : values.tiltX) + "deg) " +
+          "scale3d(" + this.settings.scale + ", " + this.settings.scale + ", " + this.settings.scale + ")";
+    
+        if (this.glare) {
+          this.glareElement.style.transform = `rotate(${values.angle}deg) translate(-50%, -50%)`;
+          this.glareElement.style.opacity = `${values.percentageY * this.settings["max-glare"] / 100}`;
+        }
+    
+        this.element.dispatchEvent(new CustomEvent("tiltChange", {
+          "detail": values
+        }));
+    
+        this.updateCall = null;
+      }
+    
+      /**
+       * Appends the glare element (if glarePrerender equals false)
+       * and sets the default style
+       */
+      prepareGlare() {
+        // If option pre-render is enabled we assume all html/css is present for an optimal glare effect.
+        if (!this.glarePrerender) {
+          // Create glare element
+          const jsTiltGlare = document.createElement("div");
+          jsTiltGlare.classList.add("js-tilt-glare");
+    
+          const jsTiltGlareInner = document.createElement("div");
+          jsTiltGlareInner.classList.add("js-tilt-glare-inner");
+    
+          jsTiltGlare.appendChild(jsTiltGlareInner);
+          this.element.appendChild(jsTiltGlare);
+        }
+    
+        this.glareElementWrapper = this.element.querySelector(".js-tilt-glare");
+        this.glareElement = this.element.querySelector(".js-tilt-glare-inner");
+    
+        if (this.glarePrerender) {
+          return;
+        }
+    
+        Object.assign(this.glareElementWrapper.style, {
+          "position": "absolute",
+          "top": "0",
+          "left": "0",
+          "width": "100%",
+          "height": "100%",
+          "overflow": "hidden",
+          "pointer-events": "none"
+        });
+    
+        Object.assign(this.glareElement.style, {
+          "position": "absolute",
+          "top": "50%",
+          "left": "50%",
+          "pointer-events": "none",
+          "background-image": `linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)`,
+          "transform": "rotate(180deg) translate(-50%, -50%)",
+          "transform-origin": "0% 0%",
+          "opacity": "0",
+        });
+    
+        this.updateGlareSize();
+      }
+    
+      updateGlareSize() {
+        if (this.glare) {
+          const glareSize = (this.element.offsetWidth > this.element.offsetHeight ? this.element.offsetWidth : this.element.offsetHeight) * 2;
+    
+          Object.assign(this.glareElement.style, {
+            "width": `${glareSize}px`,
+            "height": `${glareSize}px`,
+          });
+        }
+      }
+    
+      updateClientSize() {
+        this.clientWidth = window.innerWidth
+          || document.documentElement.clientWidth
+          || document.body.clientWidth;
+    
+        this.clientHeight = window.innerHeight
+          || document.documentElement.clientHeight
+          || document.body.clientHeight;
+      }
+    
+      onWindowResize() {
+        this.updateGlareSize();
+        this.updateClientSize();
+      }
+    
+      setTransition() {
+        clearTimeout(this.transitionTimeout);
+        this.element.style.transition = this.settings.speed + "ms " + this.settings.easing;
+        if (this.glare) this.glareElement.style.transition = `opacity ${this.settings.speed}ms ${this.settings.easing}`;
+    
+        this.transitionTimeout = setTimeout(() => {
+          this.element.style.transition = "";
+          if (this.glare) {
+            this.glareElement.style.transition = "";
+          }
+        }, this.settings.speed);
+    
+      }
+    
+      /**
+       * Method return patched settings of instance
+       * @param {boolean} settings.reverse - reverse the tilt direction
+       * @param {number} settings.max - max tilt rotation (degrees)
+       * @param {startX} settings.startX - the starting tilt on the X axis, in degrees. Default: 0
+       * @param {startY} settings.startY - the starting tilt on the Y axis, in degrees. Default: 0
+       * @param {number} settings.perspective - Transform perspective, the lower the more extreme the tilt gets
+       * @param {string} settings.easing - Easing on enter/exit
+       * @param {number} settings.scale - 2 = 200%, 1.5 = 150%, etc..
+       * @param {number} settings.speed - Speed of the enter/exit transition
+       * @param {boolean} settings.transition - Set a transition on enter/exit
+       * @param {string|null} settings.axis - What axis should be disabled. Can be X or Y
+       * @param {boolean} settings.glare - What axis should be disabled. Can be X or Y
+       * @param {number} settings.max-glare - the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
+       * @param {boolean} settings.glare-prerender - false = VanillaTilt creates the glare elements for you, otherwise
+       * @param {boolean} settings.full-page-listening - If true, parallax effect will listen to mouse move events on the whole document, not only the selected element
+       * @param {string|object} settings.mouse-event-element - String selector or link to HTML-element what will be listen mouse events
+       * @param {boolean} settings.reset - false = If the tilt effect has to be reset on exit
+       * @param {gyroscope} settings.gyroscope - Enable tilting by deviceorientation events
+       * @param {gyroscopeSensitivity} settings.gyroscopeSensitivity - Between 0 and 1 - The angle at which max tilt position is reached. 1 = 90deg, 0.5 = 45deg, etc..
+       * @param {gyroscopeSamples} settings.gyroscopeSamples - How many gyroscope moves to decide the starting position.
+       */
+      extendSettings(settings) {
+        let defaultSettings = {
+          reverse: false,
+          max: 15,
+          startX: 0,
+          startY: 0,
+          perspective: 1000,
+          easing: "cubic-bezier(.03,.98,.52,.99)",
+          scale: 1,
+          speed: 300,
+          transition: true,
+          axis: null,
+          glare: false,
+          "max-glare": 1,
+          "glare-prerender": false,
+          "full-page-listening": false,
+          "mouse-event-element": null,
+          reset: true,
+          gyroscope: true,
+          gyroscopeMinAngleX: -45,
+          gyroscopeMaxAngleX: 45,
+          gyroscopeMinAngleY: -45,
+          gyroscopeMaxAngleY: 45,
+          gyroscopeSamples: 10
+        };
+    
+        let newSettings = {};
+        for (var property in defaultSettings) {
+          if (property in settings) {
+            newSettings[property] = settings[property];
+          } else if (this.element.hasAttribute("data-tilt-" + property)) {
+            let attribute = this.element.getAttribute("data-tilt-" + property);
+            try {
+              newSettings[property] = JSON.parse(attribute);
+            } catch (e) {
+              newSettings[property] = attribute;
+            }
+    
+          } else {
+            newSettings[property] = defaultSettings[property];
+          }
+        }
+    
+        return newSettings;
+      }
+    
+      static init(elements, settings) {
+        if (elements instanceof Node) {
+          elements = [elements];
+        }
+    
+        if (elements instanceof NodeList) {
+          elements = [].slice.call(elements);
+        }
+    
+        if (!(elements instanceof Array)) {
+          return;
+        }
+    
+        elements.forEach((element) => {
+          if (!("vanillaTilt" in element)) {
+            element.vanillaTilt = new VanillaTilt(element, settings);
+          }
+        });
+      }
+    }
+    
+    if (typeof document !== "undefined") {
+      /* expose the class to window */
+      window.VanillaTilt = VanillaTilt;
+    
+      /**
+       * Auto load
+       */
+      VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
+    }
+    
+    return VanillaTilt;
+    
+    }());
+                            
+                    </xmp>
+                </div>
+            </div>
+        </div>
+    <div class="oeuvre9">
+        <div class="center">
+            <input type="checkbox" name="">
+        </div>
+    </div>
+    <div class="code">
+        <div class="csshtml">
+            <h1>HTML</h1>
+            <div class="fenetre">
+                <xmp>
+                    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>on off</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="center">
+            <input type="checkbox" name="">
+        </div>
+    </body>
+</html>
+                </xmp>
+            </div>
+        </div>
+        <div class="csshtml">
+            <h1>CSS</h1>
+            <div class="fenetre">
+                <xmp>
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #222;
+}
+.center
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+input[type="checkbox"]
+{
+    position: relative;
+    width: 120px;
+    height: 40px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, #000);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px rgb(55, 55, 55), 0 0 0 5px rgb(65, 65, 65), inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+input:checked[type="checkbox"]
+{
+    background: linear-gradient(0deg,cyan, rgb(0, 200, 200));
+    box-shadow: 0 0 2px rgb(0, 100, 100), 0 0 0 4px rgb(55, 55, 55), 0 0 0 5px rgb(65, 65, 65), inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+input[type="checkbox"]:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(0deg, #000, #333);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #000;
+    transform: scale(0.98,0.96);
+    transition: 0.5s;
+}
+input:checked[type="checkbox"]:before
+{
+    left: 40px;
+}
+input[type="checkbox"]:after
+{
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 65px;
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(0deg, rgb(200,200,200), rgb(0, 0, 0));
+    border-radius: 50%;
+    transition: 0.5s;
+}
+input:checked[type="checkbox"]:after
+{
+    background: rgb(0, 200, 200);
+    left: 105px;
+    box-shadow: 0 0 5px cyan, 0 0 15px cyan;
+}
+                </xmp>
+            </div>
+        </div>
+    </div>
+    <div class="oeuvre10">
+        <a id="boutton" href="horloge.html">Boutton</a>
+    </div>
+    <div class="code">
+        <div class="csshtml">
+            <h1>HTML</h1>
+            <div class="fenetre">
+                <xmp>
+                    <html>
+    <head>
+        <title>boutton colorée</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <a href="#">Boutton</a>
+    </body>
+</html>
+                </xmp>
+            </div>
+        </div>
+        <div class="csshtml">
+            <h1>CSS</h1>
+            <div class="fenetre">
+                <xmp>
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: black;
+}
+a
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, blue, hotpink, yellow, cyan, blue);
+    border-radius: 30px;
+    background-size: 400%;
+    z-index: 1;
+}
+a:hover
+{
+    animation: animate 8s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0%;
+    }
+    100%
+    {
+        background-position: 400%;
+    }
+}
+a:before
+{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    background: linear-gradient(90deg, blue, hotpink, yellow, cyan, blue);
+    border-radius: 40px;
+    background-size: 400%;
+    filter: blur(20px);
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+a:hover:before
+{
+    opacity: 1;
+    animation: animate 8s linear infinite;
+}
+                </xmp>
+            </div>
+        </div>
+    </div>
+    <div class="oeuvre11">
+        <carrevolant></carrevolant>
+        <script>
+            function createSquare(){
+                const carrevolant = document.querySelector('carrevolant');
+                const square = document.createElement('span');
+
+                var size = Math.random() * 50;
+
+                square.style.width = 20 + size +'px';
+                square.style.height = 20 + size +'px';
+
+                square.style.bottom = Math.random() * innerHeight + -7400 + 'px';
+                square.style.left = Math.random() * innerWidth + 'px';
+
+                carrevolant.appendChild(square);
+
+                setTimeout(() =>{
+                    square.remove()
+                },7000)
+            }
+
+            setInterval(createSquare , 250)
+        </script>
+    </div>
+    <div class="code">
+        <div class="csshtmljs">
+            <h1>HTML</h1>
+            <div class="fenetre">
+                <xmp>
+                    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>cube volant</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section></section>
+    </body>
+</html>
+                </xmp>
+            </div>
+        </div>
+        <div class="csshtmljs">
+            <h1>CSS</h1>
+            <div class="fenetre">
+                <xmp>
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    overflow: hidden;
+    min-height: 100vh;
+    background: black;
+}
+section
+{
+    height: 100vh;
+}
+span
+{
+    position: absolute;
+    pointer-events: none;
+    background: white;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10%
+    {
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
+}
+                </xmp>
+            </div>
+        </div>
+        <div class="csshtmljs">
+            <h1>JS</h1>
+            <div class="fenetre">
+                <xmp>
+
+                    const colors = [
+                        '#2196f3',
+                        '#e91e63',
+                        '#ffeb3b',
+                        '#74ff1d'
+                    ]
+        
+                    function createSquare(){
+                        const section = document.querySelector('section');
+                        const square = document.createElement('span');
+        
+                        var size = Math.random() * 50;
+        
+                        square.style.width = 20 + size +'px';
+                        square.style.height = 20 + size +'px';
+        
+                        square.style.top = Math.random() * innerHeight + 'px';
+                        square.style.left = Math.random() * innerWidth + 'px';
+        
+                        const bg = colors[Math.floor(Math.random() * colors.lenght)];
+                        square.style.background = bg;
+        
+                        section.appendChild(square);
+        
+                        setTimeout(() =>{
+                            square.remove()
+                        },5000)
+                    }
+        
+                    setInterval(createSquare , 250)
+                </xmp>
+            </div>
+        </div>
+    </div>
+    <div class="oeuvre12">
+            <div class="container">
+                <div class="card">
+                    <div class="box">
+                        <div>
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>15<span>%</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">HTML</div>
+                </div><div class="card">
+                    <div class="box">
+                        <div>
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>80<span>%</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">CSS</div>
+                </div><div class="card">
+                    <div class="box">
+                        <div>
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>5<span>%</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">JS</div>
+                </div>
+            </div>
+    </div>
+    <div class="code">
+        <div class="csshtml">
+            <h1>HTML</h1>
+            <div class="fenetre">
+                <xmp>
+                    <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>graphique circulaire html css java</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="card">
+                    <div class="box">
+                        <div>
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>15<span>%</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">HTML</div>
+                </div><div class="card">
+                    <div class="box">
+                        <div>
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>80<span>%</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">CSS</div>
+                </div><div class="card">
+                    <div class="box">
+                        <div>
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>5<span>%</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">JS</div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+                </xmp>
+            </div>
+        </div>
+        <div class="csshtml">
+            <h1>CSS</h1>
+            <div class="fenetre">
+                <xmp>
+**
+{
+    margin: 0;
+    padding: 0;
+}
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    min-height: 100vh;
+    background: rgb(48, 4, 48);
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgb(150, 39, 197);
+}
+.container
+{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container .card
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    z-index: 10;
+    margin: 20px 20px 60px;
+}
+.container .card .box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border-radius: 10px;
+}
+.container .card .box .percent
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    z-index: 100;
+}
+.container .card .box .percent .number
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .box .percent .number h2
+{
+    color: white;
+    font-size: 50px;
+}
+.container .card .box .percent .number h2 span
+{
+    font-size: 24px;
+}
+.container .card .text
+{
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 30px 20px 10px;
+    background: red;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 1px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    transition: bottom 0.5s, z-index 0s, transform 0.5s, padding 0.5s;
+    z-index: 1;
+    color: white;
+    transition-delay: 0.5s,0.5s,0s,0.5s;
+}
+.container .card:nth-child(2) .text
+{
+    background: blue;
+}
+.container .card:nth-child(3) .text
+{
+    background: limegreen;
+}
+.container .card:hover .text
+{
+    transition-delay: 0s,0.5s,0.5s,0s;
+    bottom: -70px;
+    z-index: 11;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 30px 20px 10px;
+}
+.container .card .box .percent svg
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.container .card .box .percent svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(0, 0, 0, 0.05);
+    transform: translate(5px,5px);
+    stroke-linecap: round;
+}
+.container .card .box .percent svg circle:nth-child(2)
+{
+    stroke: red;
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 396px;
+}
+.container .card:nth-child(2) .box .percent svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(0, 0, 0, 0.05);
+    transform: translate(5px,5px);
+}
+.container .card:nth-child(2) .box .percent svg circle:nth-child(2)
+{
+    stroke: blue;
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 45px;
+}
+.container .card:nth-child(3) .box .percent svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(0, 0, 0, 0.05);
+    transform: translate(5px,5px);
+}
+.container .card:nth-child(3) .box .percent svg circle:nth-child(2)
+{
+    stroke: limegreen;
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 440px;
+}
+                </xmp>
+            </div>
+        </div>
+    </div>
+    <div class="oeuvre13">
+    </div>
+    <div class="code">
+        <div class="csshtml">
+            <h1>HTML</h1>
+            <div class="fenetre">
+                <xmp>
+                </xmp>
+            </div>
+        </div>
+        <div class="csshtml">
+            <h1>CSS</h1>
+            <div class="fenetre">
+                <xmp>
+                </xmp>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

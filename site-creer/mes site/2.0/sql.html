@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wolf</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="informatique">
+    <header>
+        <a href="index.html"><img src="image/Wolf.jpg" alt="logo loup"></a>
+        <ul>
+            <li><a href="mesprogrammes.html">mesprogrammes</a></li>
+            <li><a href="mestestes.html">mestestes</a></li>
+            <li><a href="html.html">html</a></li>
+            <li><a href="css.html">css</a></li>
+            <li><a href="js.html">js</a></li>
+            <li><a href="php.html">php</a></li>
+            <li><a href="python.html">python</a></li>
+            <li><a href="sql.html">sql</a></li>
+        </ul>
+    </header>
+
+<!-- début de ma page html -->
+
+    <section class="langage">
+        <div class="cadre">
+            <h1 class="titre1">SQL</h1>
+
+<!-- SELECT -->
+
+            <h2 class="titre2" id="les bases">SELECT</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code SQL</h4>
+                    <xmp>
+    SELECT * FROM Table;
+
+    SELECT Client, Nom FROM Table;
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">Base de donnée</h4>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Bellier</th>
+                            <th>Thomas</th>
+                            <th>Homme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lac</th>
+                            <th>John</th>
+                            <th>Homme</th>
+                            <th>22</th>
+                            <th>Angleterre</th>
+                            <th>37</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Poirier</th>
+                            <th>Hugo</th>
+                            <th>Homme</th>
+                            <th>41</th>
+                            <th>France</th>
+                            <th>15</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Louie</th>
+                            <th>Cendrine</th>
+                            <th>Femme</th>
+                            <th>42</th>
+                            <th>Angleterre</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Ponsse</th>
+                            <th>Léo</th>
+                            <th>Homme</th>
+                            <th>29</th>
+                            <th>Canada</th>
+                            <th>63</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                            <th>Emilie</th>
+                            <th>Femme</th>
+                            <th>72</th>
+                            <th>Canada</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>Tessia</th>
+                            <th>Lily</th>
+                            <th>Femme</th>
+                            <th>35</th>
+                            <th>France</th>
+                            <th>22</th>
+                        </tr>
+                    </table>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Bellier</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lac</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Poirier</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Louie</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Ponsse</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>Tessia</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="paragraphe">
+                Cette commande permet de sélectionner toutes les données d’une base et de les afficher.<br>
+                <code class="sql_code"><span class="blue">SELECT</span> * <span class="blue">FROM</span> Nom_de_la_table</code><br><br>
+                Cette commande permet de sélectionné le plusieurs colonnes spécifiques.<br>
+                <code class="sql_code"><span class="blue">SELECT</span> Nom_colonne1, Nom_colonne2 <span class="blue">FROM</span> Nom_de_la_table</code><br><br>
+                <code class="sql_code"><span class="blue">SELECT</span></code> est utilisée pour sélectionner des données dans une base de données.<br>
+            </p>
+
+<!-- DISTINCT -->
+
+            <h2 class="titre2" id="les bases">DISTINCT</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code SQL</h4>
+                    <xmp>
+    SELECT DISTINCT(Pays) FROM Table;
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">Base de donnée</h4>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Bellier</th>
+                            <th>Thomas</th>
+                            <th>Homme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lac</th>
+                            <th>John</th>
+                            <th>Homme</th>
+                            <th>22</th>
+                            <th>Angleterre</th>
+                            <th>37</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Ponsse</th>
+                            <th>Léo</th>
+                            <th>Homme</th>
+                            <th>29</th>
+                            <th>Canada</th>
+                            <th>63</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="paragraphe">
+                Cette commande permet de renvoyer toutes les données distinctes (différentes) de la colonne.<br>
+                <code class="sql_code"><span class="blue">SELECT DISTINCT</span>(Nom_Colonne) <span class="blue">FROM</span> Nom_de_la_table</code><br><br>
+                <code class="sql_code"><span class="blue">DISTINCT</span></code> est utilisée pour renvoyer uniquement des valeurs distinctes (différentes).<br>
+            </p>
+
+<!-- WHERE -->
+
+            <h2 class="titre2" id="les bases">WHERE</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code SQL</h4>
+                    <xmp>
+    SELECT * FROM Table
+    WHERE Age >= 40;
+    
+    SELECT * FROM Table
+    WHERE Pays = 'France';
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">Base de donnée</h4>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Poirier</th>
+                            <th>Hugo</th>
+                            <th>Homme</th>
+                            <th>41</th>
+                            <th>France</th>
+                            <th>15</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Louie</th>
+                            <th>Cendrine</th>
+                            <th>Femme</th>
+                            <th>42</th>
+                            <th>Angleterre</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                            <th>Emilie</th>
+                            <th>Femme</th>
+                            <th>72</th>
+                            <th>Canada</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                    </table>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Bellier</th>
+                            <th>Thomas</th>
+                            <th>Homme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Poirier</th>
+                            <th>Hugo</th>
+                            <th>Homme</th>
+                            <th>41</th>
+                            <th>France</th>
+                            <th>15</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>Tessia</th>
+                            <th>Lily</th>
+                            <th>Femme</th>
+                            <th>35</th>
+                            <th>France</th>
+                            <th>22</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="paragraphe">
+                Cette commande permet de filtrer les données du tableau.<br>
+                <code class="sql_code"><span class="blue">SELECT</span> * <span class="blue">FROM</span> Nom_de_la_table<br>
+                <span class="blue">WHERE</span> condition;</code><br><br>
+                <code class="sql_code"><span class="blue">WHERE</span></code> est utilisée pour filtrer les enregistrements.<br>
+            </p>
+
+
+<!-- AND, OR, NOT -->
+
+            <h2 class="titre2" id="les bases">AND, OR, NOT</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code SQL</h4>
+                    <xmp>
+    SELECT * FROM Table
+    WHERE Sexe = 'Homme' AND Age >= 50;
+
+    SELECT * FROM Table
+    WHERE Pays = 'France' OR Commande <= 20;
+
+    SELECT * FROM Table
+    WHERE NOT Pays = 'France';
+
+    SELECT * FROM Table
+    WHERE NOT Pays = 'Angleterre' AND NOT Pays = 'France';
+
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">Base de donnée</h4>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                    </table>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Bellier</th>
+                            <th>Thomas</th>
+                            <th>Homme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Louie</th>
+                            <th>Cendrine</th>
+                            <th>Femme</th>
+                            <th>42</th>
+                            <th>Angleterre</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                            <th>Emilie</th>
+                            <th>Femme</th>
+                            <th>72</th>
+                            <th>Canada</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>Tessia</th>
+                            <th>Lily</th>
+                            <th>Femme</th>
+                            <th>35</th>
+                            <th>France</th>
+                            <th>22</th>
+                        </tr>
+                    </table>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lac</th>
+                            <th>John</th>
+                            <th>Homme</th>
+                            <th>22</th>
+                            <th>Angleterre</th>
+                            <th>37</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Louie</th>
+                            <th>Cendrine</th>
+                            <th>Femme</th>
+                            <th>42</th>
+                            <th>Angleterre</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Ponsse</th>
+                            <th>Léo</th>
+                            <th>Homme</th>
+                            <th>29</th>
+                            <th>Canada</th>
+                            <th>63</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                            <th>Emilie</th>
+                            <th>Femme</th>
+                            <th>72</th>
+                            <th>Canada</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                    </table>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Ponsse</th>
+                            <th>Léo</th>
+                            <th>Homme</th>
+                            <th>29</th>
+                            <th>Canada</th>
+                            <th>63</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                            <th>Emilie</th>
+                            <th>Femme</th>
+                            <th>72</th>
+                            <th>Canada</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="paragraphe">
+                Cette commande permet de filtrer les données du tableau.<br>
+                <code class="sql_code"><span class="blue">WHERE</span> condition <span class="blue">AND</span> condition;</code><br><br>
+                <code class="sql_code"><span class="blue">WHERE</span> condition <span class="blue">OR</span> condition;</code><br><br>
+                <code class="sql_code"><span class="blue">WHERE</span> <span class="blue">NOT</span> condition;</code><br><br>
+                <code class="sql_code"><span class="blue">AND</span></code> affiche un enregistrement si toutes les conditions séparées par AND sont VRAIES.<br>
+                <code class="sql_code"><span class="blue">OR</span></code> affiche un enregistrement si l'une des conditions séparées par OR est VRAIE.<br>
+                <code class="sql_code"><span class="blue">NOT</span></code> n’affiche pas la condition.<br>
+            </p>
+
+<!-- ORDER BY -->
+
+            <h2 class="titre2" id="les bases">ORDER BY</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code SQL</h4>
+                    <xmp>
+    SELECT * FROM Table
+    ORDER BY Nom ASC;
+
+    SELECT * FROM Table
+    ORDER BY Nom DESC;
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">Base de donnée</h4>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Bellier</th>
+                            <th>Thomas</th>
+                            <th>Homme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                            <th>Emilie</th>
+                            <th>Femme</th>
+                            <th>72</th>
+                            <th>Canada</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lac</th>
+                            <th>John</th>
+                            <th>Homme</th>
+                            <th>22</th>
+                            <th>Angleterre</th>
+                            <th>37</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Louie</th>
+                            <th>Cendrine</th>
+                            <th>Femme</th>
+                            <th>42</th>
+                            <th>Angleterre</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Poirier</th>
+                            <th>Hugo</th>
+                            <th>Homme</th>
+                            <th>41</th>
+                            <th>France</th>
+                            <th>15</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Ponsse</th>
+                            <th>Léo</th>
+                            <th>Homme</th>
+                            <th>29</th>
+                            <th>Canada</th>
+                            <th>63</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>Tessia</th>
+                            <th>Lily</th>
+                            <th>Femme</th>
+                            <th>35</th>
+                            <th>France</th>
+                            <th>22</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                    </table>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>Tessia</th>
+                            <th>Lily</th>
+                            <th>Femme</th>
+                            <th>35</th>
+                            <th>France</th>
+                            <th>22</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Ponsse</th>
+                            <th>Léo</th>
+                            <th>Homme</th>
+                            <th>29</th>
+                            <th>Canada</th>
+                            <th>63</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Poirier</th>
+                            <th>Hugo</th>
+                            <th>Homme</th>
+                            <th>41</th>
+                            <th>France</th>
+                            <th>15</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Louie</th>
+                            <th>Cendrine</th>
+                            <th>Femme</th>
+                            <th>42</th>
+                            <th>Angleterre</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lac</th>
+                            <th>John</th>
+                            <th>Homme</th>
+                            <th>22</th>
+                            <th>Angleterre</th>
+                            <th>37</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                            <th>Emilie</th>
+                            <th>Femme</th>
+                            <th>72</th>
+                            <th>Canada</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Bellier</th>
+                            <th>Thomas</th>
+                            <th>Homme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="paragraphe">
+                Cette commande permet d’afficher dans l’ordre croissant ou décroissant la colonne demandé.<br>
+                <code class="sql_code"><span class="blue">SELECT</span> * <span class="blue">FROM</span> Nom_de_la_table<br>
+                <span class="blue">ORDER BY</span> Nom_colonne <span class="blue">ASC</span>;</code><br><br>
+                <code class="sql_code"><span class="blue">SELECT</span> * <span class="blue">FROM</span> Nom_de_la_table<br>
+                <span class="blue">ORDER BY</span> Nom_colonne <span class="blue">DESC</span>;</code><br><br>
+                <code class="sql_code"><span class="blue">ORDER BY</span></code> trie les enregistrements par ordre croissant par défaut.<br>
+                <code class="sql_code"><span class="blue">ASC</span></code> trie dans l’ordre croissant (d'abord les ligne NULL, ensuite les nombres et pour finir les chaines de caractères.)<br>
+                <code class="sql_code"><span class="blue">DESC</span></code> trie dans l’ordre décroissant.<br>
+            </p>
+
+<!-- IS NULL, NOT IS NULL -->
+
+            <h2 class="titre2" id="les bases">IS NULL, NOT IS NULL</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code SQL</h4>
+                    <xmp>
+    SELECT * FROM Table
+    WHERE IS NULL
+
+    SELECT * FROM Table
+    WHERE NOT IS NULL
+                    </xmp>
+                </div>
+            <div class="page">
+                <h4 class="titre4">Base de donnée</h4>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Bellier</th>
+                            <th>Thomas</th>
+                            <th>Homme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lac</th>
+                            <th>John</th>
+                            <th>Homme</th>
+                            <th>22</th>
+                            <th>Angleterre</th>
+                            <th>37</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Poirier</th>
+                            <th>Hugo</th>
+                            <th>Homme</th>
+                            <th>41</th>
+                            <th>France</th>
+                            <th>15</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Louie</th>
+                            <th>Cendrine</th>
+                            <th>Femme</th>
+                            <th>42</th>
+                            <th>Angleterre</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Ponsse</th>
+                            <th>Léo</th>
+                            <th>Homme</th>
+                            <th>29</th>
+                            <th>Canada</th>
+                            <th>63</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                            <th>Emilie</th>
+                            <th>Femme</th>
+                            <th>72</th>
+                            <th>Canada</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>Tessia</th>
+                            <th>Lily</th>
+                            <th>Femme</th>
+                            <th>35</th>
+                            <th>France</th>
+                            <th>22</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="paragraphe">
+                Cette commande permet de sélectionner les ligne NULL ou NOT IS NULL.<br>
+                <code class="sql_code"><span class="blue">SELECT</span> * <span class="blue">FROM</span> Nom_de_la_table<br>
+                <span class="blue">WHERE</span> Nom_colonne <span class="blue">IS NULL;</span></code><br><br>
+                <code class="sql_code"><span class="blue">SELECT</span> * <span class="blue">FROM</span> Nom_de_la_table<br>
+                <span class="blue">WHERE</span> Nom_colonne <span class="blue">NOT IS NULL;</span></code><br><br>
+                Un champ avec une valeur <code class="sql_code"><span class="blue">NULL</span></code> est un champ sans valeur.<br>
+            </p>
+
+<!-- UPDATE -->
+
+            <h2 class="titre2" id="les bases">UPDATE</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code SQL</h4>
+                    <xmp>
+    SELECT * FROM Liste;
+        
+    UPDATE Liste
+    SET Nom = 'Menier', City= 'Cécile', Sexe = 'Femme'
+    WHERE Client = 1;
+        
+    SELECT * FROM Liste;
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">Base de donnée</h4>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Bellier</th>
+                            <th>Thomas</th>
+                            <th>Homme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lac</th>
+                            <th>John</th>
+                            <th>Homme</th>
+                            <th>22</th>
+                            <th>Angleterre</th>
+                            <th>37</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Poirier</th>
+                            <th>Hugo</th>
+                            <th>Homme</th>
+                            <th>41</th>
+                            <th>France</th>
+                            <th>15</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Louie</th>
+                            <th>Cendrine</th>
+                            <th>Femme</th>
+                            <th>42</th>
+                            <th>Angleterre</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Ponsse</th>
+                            <th>Léo</th>
+                            <th>Homme</th>
+                            <th>29</th>
+                            <th>Canada</th>
+                            <th>63</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                            <th>Emilie</th>
+                            <th>Femme</th>
+                            <th>72</th>
+                            <th>Canada</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>Tessia</th>
+                            <th>Lily</th>
+                            <th>Femme</th>
+                            <th>35</th>
+                            <th>France</th>
+                            <th>22</th>
+                        </tr>
+                    </table>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Menier</th>
+                            <th>Cécile</th>
+                            <th>Femme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lac</th>
+                            <th>John</th>
+                            <th>Homme</th>
+                            <th>22</th>
+                            <th>Angleterre</th>
+                            <th>37</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Poirier</th>
+                            <th>Hugo</th>
+                            <th>Homme</th>
+                            <th>41</th>
+                            <th>France</th>
+                            <th>15</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Louie</th>
+                            <th>Cendrine</th>
+                            <th>Femme</th>
+                            <th>42</th>
+                            <th>Angleterre</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Ponsse</th>
+                            <th>Léo</th>
+                            <th>Homme</th>
+                            <th>29</th>
+                            <th>Canada</th>
+                            <th>63</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                            <th>Emilie</th>
+                            <th>Femme</th>
+                            <th>72</th>
+                            <th>Canada</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>Tessia</th>
+                            <th>Lily</th>
+                            <th>Femme</th>
+                            <th>35</th>
+                            <th>France</th>
+                            <th>22</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="paragraphe">
+                Cette commande permet de modifié le tableau.<br>
+                <code class="sql_code"><span class="fuchsia">UPDATE</span> Nom_de_la_table<br>
+                <span class="blue">SET</span> Nom_colonne = Valeur, Nom_colonne = Valeur, Nom_colonne = Valeur<br>
+                <span class="blue">WHERE</span> Nom_colonne = Valeur;</code><br><br>
+                <code class="sql_code"><span class="fuchsia">UPDATE</span></code> est utilisée pour modifier les enregistrements existants dans une table.<br>
+            </p>
+
+<!-- DELETE -->
+
+            <h2 class="titre2" id="les bases">DELETE</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code SQL</h4>
+                    <xmp>
+    SELECT * FROM Liste;
+
+    DELETE FROM Liste
+    WHERE Client = 3;
+
+    SELECT * FROM Liste;                        
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">Base de donnée</h4>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Bellier</th>
+                            <th>Thomas</th>
+                            <th>Homme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lac</th>
+                            <th>John</th>
+                            <th>Homme</th>
+                            <th>22</th>
+                            <th>Angleterre</th>
+                            <th>37</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Poirier</th>
+                            <th>Hugo</th>
+                            <th>Homme</th>
+                            <th>41</th>
+                            <th>France</th>
+                            <th>15</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Louie</th>
+                            <th>Cendrine</th>
+                            <th>Femme</th>
+                            <th>42</th>
+                            <th>Angleterre</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Ponsse</th>
+                            <th>Léo</th>
+                            <th>Homme</th>
+                            <th>29</th>
+                            <th>Canada</th>
+                            <th>63</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                            <th>Emilie</th>
+                            <th>Femme</th>
+                            <th>72</th>
+                            <th>Canada</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>Tessia</th>
+                            <th>Lily</th>
+                            <th>Femme</th>
+                            <th>35</th>
+                            <th>France</th>
+                            <th>22</th>
+                        </tr>
+                    </table>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Menier</th>
+                            <th>Cécile</th>
+                            <th>Femme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lac</th>
+                            <th>John</th>
+                            <th>Homme</th>
+                            <th>22</th>
+                            <th>Angleterre</th>
+                            <th>37</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Poirier</th>
+                            <th>Hugo</th>
+                            <th>Homme</th>
+                            <th>41</th>
+                            <th>France</th>
+                            <th>15</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>Louie</th>
+                            <th>Cendrine</th>
+                            <th>Femme</th>
+                            <th>42</th>
+                            <th>Angleterre</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>Ponsse</th>
+                            <th>Léo</th>
+                            <th>Homme</th>
+                            <th>29</th>
+                            <th>Canada</th>
+                            <th>63</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>Grade</th>
+                            <th>Emilie</th>
+                            <th>Femme</th>
+                            <th>72</th>
+                            <th>Canada</th>
+                            <th>12</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>Lancier</th>
+                            <th>Gabriel</th>
+                            <th>Homme</th>
+                            <th>54</th>
+                            <th>Japon</th>
+                            <th>54</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>Tessia</th>
+                            <th>Lily</th>
+                            <th>Femme</th>
+                            <th>35</th>
+                            <th>France</th>
+                            <th>22</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="paragraphe">
+                Cette commande permet de supprimer des données sur un tableau.<br>
+                <code class="sql_code"><span class="blue">DELETE FROM</span> Nom_de_la_table<br>
+                <span class="blue">WHERE</span> Nom_colonne = Valeur;</code><br><br>
+                <code class="sql_code"><span class="blue">DELETE</span></code> est utilisée pour supprimer des enregistrements existants dans une table.<br>
+            </p>
+
+<!-- SELECT TOP -->
+
+            <h2 class="titre2" id="les bases">SELECT TOP</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code SQL</h4>
+                    <xmp>
+    SELECT TOP 50 PERCENT * FROM Nom_de_la_table
+
+    SELECT TOP 3 * FROM Nom_de_la_table                        
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">Base de donnée</h4>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Bellier</th>
+                            <th>Thomas</th>
+                            <th>Homme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>Lac</th>
+                            <th>John</th>
+                            <th>Homme</th>
+                            <th>22</th>
+                            <th>Angleterre</th>
+                            <th>37</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>Poirier</th>
+                            <th>Hugo</th>
+                            <th>Homme</th>
+                            <th>41</th>
+                            <th>France</th>
+                            <th>15</th>
+                        </tr>
+                    </table>
+                    <table class="sql_tableau">
+                        <tr>
+                            <th>Client</th>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Sexe</th>
+                            <th>Age</th>
+                            <th>Pays</th>
+                            <th>Commande</th>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <th>Menier</th>
+                            <th>Cécile</th>
+                            <th>Femme</th>
+                            <th>26</th>
+                            <th>France</th>
+                            <th>45</th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>Fouchard</th>
+                            <th>Didier</th>
+                            <th>Homme</th>
+                            <th>52</th>
+                            <th>Australie</th>
+                            <th>53</th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>Valier</th>
+                            <th>Laurence</th>
+                            <th>Femme</th>
+                            <th>33</th>
+                            <th>Russie</th>
+                            <th>7</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="paragraphe">
+                Cette commande permet de modifié le tableau.<br>
+                <code class="sql_code"><span class="blue">SELECT TOP</span> Nombre <span class="blue">PERCENT</span> * <span class="blue">FROM</span> Nom_de_la_table;<br><br>
+                <span class="blue">SELECT TOP</span> Nombre * <span class="blue">FROM</span> Nom_de_la_table;<br><br></code>
+                <code class="sql_code"><span class="blue">SELECT TOP</span></code> est utilisée pour spécifier le nombre d'enregistrements à retourner.<br>
+            </p>
+        </div>
+    </section>
+</body>
+        </div>
+    </section>
+</body>
+
+</html>

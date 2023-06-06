@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wolf</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="informatique">
+    <header>
+        <a href="index.html"><img src="image/Wolf.jpg" alt="logo loup"></a>
+        <ul>
+            <li><a href="mesprogrammes.html">mesprogrammes</a></li>
+            <li><a href="mestestes.html">mestestes</a></li>
+            <li><a href="html.html">html</a></li>
+            <li><a href="css.html">css</a></li>
+            <li><a href="js.html">js</a></li>
+            <li><a href="php.html">php</a></li>
+            <li><a href="python.html">python</a></li>
+            <li><a href="sql.html">sql</a></li>
+        </ul>
+    </header>
+
+<!-- début de ma page html -->
+
+    <section class="langage">
+        <div class="cadre">
+            <h1 class="titre1">HTML</h1>
+        <ol type="1" class="chapitrehtml">
+            <li><a href="#les bases">Les bases</a></li>
+            <li><a href="#image video et lien">image, vidéo et lien</a></li>
+            <li><a href="#autre media">autre média</a></li>
+            <li><a href="#paragraphe">paragraphe</a></li>
+            <li><a href="#style">style</a></li>
+            <li><a href="#commentaire">commentaire</a></li>
+            <li><a href="#htmlcss">HTML CSS</a></li>
+            <li><a href="#couleur">couleur</a></li>
+            <li><a href="#map area">map et area</a></li>
+            <li><a href="#picture">picture</a></li>
+            <li><a href="#tableau">tableau</a></li>
+            <li><a href="#liste">liste</a></li>
+            <li><a href="#bloc">bloc</a></li>
+            <li><a href="#class id">class et id</a></li>
+            <li><a href="#iframe">iframe</a></li>
+            <li><a href="#htmljs">HTML et JavaScript</a></li>
+            <li><a href="#formulaire">formulaire</a></li>
+            <li><a href="#input">input</a></li>
+            <li><a href="#autre">autre</a></li>
+            <li><a href="#graphique">graphique</a></li>
+        </ol>
+
+<!-- base html -->
+
+            <h2 class="titre2" id="les bases">Les bases</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>nom du site internet</title>
+    </head>
+    <body>
+        <h1>Titre</h1>
+        <h2>Titre</h2>
+        <h3>Titre</h3>
+        <h4>Titre</h4>
+        <h5>Titre</h5>
+        <h6>Titre</h6>
+        <p>mon texte<br>mon deuxième texte</p>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4>
+                    <h1>Titre</h1>
+                    <h2>Titre</h2>
+                    <h3>Titre</h3>
+                    <h4>Titre</h4>
+                    <h5>Titre</h5>
+                    <h6>Titre</h6>
+                    <p>mon texte<br>mon deuxième texte</p>
+                </div>
+            </div>
+            <p class="paragraphe">
+                l'extension d'un fichier html est .html<br>
+                <code>&#60balise&#62</code>: ceci est une balise<br>
+                <code>&#60!DOCTYPE html&#62</code>: document html<br>
+                <code>&#60html&#62</code>: contenue html<br>
+                <code>&#60head&#62</code>: contenue extérieure du site<br>
+                <code>&#60meta&#62</code>: utilisé pour spécifier le jeu de caractères, la description de la page, les mots-clés, l'auteur du document et les paramètres de la fenêtre d'affichage.<br>
+                <code>&#60title&#62</code>: nom du site<br>
+                <code>&#60body&#62</code>: contenue du corp de la page html.<br>
+                <code>&#60h1&#62</code>: à <code>&#60h6&#62</code>: Titre<br>
+                <code>&#60p&#62</code>: texte<br>
+                <code>&#60br&#62</code>: revient a la ligne
+            </p>
+
+<!-- image video et lien -->
+
+            <h2 id="image video et lien" class="titre2">image et lien</h2>
+
+<!-- image -->
+
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="image google">
+        <img src="html.png" alt="logo html">
+        <img src="image/firefox.png" alt="logo firefox">
+        <img src="file:///C:/Users/Johan/Desktop/mon%20site/image/chrome.png" alt="logo chrome" >
+        <img src="image/.png" alt="logo edge" width: 100px;>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <img src="https://www.google.fr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="image google">
+                    <img src="image/html.png" alt="logo html" style="width: 100px;">
+                    <img src="image/firefox.png" alt="logo firefox" style="width: 100px;">
+                    <img src="file:///C:/Users/Johan/Desktop/mon%20site/image/chrome.png" alt="logo chrome"  style="width: 100px;">
+                    <img src="image/.png" alt="logo edge" width: 100px;>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60img&#62</code>: insert une image<br>
+                <code>&#60video&#62</code>: insert une vidéo<br>
+                <code>src=""</code>: source de l'image<br>
+                <code>alt=""</code>: permet de donner une description de l'image si ce dernier n'apparaît pas à l'écran.
+            </p>
+
+<!-- lien -->
+
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <a href=https://www.google.fr>lien site google</a><br><br>
+        <a href=index.html>lien site local</a><br><br>
+        <a href=image/html.png>lien image local rechercher dans un dossier</a><br><br>
+        <a href=file:///C:/nomdossier/nomdossier/nomdossier/nomdossier/fichier.html>lien site local rechercher depuis le disque.</a><br><br>
+        <a href=index.html target="_blank">Ouvre le document dans une nouvelle fenêtre</a><br><br>
+        <a href=index.html target="_parent">Ouvre le document dans le cadre parent</a><br><br>
+        <a href=index.html target="_self">Ouvre le document dans la même fenêtre</a><br><br>
+        <a href=index.html target="_top">Ouvre le document dans tout le corps de la fenêtre</a><br><br>
+        <a href="https://www.google.fr" target="_blank"><img src="image/google.png"></a><br><br>
+        <a href="mailto:exemple@gmail.com">envoie un mail</a><br><br>
+        <button onclick="document.location='index.html'">boutton HTML</button><br><br>
+        <button onclick="document.location='index.html'" title="lien vers le fichier index.hyml">boutton HTML</button><br><br>
+        <p>lien vers le chapitre <a href="#image et lien">image et lien</a></p><br><br>
+        <p>lien vers le chapitre <a class="lienhtml1" href="mesprogrammes.html#boutton" target="_blank">d'un autre fichier</a></p>
+        <style>
+            
+a:link {
+  color: green;
+  text-decoration: none;
+}
+a:visited {
+  color: orange;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+a:active {
+  color: blue;
+  text-decoration: underline;
+}
+
+        </style>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <a class="lienhtml1" href=https://www.google.fr>lien site google</a><br><br>
+                    <a class="lienhtml1" href=index.html>lien site local</a><br><br>
+                    <a class="lienhtml1" href=image/html.png>lien image local rechercher dans un dossier</a><br><br>
+                    <a class="lienhtml1" href=file:///C:/Users/Johan/Desktop/mon%20site/informatique.html>lien site local rechercher depuis le disque.</a><br><br>
+                    <a class="lienhtml1" href=index.html target="_blank">Ouvre le document dans une nouvelle fenêtre</a><br><br>
+                    <a class="lienhtml1" href=index.html target="_parent">Ouvre le document dans le cadre parent</a><br><br>
+                    <a class="lienhtml1" href=index.html target="_self">Ouvre le document dans la même fenêtre</a><br><br>
+                    <a class="lienhtml1" href=index.html target="_top">Ouvre le document dans tout le corps de la fenêtre</a><br><br>
+                    <a class="lienhtml1" href="https://www.google.fr" target="_blank"><img src="image/google.png"></a><br><br>
+                    <a class="lienhtml1" href="mailto:exemple@gmail.com">evoie un mail</a><br><br>
+                    <button onclick="document.location='index.html'" title="lien vers le fichier index.hyml">boutton HTML</button><br><br>
+                    <p>lien vers le chapitre <a class="lienhtml1" href="#image et lien">image et lien</a></p><br><br>
+                    <p>lien vers le chapitre <a class="lienhtml1" href="mesprogrammes.html#boutton" target="_blank">d'un autre fichier</a></p>
+                    <style>
+
+.lienhtml1:link {
+  color: green;
+  text-decoration: none;
+}
+.lienhtml1:visited {
+  color: orange;
+  text-decoration: none;
+}
+.lienhtml1:hover {
+  color: red;
+  text-decoration: underline;
+}
+.lienhtml1:active {
+  color: blue;
+  text-decoration: underline;
+}
+
+                    </style>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60a&#62</code>: lien vers un autre site<br>
+                <code>href="":</code> La destination du lien<br>
+                <code>target="_self"</code>: Défaut. Ouvre le document dans la même fenêtre/onglet que celui où il a été cliqué<br>
+                <code>target="_blank"</code>: Ouvre le document dans une nouvelle fenêtre ou un nouvel onglet<br>
+                <code>target="_parent"</code>: Ouvre le document dans le cadre parent<br>
+                <code>target="_top"</code> Ouvre le document dans tout le corps de la fenêtre<br>
+                <code>mailto</code>: créer un lien qui ouvre le programme de messagerie<br>
+                <code>title=""</code>:spécifie des informations supplémentaires<br>
+                <code>a:link</code>: un lien normal non visité<br>
+                <code>a:visited</code>: un lien visité
+                <code>a:hover</code>: un lien lorsque l'utilisateur passe la souris dessus<br>
+                <code>a:active</code>: un lien lorsque l'on clique dessus<br>
+                <code>id=""</code>: attribut pour créer un signet
+            </p>
+
+<!-- autre media -->
+
+            <h2 class="titre2">autre média</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <video width="320" height="240" controls>
+            <source src="video/pandulenutwon.mp4" type="video/mp4">
+        </video>
+        <audio controls>
+            <source src="sons/Pharrell Williams - Happy (Video).mp3" type="audio/mp3">
+        </audio>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <video width="320" height="240" controls>
+                        <source src="video/pandulenutwon.mp4" type="video/mp4">
+                    </video>
+                    <audio controls>
+                        <source src="sons/Pharrell Williams - Happy (Video).mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60video&#62</code>: insert une vidéo<br>
+                <code>&#60audio&#62</code>: insert un fichier audio<br>
+                <code>autoplay</code>: lance la vidéo ou le sons automatiquement<br><br>
+                <code>muted</code>: met la vidéo ou le sons en muet<br><br>
+                <b style="color: red;">attention</b>: le lancement automatque de la vidéo ou du sons peu être bloqué par le naviguateur
+            </p>
+            
+<!-- paragraphe -->
+
+            <h2 id="paragraphe" class="titre2">paragraphe</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <pre>
+            texte numéro un
+
+            texte numéro deux
+
+            texte numéro trois
+        </pre>
+        <b>gras</b><br>
+        <strong>important</strong><br>
+        <i>italique</i><br>
+        <em>évidence</em><br>
+        <small>petit</small><br>
+        <mark>surligner</mark><br>
+        <del>rayer</del><br>
+        <ins>souligner</ins><br>
+        <p>H<sub>2</sub>O</p><br>
+        <p>10<sup>54</sup></p><br>
+        <blockquote cite="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">Wikipédia est un projet d’encyclopédie collective en ligne, universelle, multilingue et fonctionnant sur le principe du wiki. Ce projet vise à offrir un contenu librement réutilisable, objectif et vérifiable, que chacun peut modifier et améliorer.</blockquote><br>
+        <p>D'après Albert Einstein: <q>Tout le monde est un génie. Mais si vous jugez un poisson sur ses capacités à grimper à un arbre , il passera toute sa vie à croire qu'il est stupide.</q></p><br>
+        <p>C'est en août 1991 que langage <abbr title="Hypertext Markup Language">HTML</abbr> est sorti.</p><br>
+        <address>
+            Écrit par John Doe.<br>
+            Rendez-nous visite sur :<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+        <p>Disney a sorti le film <cite>Nemo</cite> le 26 novembre 2003</p><br>
+        <bdo dir="rtl">Je suis écris à l'envers.</bdo>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <pre>
+                        texte numéro un
+            
+                        texte numéro deux
+            
+                        texte numéro trois
+                    </pre>
+                    <b>gras</b><br>
+                    <strong>important</strong><br>
+                    <i>italique</i><br>
+                    <em>évidence</em><br>
+                    <small>petit</small><br>
+                    <mark>surligner</mark><br>
+                    <del>rayer</del><br>
+                    <ins>souligner</ins><br>
+                    <p>H<sub>2</sub>O</p><br>
+                    <p>10<sup>54</sup></p><br>
+                    <blockquote cite="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">Wikipédia est un projet d’encyclopédie collective en ligne, universelle, multilingue et fonctionnant sur le principe du wiki. Ce projet vise à offrir un contenu librement réutilisable, objectif et vérifiable, que chacun peut modifier et améliorer.</blockquote><br>
+                    <p>D'après Albert Einstein: <q>Tout le monde est un génie. Mais si vous jugez un poisson sur ses capacités à grimper à un arbre , il passera toute sa vie à croire qu'il est stupide.</q></p><br>
+                    <p>C'est en août 1991 que le langage <abbr title="Hypertext Markup Language">HTML</abbr> est sorti.</p><br>
+                    <address>
+                        Écrit par John Doe.<br>
+                        Rendez-nous visite sur :<br>
+                        Example.com<br>
+                        Box 564, Disneyland<br>
+                        USA
+                    </address>
+                    <p>Disney a sorti le film <cite>Nemo</cite> le 26 novembre 2003</p><br>
+                    <bdo dir="rtl">Je suis écris à l'envers.</bdo>
+                </div>
+            </div>
+            <p class="paragraphe">
+                
+                    <code>&#60pre&#62</code>: il préserve à la fois les espaces et les sauts de ligne<br>
+                    <code>&#60b&#62</code>: texte en gras<br>
+                    <code>&#60strong&#62</code>: texte important (gras)<br>
+                    <code>&#60i&#62</code>: texte italique<br>
+                    <code>&#60em&#62</code>: texte mis en évidence (italique)<br>
+                    <code>&#60small&#62</code>: texte petit<br>
+                    <code>&#60mark&#62</code>: texte surligner<br>
+                    <code>&#60del&#62</code>: texte barrer<br>
+                    <code>&#60ins&#62</code>: texte souligner<br>
+                    <code>&#60sub&#62</code>: texte en indice<br>
+                    <code>&#60sup&#62</code>: texte en exposant<br>
+                    <code>&#60blockquote&#62</code>: section qui est citée à partir d'une autre source<br>
+                    <code>&#60q&#62</code>: courte citation<br>
+                    <code>&#60abbr&#62</code>: définit une abréviation ou un acronyme<br>
+                    <code>&#60address&#62</code>: définit les coordonnées<br>
+                    <code>&#60cite&#62</code>: définit le titre d'une œuvre<br>
+                    <code>&#60bdo&#62</code>: change la direction du texte
+                
+            </p>
+
+<!-- style -->
+
+            <h2 id="style" class="titre2">style</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <p style="color: red;">rouge</p>
+        <p style="color: green;">vert</p>
+        <p style="font-size: 50px;">grand</p>
+        <p style="font-size: 10px;">petit</p>
+        <img src="image/html.png" alt="logo html" style="width: 100px; height: 200px;">
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <p style="color: red;">bonjour</p>
+                    <p style="color: green;">vert</p>
+                    <p style="font-size: 50px;">grand</p>
+                    <p style="font-size: 10px;">petit</p>
+                    <img src="image/html.png" alt="logo html" style="width: 100px; height: 200px;">
+                </div>
+            </div>
+            <p class="paragraphe">
+                style=":" utilisé pour ajouter des styles à un élément, couleur, la police, la taille, etc.<br>
+            </p>
+
+<!-- commentaire -->
+
+            <h2 id="commentaire" class="titre2">commentaire</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+<!-- ceci est un commentaire -->
+<!--
+    ceci est un commentaire
+    ceci est un deuxième commentaire
+-->
+    </body>
+</html>
+                    </xmp>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60!-- commentaire --&#62</code>
+            </p>
+
+<!-- coleurs -->
+
+            <h2 id="couleur" class="titre2">couleur</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <p style="background-color: tomato;">Tomate</p>
+        <p style="background-color: orange;">Orange</p>
+        <p style="background-color: DodgerBlue;">DodgerBlue</p>
+        <p style="background-color: MediumSeaGreen;">MediumSeaGreen</p>
+        <p style="background-color: lightgray;">Gris clair</p>
+        <p style="background-color: Violet;">Violet</p>
+        <p style="background-color: SlateBlue;">SlateBlue</p>
+        <p style="background-color: grey;">gris</p><br>
+        <p style="background-color: rgb(255, 0, 0);">rgb(255, 0, 0)</p>
+        <p style="background-color: rgb(255, 165, 0);">rgb(255, 165, 0)</p>
+        <p style="background-color: rgb(0, 0, 255);">rgb(0, 0, 255)</p>
+        <p style="background-color: rgb(0, 255, 0);">rgb(0, 255, 0)</p>
+        <p style="background-color: rgb(200, 200, 200);">rgb(200, 200, 200)</p>
+        <p style="background-color: rgb(255, 0, 255);">rgb(255, 0, 255)</p>
+        <p style="background-color: rgb(150, 0, 255);">rgb(150, 0, 255)</p><br>
+        <p style="background-color: rgba(255, 0, 0, 0.2);">rgba(255, 0, 0, 0.2)</p>
+        <p style="background-color: rgba(255, 0, 0, 0.5);">rgba(255, 0, 0, 0.5)</p>
+        <p style="background-color: rgba(255, 0, 0, 1);">rgba(255, 0, 0, 1)</p>
+        <p style="background-color: rgba(0, 255, 0, 0.2);">rgba(0, 255, 0, 0.2)</p>
+        <p style="background-color: rgba(0, 255, 0, 0.5);">rgba(0, 255, 0, 0.5)</p>
+        <p style="background-color: rgba(0, 255, 0, 1);">rgba(0, 255, 0, 1)</p>
+        <p style="background-color: rgba(0, 0, 255, 0.2);">rgba(0, 0, 255, 0.2)</p>
+        <p style="background-color: rgba(0, 0, 255, 0.5);">rgba(0, 0, 255, 0.5)</p>
+        <p style="background-color: rgba(0, 0, 255, 1);">rgba(0, 0, 255, 1)</p><br>
+        <p style="background-color:#ff0000;">#ff0000</p>
+        <p style="background-color:#0000ff;">#0000ff</p>
+        <p style="background-color:#3cb371;">#3cb371</p>
+        <p style="background-color:#ee82ee;">#ee82ee</p>
+        <p style="background-color:#ffa500;">#ffa500</p>
+        <p style="background-color:#6a5acd;">#6a5acd</p><br>
+        <p style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</p>
+        <p style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</p>
+        <p style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</p>
+        <p style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</p>
+        <p style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</p>
+        <p style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</p><br>
+        <p style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</p>
+        <p style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</p>
+        <p style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</p>
+        <p style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</p>
+        <p style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</p>
+        <p style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</p>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <p style="background-color: tomato;">Tomate</p>
+                    <p style="background-color: orange;">Orange</p>
+                    <p style="background-color: DodgerBlue;">DodgerBlue</p>
+                    <p style="background-color: MediumSeaGreen;">MediumSeaGreen</p>
+                    <p style="background-color: lightgray;">Gris clair</p>
+                    <p style="background-color: Violet;">Violet</p>
+                    <p style="background-color: SlateBlue;">SlateBlue</p>
+                    <p style="background-color: grey;">gris</p><br>
+                    <p style="background-color: rgb(255, 0, 0);">rgb(255, 0, 0)</p>
+                    <p style="background-color: rgb(255, 165, 0);">rgb(255, 165, 0)</p>
+                    <p style="background-color: rgb(0, 0, 255);">rgb(0, 0, 255)</p>
+                    <p style="background-color: rgb(0, 255, 0);">rgb(0, 255, 0)</p>
+                    <p style="background-color: rgb(200, 200, 200);">rgb(200, 200, 200)</p>
+                    <p style="background-color: rgb(255, 0, 255);">rgb(255, 0, 255)</p>
+                    <p style="background-color: rgb(150, 0, 255);">rgb(150, 0, 255)</p><br>
+                    <p style="background-color: rgba(255, 0, 0, 0.2);">rgba(255, 0, 0, 0.2)</p>
+                    <p style="background-color: rgba(255, 0, 0, 0.5);">rgba(255, 0, 0, 0.5)</p>
+                    <p style="background-color: rgba(255, 0, 0, 1);">rgba(255, 0, 0, 1)</p>
+                    <p style="background-color: rgba(0, 255, 0, 0.2);">rgba(0, 255, 0, 0.2)</p>
+                    <p style="background-color: rgba(0, 255, 0, 0.5);">rgba(0, 255, 0, 0.5)</p>
+                    <p style="background-color: rgba(0, 255, 0, 1);">rgba(0, 255, 0, 1)</p>
+                    <p style="background-color: rgba(0, 0, 255, 0.2);">rgba(0, 0, 255, 0.2)</p>
+                    <p style="background-color: rgba(0, 0, 255, 0.5);">rgba(0, 0, 255, 0.5)</p>
+                    <p style="background-color: rgba(0, 0, 255, 1);">rgba(0, 0, 255, 1)</p><br>
+                    <p style="background-color:#ff0000;">#ff0000</p>
+                    <p style="background-color:#0000ff;">#0000ff</p>
+                    <p style="background-color:#3cb371;">#3cb371</p>
+                    <p style="background-color:#ee82ee;">#ee82ee</p>
+                    <p style="background-color:#ffa500;">#ffa500</p>
+                    <p style="background-color:#6a5acd;">#6a5acd</p><br>
+                    <p style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</p>
+                    <p style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</p>
+                    <p style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</p>
+                    <p style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</p>
+                    <p style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</p>
+                    <p style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</p><br>
+                    <p style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</p>
+                    <p style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</p>
+                    <p style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</p>
+                    <p style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</p>
+                    <p style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</p>
+                    <p style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</p>
+                </div>
+            </div>
+            <p class="paragraphe">
+                rgb(red, green, blue) "0 à 255"<br>
+                rgba(red, green, blue, alpha) alpha = transparence "0 à 1"<br>
+                hex #rrggbb<br>
+                hsl ( teinte, saturation, luminosité) "(0 à 360, 0% à 100%, 0 à 100%")<br>
+                hsla ( teinte, saturation, luminosité, alpha) 
+            </p>
+
+<!-- link CSS -->
+
+            <h2 id="htmlcss" class="titre2">HTML CSS</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+        <link rel="stylesheet" href="/html/styles.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <p>texte rouge</p>
+        <style>
+            p{
+                color: red;
+            }
+        </style>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <p class="rougehtml1">texte rouge</p>
+                    <style>
+                        .blocscript .page .rougehtml1{
+                            color: red;
+                        }
+                    </style>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60link&#62</code>: lien vers un fichier externe<br>
+                <code>&#60style&#62</code>: balise CSS
+            </p>
+
+<!-- map et area -->
+
+            <h2 id="map area" class="titre2">map et area</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <img src="image/workplace.png" alt="Workplace" usemap="#workmap" width="400" height="379">
+        
+        <map name="workmap">
+          <area shape="rect" coords="34,44,270,350" alt="Computer" href="image/mac.jpg" target="_blank">
+          <!-- ordinateur -->
+          <area shape="rect" coords="290,172,333,250" alt="Phone" href="image/cellphone.jpg" target="_blank">
+          <!-- téléphone -->
+          <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="image/coffeehouse2.jpg" target="_blank">
+          <!-- café -->
+        </map>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <img src="image/workplace.png" alt="Workplace" usemap="#workmap" width="400" height="379">
+                    
+                    <map name="workmap">
+                      <area shape="rect" coords="34,44,270,350" alt="Computer" href="image/mac.jpg" target="_blank">
+                      <!-- ordinateur -->
+                      <area shape="rect" coords="290,172,333,250" alt="Phone" href="image/cellphone.jpg" target="_blank">
+                      <!-- téléphone -->
+                      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="image/coffeehouse2.jpg" target="_blank">
+                      <!-- café -->
+                    </map>
+                </div>
+            </div>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <img src="image/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        
+        <map name="workmap">
+          <area shape="rect" coords="34,44,270,350" alt="Computer" href="image/mac.jpg" target="_blank">
+          <area shape="rect" coords="290,172,333,250" alt="Phone" href="image/cellphone.jpg" target="_blank">
+          <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="image/coffeehouse2.jpg" target="_blank">
+        </map>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <img src="image/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+                    
+                    <map name="workmap">
+                      <area shape="rect" coords="34,44,270,350" alt="Computer" href="image/mac.jpg" target="_blank">
+                      <area shape="rect" coords="290,172,333,250" alt="Phone" href="image/cellphone.jpg" target="_blank">
+                      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="image/coffeehouse2.jpg" target="_blank">
+                    </map>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60map&#62</code>: définit une image cliquable<br>
+                <code>&#60area&#62</code>: définies les zones cliquable<br>
+                <code>rect</code>: définit une région rectangulaire<br>
+                <code>circle</code>: définit une région circulaire<br>
+                <code>poly</code>: définit une région polygonale<br>
+                <code>default</code>: définit toute la région
+            </p>
+
+<!-- picture -->
+
+            <h2 id="picture" class="titre2">picture</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <picture>
+            <source media="(min-width: 1600px)" srcset="image/js.png">
+            <source media="(min-width: 1200px)" srcset="image/css.png">
+            <img src="image/html.png" style="width: 200px;">
+        </picture>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <picture>
+                        <source media="(min-width: 1600px)" srcset="image/js.png">
+                        <source media="(min-width: 1200px)" srcset="image/css.png">
+                        <img src="image/html.png" style="width: 200px;">
+                    </picture>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60picture&#62</code>: vous permet d'afficher différentes images pour différents appareils ou tailles d'écran.<br>
+                <code>&#60source&#62</code>: chacun faisant référence à différentes images celon la taille de l'écran<br>
+                <code>media=""</code>: définit lorsque l'image n'est plus approprié<br>
+                <code>srcset</code>: définit l'image
+            </p>
+
+<!-- tableau -->
+
+            <h2 id="tableau" class="titre2">tableau</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+            
+table, th, td {
+  border:1px solid black;
+}
+.tableauhtml tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+</style>
+    </head>
+    <body>
+        <table>
+            <tr>
+              <th>fruits</th>
+              <th>légumes</th>
+              <th>boisson</th>
+            </tr>
+            <tr>
+              <td>pomme</td>
+              <td>poivron</td>
+              <td>eau</td>
+            </tr>
+            <tr>
+              <td>banane</td>
+              <td>carotte</td>
+              <td>sirop</td>
+            </tr>
+        </table><br>
+        <table style="border-collapse: collapse;">
+            <tr>
+              <th>fruits</th>
+              <th>légumes</th>
+              <th>boisson</th>
+            </tr>
+            <tr>
+              <td>pomme</td>
+              <td>poivron</td>
+              <td>eau</td>
+            </tr>
+            <tr>
+              <td>banane</td>
+              <td>carotte</td>
+              <td>sirop</td>
+            </tr>
+        </table><br>
+        <table class="tableauhtml" style="border-spacing: 15px;">
+            <colgroup>
+                <col span="2" style="background-color: #00ffff">
+            </colgroup>
+            <tr>
+              <th>fruits</th>
+              <th style="width: 200px;">légumes</th>
+              <th>boisson</th>
+            </tr>
+            <tr>
+              <td>pomme</td>
+              <td>poivron</td>
+              <td>eau</td>
+            </tr>
+            <tr>
+              <td>banane</td>
+              <td>carotte</td>
+              <td>sirop</td>
+            </tr>
+        </table>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <table class="tableauhtml">
+                        <tr>
+                          <th>fruits</th>
+                          <th>légumes</th>
+                          <th>boisson</th>
+                        </tr>
+                        <tr>
+                          <td>pomme</td>
+                          <td>poivron</td>
+                          <td>eau</td>
+                        </tr>
+                        <tr>
+                          <td>banane</td>
+                          <td>carotte</td>
+                          <td>sirop</td>
+                        </tr>
+                    </table><br>
+                    <table class="tableauhtml" style="border-collapse: collapse;">
+                        <tr>
+                          <th>fruits</th>
+                          <th>légumes</th>
+                          <th>boisson</th>
+                        </tr>
+                        <tr>
+                          <td>pomme</td>
+                          <td>poivron</td>
+                          <td>eau</td>
+                        </tr>
+                        <tr>
+                          <td>banane</td>
+                          <td>carotte</td>
+                          <td>sirop</td>
+                        </tr>
+                    </table><br>
+                    <table class="tableauhtml" style="border-spacing: 15px;">
+                        <tr>
+                          <th colspan="3">nourritures</th>
+                        </tr>
+                        <tr>
+                          <td style="width: 200px;">pomme</td>
+                          <td>poivron</td>
+                          <td>eau</td>
+                        </tr>
+                        <tr>
+                          <td>banane</td>
+                          <td>carotte</td>
+                          <td>sirop</td>
+                        </tr>
+                    </table><br>
+                    <table class="tableauhtml" style="border-collapse: collapse;">
+                    <colgroup>
+                        <col span="2" style="background-color: #00ffff">
+                    </colgroup>
+                        <tr>
+                          <th>fruits</th>
+                          <th>légumes</th>
+                          <th>boisson</th>
+                        </tr>
+                        <tr>
+                          <td>pomme</td>
+                          <td>poivron</td>
+                          <td>eau</td>
+                        </tr>
+                        <tr>
+                          <td>banane</td>
+                          <td>carotte</td>
+                          <td>sirop</td>
+                        </tr>
+                        <tr>
+                          <td>cerise</td>
+                          <td>courgette</td>
+                          <td>bière</td>
+                        </tr>
+                        <tr>
+                          <td>abricot</td>
+                          <td>choux</td>
+                          <td>jus de fruit</td>
+                        </tr>
+                        <tr>
+                          <td>pêche</td>
+                          <td>poirot</td>
+                          <td>gazeux</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60table&#62</code>: crée un tableau<br>
+                <code>&#60tr&#62</code>: crée une ligne<br>
+                <code>&#60td&#62</code>: crée une colonne<br>
+                <code>&#60th&#62</code>: entête du tableau<br>
+                <code>collapse</code>: supprime la séparation entre les cases<br>
+                <code>border-spacing</code>: taille espacement entre les cases<br>
+                <code>colspan</code>: s'étend sur plusieurs colonne<br>
+                <code>nth-child(even)</code>: une ligne ou colonne sur deux est concerner<br>
+                <code>&#60colgroup&#62</code>: conteneur pour les spécifications de colonne
+            </p>
+
+<!-- liste -->
+
+            <h2 id="liste" class="titre2">liste</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <ul>
+            <li>liste1</li>                        
+            <li>liste2</li>                        
+            <li>liste3</li>
+        </ul><br>
+        <ol>
+            <li>liste1</li>                        
+            <li>liste2</li>                        
+            <li>liste3</li>
+        </ol><br>
+        <dl>
+            <dt>liste1</dt>
+            <dd>liste1-1</dd>
+            <dd>liste1-2</dd>
+            <dd>liste1-3</dd>
+            <dt>liste2</dt>
+            <dd>liste2-1</dd>
+            <dd>liste2-2</dd>
+            <dd>liste2-3</dd>
+            <dt>liste3</dt>
+            <dd>liste3-1</dd>
+            <dd>liste3-2</dd>
+            <dd>liste3-3</dd>
+        </dl><br>
+        <ul style="list-style-type:disc;">
+            <li>liste1</li>                        
+            <li>liste2</li>                        
+            <li>liste3</li>
+        </ul><br>
+        <ul style="list-style-type:circle;">
+            <li>liste1</li>                        
+            <li>liste2</li>                        
+            <li>liste3</li>
+        </ul><br>
+        <ul style="list-style-type:square;">
+            <li>liste1</li>                        
+            <li>liste2</li>                        
+            <li>liste3</li>
+        </ul><br>
+        <ul style="list-style-type:none;">
+            <li>liste1</li>                        
+            <li>liste2</li>                        
+            <li>liste3</li>
+        </ul><br>
+        <ol type="1">
+            <li>liste1</li>                        
+            <li>liste2</li>                        
+            <li>liste3</li>
+        </ol><br>
+        <ol type="A">
+            <li>liste1</li>                        
+            <li>liste2</li>                        
+            <li>liste3</li>
+        </ol><br>
+        <ol type="a">
+            <li>liste1</li>                        
+            <li>liste2</li>                        
+            <li>liste3</li>
+        </ol><br>
+        <ol type="I">
+            <li>liste1</li>                        
+            <li>liste2</li>                        
+            <li>liste3</li>
+        </ol><br>
+        <ol type="i">
+            <li>liste1</li>                        
+            <li>liste2</li>                        
+            <li>liste3</li>
+        </ol><br>
+        <ol start="15" type="I">
+            <li>liste1</li>                        
+            <li>liste2</li>                        
+            <li>liste3</li>
+        </ol><br>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                        <ul>
+                            <li>liste1</li>                        
+                            <li>liste2</li>                        
+                            <li>liste3</li>
+                        </ul><br>
+                        <ol>
+                            <li>liste1</li>                        
+                            <li>liste2</li>                        
+                            <li>liste3</li>
+                        </ol><br>
+                        <dl>
+                            <dt>liste1</dt>
+                            <dd>liste1-1</dd>
+                            <dd>liste1-2</dd>
+                            <dd>liste1-3</dd>
+                            <dt>liste2</dt>
+                            <dd>liste2-1</dd>
+                            <dd>liste2-2</dd>
+                            <dd>liste2-3</dd>
+                            <dt>liste3</dt>
+                            <dd>liste3-1</dd>
+                            <dd>liste3-2</dd>
+                            <dd>liste3-3</dd>
+                        </dl><br>
+                        <ul style="list-style-type:disc;">
+                            <li>liste1</li>                        
+                            <li>liste2</li>                        
+                            <li>liste3</li>
+                        </ul><br>
+                        <ul style="list-style-type:circle;">
+                            <li>liste1</li>                        
+                            <li>liste2</li>                        
+                            <li>liste3</li>
+                        </ul><br>
+                        <ul style="list-style-type:square;">
+                            <li>liste1</li>                        
+                            <li>liste2</li>                        
+                            <li>liste3</li>
+                        </ul><br>
+                        <ul style="list-style-type:none;">
+                            <li>liste1</li>                        
+                            <li>liste2</li>                        
+                            <li>liste3</li>
+                        </ul><br>
+                        <ol type="1">
+                            <li>liste1</li>                        
+                            <li>liste2</li>                        
+                            <li>liste3</li>
+                        </ol><br>
+                        <ol type="A">
+                            <li>liste1</li>                        
+                            <li>liste2</li>                        
+                            <li>liste3</li>
+                        </ol><br>
+                        <ol type="a">
+                            <li>liste1</li>                        
+                            <li>liste2</li>                        
+                            <li>liste3</li>
+                        </ol><br>
+                        <ol type="I">
+                            <li>liste1</li>                        
+                            <li>liste2</li>                        
+                            <li>liste3</li>
+                        </ol><br>
+                        <ol type="i">
+                            <li>liste1</li>                        
+                            <li>liste2</li>                        
+                            <li>liste3</li>
+                        </ol><br>
+                        <ol start="15" type="I">
+                            <li>liste1</li>                        
+                            <li>liste2</li>                        
+                            <li>liste3</li>
+                        </ol><br>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60ul&#62</code>: définit une liste (non ordonnée)<br>
+                <code>&#60li&#62</code>: définit un élément de la liste<br>
+                <code>&#60ol&#62</code>: définit une liste (ordonnée)<br>
+                <code>&#60dl&#62</code>: définit une liste descriptif<br>
+                <code>&#60dt&#62</code>: définit un élément de la liste<br>
+                <code>&#60ol&#62</code>: définit la description de l'élément de la liste<br>
+                <code>list-style-type</code>: définit le marqueur de la liste (disc, circle, square, none)<br>
+                <code>&#60ol type=""&#62</code>: définit le marqueur de la liste (1, A, a, I, i)<br>
+                <code>&#60ol start=""&#62</code>: définit départ du marqueur de la liste<br>
+            </p>
+
+<!-- bloc -->
+
+            <h2 id="bloc" class="titre2">bloc</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div>
+            <p>chapitre sur les <span style="color: red;">blocs</span></p>            
+            <p>voici deux types de <span style="color: blue;">conteneurs</span></p>            
+            <p>les <span style="color: green;">&#60div&#62</span> et les <span style="color: pink;">&#60span&#62</span></p>
+        </div>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <div>
+                        <p>chapitre sur les <span style="color: red;">blocs</span></p>                        
+                        <p>voici deux types de <span style="color: blue;">conteneurs</span></p>                        
+                        <p>les <span style="color: green;">&#60div&#62</span> et les <span style="color: pink;">&#60span&#62</span></p>
+                    </div>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60div&#62</code>: est un conteneur de plusieurs éléments<br>
+                <code>&#60span&#62</code>: est un conteneur d'un élément
+            </p>
+
+<!-- class et id -->
+
+            <h2 id="class id" class="titre2">class et id</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+#cyan{
+    color: cyan;
+}
+        </style>
+    </head>
+    <body>
+        <p class="red">je suis dans la class red</p>
+        <p class="blue">je suis dans la class blue</p>
+        <p> j'appartiens à aucune class</p>
+        <p class="red">je suis dans la class red</p>
+        <p class="blue">je suis dans la class blue</p>
+        <p> j'appartiens à aucune class</p>
+        <p class="red">je suis dans la class red</p>
+        <p class="blue">je suis dans la class blue</p>
+        <p> j'appartiens à aucune class</p>
+        <p id="cyan">mon identifiant est cyan</p>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <p class="red">je suis dans la class red</p>
+                    <p class="blue">je suis dans la class blue</p>
+                    <p> j'appartiens à aucune class</p>
+                    <p class="red">je suis dans la class red</p>
+                    <p class="blue">je suis dans la class blue</p>
+                    <p> j'appartiens à aucune class</p>
+                    <p class="red">je suis dans la class red</p>
+                    <p class="blue">je suis dans la class blue</p>
+                    <p> j'appartiens à aucune class</p>
+                    <p id="cyan">mon identifiant est cyan</p>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>class=""</code>: utilisé pour pointer vers un nom de classe (créer un groupe)<br>
+                <code>id=""</code>: spécifie un identifiant unique
+            </p>
+
+<!-- iframe -->
+
+            <h2 id="iframe" class="titre2">iframe</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <iframe src="index.html" name="iframe_a" height="100%" width="50%" ></iframe>
+        <a href="index.html" target="iframe_a">lien home</a><br><br>
+        <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal" target="iframe_a">lien wikipédia</a>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <iframe src="index.html" name="iframe_a" height="100%" width="100%" ></iframe>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <a href="index.html" target="iframe_a">lien home</a><br><br>
+                <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal" target="iframe_a">lien wikipédia</a>
+            </p>
+            <p class="paragraphe">
+                <code>&#60iframe&#62</code>: utilisé pour pointer vers un nom de classe (créer un groupe)
+            </p>
+
+<!-- HTML et JavaScript -->
+
+            <h2 id="htmljs" class="titre2">HTML et JavaScript</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <p id="js"></p>
+        <script>
+            document.getElementById("js").innerHTML = "Bonjour!";
+        </script>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <p id="js"></p>
+                    <script>
+                        document.getElementById("js").innerHTML = "Bonjour!";
+                    </script>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60script&#62</code>: balise JavaScript
+            </p>
+
+<!-- formulaire -->
+
+            <h2 id="formulaire" class="titre2">formulaire</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <form>
+          <label for="htmlname">Prénom:</label><br>
+          <input type="text" id="fname" name="htmlname" value="John"><br>
+          <label for="htmlname">Nom:</label><br>
+          <input type="text" id="lname" name="htmlname" value="Doe">
+        </form><br><br>
+        <form>
+          <input type="checkbox" id="transport1" name="transport1" value="moto">
+          <label for="transport1">je conduis une moto</label><br>
+          <input type="checkbox" id="transport2" name="transport2" value="voiture">
+          <label for="transport2">je conduis une voiture</label><br>
+          <input type="checkbox" id="transport3" name="transport3" value="batteau">
+          <label for="transport3">je conduis une batteau</label><br><br>
+          <input type="submit" value="soumettre">
+        </form><br><br>
+        <form>
+            <input type="radio" id="html" name="langage" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="langage" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="langage" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </form><br>
+        <form>
+            <label for="voitures">choisie une voiture:</label>
+            <select id="voitures" name="voitures">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+        </form><br>
+        <form>
+            <label for="voitures">choisie une voiture:</label>
+            <select id="voitures" name="voitures" size="5">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+              <option value="audi">citroen</option>
+              <option value="audi">peugeot</option>
+            </select>
+        </form><br>
+        <form>
+            <label for="voitures">choisie une voiture:</label>
+            <select id="voitures" name="voitures" size="5" multiple>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+              <option value="audi">citroen</option>
+              <option value="audi">peugeot</option>
+            </select>
+        </form><br>
+        <form>
+            <textarea name="message" rows="10" cols="30">champ de saisie multiligne</textarea>
+        </form>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <form>
+                      <label for="htmlname">Prénom:</label><br>
+                      <input type="text" id="fname" name="htmlname" value="John"><br>
+                      <label for="htmlname">Nom:</label><br>
+                      <input type="text" id="lname" name="htmlname" value="Doe">
+                    </form><br><br>
+                    <form>
+                      <input type="checkbox" id="transport1" name="transport1" value="moto">
+                      <label for="transport1">je conduis une moto</label><br>
+                      <input type="checkbox" id="transport2" name="transport2" value="voiture">
+                      <label for="transport2">je conduis une voiture</label><br>
+                      <input type="checkbox" id="transport3" name="transport3" value="batteau">
+                      <label for="transport3">je conduis une batteau</label><br><br>
+                      <input type="submit" value="soumettre">
+                    </form><br><br>
+                    <form>
+                        <input type="radio" id="html" name="langage" value="HTML">
+                        <label for="html">HTML</label><br>
+                        <input type="radio" id="css" name="langage" value="CSS">
+                        <label for="css">CSS</label><br>
+                        <input type="radio" id="javascript" name="langage" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
+                    </form><br>
+                    <form>
+                        <label for="voitures">choisie une voiture:</label>
+                        <select id="voitures" name="voitures">
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="fiat">Fiat</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                    </form><br>
+                    <form>
+                        <label for="voitures">choisie une voiture:</label>
+                        <select id="voitures" name="voitures" size="5">
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="fiat">Fiat</option>
+                          <option value="audi">Audi</option>
+                          <option value="audi">citroen</option>
+                          <option value="audi">peugeot</option>
+                        </select>
+                    </form><br>
+                    <form>
+                        <label for="voitures">choisie une voiture:</label>
+                        <select id="voitures" name="voitures" size="5" multiple>
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="fiat">Fiat</option>
+                          <option value="audi">Audi</option>
+                          <option value="audi">citroen</option>
+                          <option value="audi">peugeot</option>
+                        </select>
+                    </form><br>
+                    <form>
+                        <textarea name="message" rows="10" cols="30">champ de saisie multiligne</textarea>
+                    </form>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60form&#62</code>: peut être affiché de plusieurs façons, selon l' type<br>
+                <code>type="texte"</code>: définit un champ de saisie<br>
+                <code>type="checkbox"</code>: définit un botton à choix multiples<br>
+                <code>type="texte"</code>: définit un boutton à choix unique<br>
+                <code>&#60select&#62</code>: crée une liste déroulente<br>
+                <code>&#60option&#62</code>: élément de la liste déroulente<br>
+                <code>size=""</code>: nombre d'élément de la liste visible<br>
+                <code>multiple</code>: choix multiple <kbd>ctr + clic gauche</kbd><br>
+                <code>&#60textarea&#62</code>: champ de saisie multiligne<br>
+                <code>rows=""</code>: nombre de ligne visible<br>
+                <code>cols=""</code>: nombre de collone visible<br>
+                <code>type="submit"</code>: soumet le formulaire<br><br>
+                <code>&#60form action=""&#62</code>: attribut définit l'action à effectuer lorsque le formulaire est soumis<br>
+                <code>&#60form action="" method=""&#62</code>: attribut spécifie la méthode HTTP à utiliser lors de la soumission des données du formulaire<br>
+                <code>&#60form action="" autocomplete=""&#62</code>: attribut spécifie si un formulaire doit avoir la saisie semi-automatique activée ou désactivée<br>
+                <code>&#60form action="" novalidate&#62</code>: attribut est un attribut booléen<br><br>
+                les éléments que peut contenir <code>&#60form&#62</code>:
+                <ul id="paragraphelistehtml">
+                    <li><code>&#60input&#62</code></li>
+                    <li><code>&#60label&#62</code></li>
+                    <li><code>&#60select&#62</code></li>
+                    <li><code>&#60textarea&#62</code></li>
+                    <li><code>&#60button&#62</code></li>
+                    <li><code>&#60fieldset&#62</code></li>
+                    <li><code>&#60legend&#62</code></li>
+                    <li><code>&#60datalist&#62</code></li>
+                    <li><code>&#60output&#62</code></li>
+                    <li><code>&#60option&#62</code></li>
+                    <li><code>&#60optgroup&#62</code></li>
+                </ul>
+            </p>
+<!-- input -->
+
+            <h2 id="input" class="titre2">input</h2>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <form>
+            <input type="texte" value="identifiant"><br>
+            <input type="password"><br>
+            <input type="submit"><br>
+            <input type="reset"><br><br>
+            <input name="radio" type="radio"><br>
+            <input name="radio" type="radio"><br>
+            <input name="radio" type="radio"><br><br>
+            <input name="checkbox" type="checkbox"><br>
+            <input name="checkbox" type="checkbox"><br>
+            <input name="checkbox" type="checkbox"><br><br>
+            <input type="button" onclick="alert('Bonjour à toi!')" value="clique sur moi"><br><br>
+            <input type="color"><br><br>
+            <input type="date"><br>
+            <label for="datemin">entrer une date après 2000-12-31:</label>
+            <input type="date" id="datemin" min="2000-12-31"><br><br>
+            <label for="datemax">entrer une date avant le 1980-12-31:</label>
+            <input type="date" id="datemax" max="1979-12-31"><br><br><br>
+            <input type="datetime-local"><br><br>
+            <input type="email"><br><br>
+            <input type="image" src="image/img_submit.gif"><br><br>
+            <input type="file"><br><br>
+            <input type="hidden" id="custId" name="custId" value="3487"><br><br>
+            <input type="month"><br><br>
+            <input type="number" min="-1000" max="1000"><br><br>
+            <label for="rangehtml">valeur entre 0 et 100</label>
+            <input type="range" min="0" max="100" name="rangehtml"><br><br>
+            <label for="search">recherche</label>
+            <input type="search" name="search"><br><br>
+            <input type="tel" placeholder="12 34 56 78 90" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"><br><br>
+            <input type="time"><br><br>
+            <input type="url"><br><br>
+            <input type="week">
+        </form>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <form>
+                        <input type="texte" value="identifiant"><br>
+                        <input type="password"><br>
+                        <input type="submit"><br>
+                        <input type="reset"><br><br>
+                        <input name="radio" type="radio"><br>
+                        <input name="radio" type="radio"><br>
+                        <input name="radio" type="radio"><br><br>
+                        <input name="checkbox" type="checkbox"><br>
+                        <input name="checkbox" type="checkbox"><br>
+                        <input name="checkbox" type="checkbox"><br><br>
+                        <input type="button" onclick="alert('Bonjour à toi!')" value="clique sur moi"><br><br>
+                        <input type="color"><br><br>
+                        <input type="date"><br>
+                        <label for="datemin">entrer une date après 2000-12-31:</label>
+                        <input type="date" id="datemin" min="2000-12-31"><br><br>
+                        <label for="datemax">entrer une date avant le 1980-12-31:</label>
+                        <input type="date" id="datemax" max="1979-12-31"><br><br><br>
+                        <input type="datetime-local"><br><br>
+                        <input type="email"><br><br>
+                        <input type="image" src="image/img_submit.gif"><br><br>
+                        <input type="file"><br><br>
+                        <input type="hidden" id="custId" name="custId" value="3487"><br><br>
+                        <input type="month"><br><br>
+                        <input type="number" min="-1000" max="1000"><br><br>
+                        <label for="rangehtml">valeur entre 0 et 100</label>
+                        <input type="range" min="0" max="100" name="rangehtml"><br><br>
+                        <label for="search">recherche</label>
+                        <input type="search" name="search"><br><br>
+                        <input type="tel" placeholder="12 34 56 78 90" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"><br><br>
+                        <input type="time"><br><br>
+                        <input type="url"><br><br>
+                        <input type="week">
+                    </form>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60input type="button"&#62</code>: définit un bouton<br>
+                <code>&#60input type="checkbox"&#62</code>: définit une case à cocherv<br>
+                <code>&#60input type="color"&#62</code>: est utilisé pour les champs de saisie qui doivent contenir une couleur<br>
+                <code>&#60input type="date"&#62</code>: est utilisé pour les champs de saisie qui doivent contenir une date<br>
+                <code>&#60input type="datetime-local"&#62</code>: spécifie un champ de saisie de date et d'heure, sans fuseau horaire<br>
+                <code>&#60input type="email"&#62</code>: est utilisé pour les champs de saisie qui doivent contenir une adresse e-mail<br>
+                <code>&#60input type="file"&#62</code>: définit un champ de sélection de fichier et un bouton "Parcourir" pour les téléchargements de fichiers<br>
+                <code>&#60input type="hidden"&#62</code>: définit un champ de saisie masqué (invisible pour un utilisateur)<br>
+                <code>&#60input type="image"&#62</code>: définit une image comme un bouton d'envoi<br>
+                <code>&#60input type="month"&#62</code>: permet à l'utilisateur de sélectionner un mois et une année<br>
+                <code>&#60input type="number"&#62</code>: définit un champ de saisie numérique<br>
+                <code>&#60input type="password"&#62</code>: définit un champ mot de passe<br>
+                <code>&#60input type="radio"&#62</code>: définit un bouton radio<br>
+                <code>&#60input type="range"&#62</code>: définit un contrôle permettant de saisir un nombre dont la valeur exacte n'a pas d'importance (comme un curseur)<br>
+                <code>&#60input type="reset"&#62</code>: définit un bouton de réinitialisation qui réinitialisera toutes les valeurs du formulaire à leurs valeurs par défaut<br>
+                <code>&#60input type="search"&#62</code>: est utilisé pour les champs de recherche<br>
+                <code>&#60input type="submit"&#62</code>: définit un bouton pour soumettre des données de formulaire à un gestionnaire de formulaire<br>
+                <code>&#60input type="tel"&#62</code>: est utilisé pour les champs de saisie qui doivent contenir un numéro de téléphone<br>
+                <code>&#60input type="text"&#62</code>: définit un champ de saisie de texte sur une seule ligne<br>
+                <code>&#60input type="time"&#62</code>: permet à l'utilisateur de sélectionner une heure (pas de fuseau horaire)<br>
+                <code>&#60input type="url"&#62</code>: est utilisé pour les champs de saisie qui doivent contenir une adresse URL<br>
+                <code>&#60input type="week"&#62</code>: permet à l'utilisateur de sélectionner une semaine et une année<br>
+            </p>
+         
+<!-- autre -->
+<!-- icone -->
+
+            <h2 id="autre" class="titre2">autre</h2>
+            <h3 class="titre3">îcone</h3>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    </head>
+    <body>
+    </body>
+</html>
+                    </xmp>
+                </div>
+            </div>
+
+<!-- mise en page -->
+
+            <h3 class="titre3">mise en page</h3>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <header></header>
+        <nav></nav>
+        <section></section>
+        <article></article>
+        <aside></aside>
+        <footer></footer>
+        <details></details>
+        <summary></summary>
+    </body>
+</html>
+                    </xmp>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60header&#62</code>: Définit un en-tête pour un document ou une section<br>
+                <code>&#60nav&#62</code>: Définit un ensemble de liens de navigation<br>
+                <code>&#60section&#62</code>: Définit une section dans un document<br>
+                <code>&#60article&#62</code>: Définit un contenu indépendant et autonome<br>
+                <code>&#60aside&#62</code>: Définit le contenu en dehors du contenu (comme une barre latérale)<br>
+                <code>&#60footer&#62</code>: Définit un pied de page pour un document ou une section<br>
+                <code>&#60details&#62</code>: Définit des détails supplémentaires que l'utilisateur peut ouvrir et fermer à la demande<br>
+                <code>&#60summary&#62</code>: Définit un titre pour l' <code>&#60details&#62</code> élément
+            </p>
+
+<!-- code -->
+
+            <h3 class="titre3">code</h3>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <p>inspecté la page <kbd>f12</kbd></p><br><br>
+        <p>Message de mon ordinateur :<br><br>
+        <samp>Fichier introuvable.<br>
+        Appuyez sur F1 pour continuer</samp></p><br><br>
+        <code>
+            var x = 7;
+            var x = 8;
+            var z = x + y;
+        </code><br><br>
+        <p>l'aire du triangle est: 1/2 x <var>b</var> x <var>h</var>, où <var>b</var> est la base et <var>h</var> la hauteur verticale.</p>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <p>inspecté la page <kbd>f12</kbd></p><br><br>
+                    <p>Message de mon ordinateur :<br><br>
+                    <samp>Fichier introuvable.<br>
+                    Appuyez sur F1 pour continuer</samp></p><br><br>
+                    <pre>
+                    <code>
+                        var x = 7;
+                        var x = 8;
+                        var z = x + y;
+                    </code><br><br>
+                </pre>
+                    <p>l'aire du triangle est: 1/2 x <var>b</var> x <var>h</var>, où <var>b</var> est la base et <var>h</var> la hauteur verticale.</p>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60kbd&#62</code>: élément définit la saisie au clavier<br>
+                <code>&#60samp&#62</code>: élément définit un exemple de sortie d'un programme informatique<br>
+                <code>&#60code&#62</code>: élément définit un morceau de code informatique<br>
+                <code>&#60var&#62</code>: élément définit une variable en programmation ou dans une expression mathématique<br>
+                <code>&#60pre&#62</code>: élément définit le texte préformaté
+            </p>
+
+<!-- emoji -->
+
+            <h3 class="titre3">emoji</h3>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <p>&#128512<br>
+        &#128516<br>
+        &#128525<br>
+        &#128151</p>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <p>&#128512<br>
+                    &#128516<br>
+                    &#128525<br>
+                    &#128151</p>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60meta charset="utf-8&#62</code>: est obligatoire pour les caractères spéciaux
+            </p>
+
+<!-- graphique -->
+
+
+            <h3 id="graphique" class="titre3">graphique</h3>
+           
+<!-- canvas --> 
+ 
+            
+            <h3 class="titre3">canvas</h3>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <canvas width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <canvas id="cercle" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <canvas id="bonjour" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <canvas id="bonjour2" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <canvas id="degrade" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <canvas id="degrade2" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <canvas id="degraderond" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <canvas id="degraderond2" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+
+            var c = document.getElementById("cercle");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+
+            var c = document.getElementById("bonjour");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.fillText("boujour", 10, 50);
+
+            var c = document.getElementById("bonjour2");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.strokeText("boujour", 10, 50);
+
+            var c = document.getElementById("degrade");
+            var ctx = c.getContext("2d");
+            // Create gradient
+            var grd = ctx.createLinearGradient(0, 0, 200, 0);
+            grd.addColorStop(0, "red");
+            grd.addColorStop(1, "blue");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10, 10, 150, 80);
+            
+            var c = document.getElementById("degrade2");
+            var ctx = c.getContext("2d");
+            // Create gradient
+            var grd = ctx.createLinearGradient(0, 0, 200, 0);
+            grd.addColorStop(0, "red");
+            grd.addColorStop(0.5, "white");
+            grd.addColorStop(1, "blue");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(0, 0, 200, 100);
+            
+            var c = document.getElementById("degraderond");
+            var ctx = c.getContext("2d");
+            // Create gradient
+            var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+            grd.addColorStop(0, "green");
+            grd.addColorStop(1, "white");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10, 10, 150, 80);
+            
+            var c = document.getElementById("degraderond2");
+            var ctx = c.getContext("2d");
+            // Create gradient
+            var grd = ctx.createRadialGradient(100, 50, 0, 100, 50, 100);
+            grd.addColorStop(0, "red");
+            grd.addColorStop(1, "yellow");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(0, 0, 200, 100);
+        </script>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <canvas width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <canvas id="cercle" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <canvas id="bonjour" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <canvas id="bonjour2" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <canvas id="degrade" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <canvas id="degrade2" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <canvas id="degraderond" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <canvas id="degraderond2" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                    <script>
+                        var c = document.getElementById("myCanvas");
+                        var ctx = c.getContext("2d");
+                        ctx.moveTo(0,0);
+                        ctx.lineTo(200,100);
+                        ctx.stroke();
+
+                        var c = document.getElementById("cercle");
+                        var ctx = c.getContext("2d");
+                        ctx.beginPath();
+                        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+                        ctx.stroke();
+
+                        var c = document.getElementById("bonjour");
+                        var ctx = c.getContext("2d");
+                        ctx.font = "30px Arial";
+                        ctx.fillText("boujour", 10, 50);
+
+                        var c = document.getElementById("bonjour2");
+                        var ctx = c.getContext("2d");
+                        ctx.font = "30px Arial";
+                        ctx.strokeText("boujour", 10, 50);
+
+                        var c = document.getElementById("degrade");
+                        var ctx = c.getContext("2d");
+                        // Create gradient
+                        var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                        grd.addColorStop(0, "red");
+                        grd.addColorStop(1, "blue");
+                        // Fill with gradient
+                        ctx.fillStyle = grd;
+                        ctx.fillRect(10, 10, 150, 80);
+                        
+                        var c = document.getElementById("degrade2");
+                        var ctx = c.getContext("2d");
+                        // Create gradient
+                        var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                        grd.addColorStop(0, "red");
+                        grd.addColorStop(0.5, "white");
+                        grd.addColorStop(1, "blue");
+                        // Fill with gradient
+                        ctx.fillStyle = grd;
+                        ctx.fillRect(0, 0, 200, 100);
+                        
+                        var c = document.getElementById("degraderond");
+                        var ctx = c.getContext("2d");
+                        // Create gradient
+                        var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+                        grd.addColorStop(0, "green");
+                        grd.addColorStop(1, "white");
+                        // Fill with gradient
+                        ctx.fillStyle = grd;
+                        ctx.fillRect(10, 10, 150, 80);
+                        
+                        var c = document.getElementById("degraderond2");
+                        var ctx = c.getContext("2d");
+                        // Create gradient
+                        var grd = ctx.createRadialGradient(100, 50, 0, 100, 50, 100);
+                        grd.addColorStop(0, "red");
+                        grd.addColorStop(1, "yellow");
+                        // Fill with gradient
+                        ctx.fillStyle = grd;
+                        ctx.fillRect(0, 0, 200, 100);
+                    </script>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60canvas&#62</code>: est utilisé pour dessiner des graphiques sur une page Web
+            </p>
+
+<!-- svg --> 
+ 
+            
+            <h3 class="titre3">svg</h3>
+            <div class="blocscript">
+                <div class="script">
+                    <h4 class="titre4">code html</h4>
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4><br>
+                    <svg width="100" height="100">
+                      <circle cx="50" cy="50" r="40" stroke="pink" stroke-width="8" fill="violet" />
+                    </svg>
+                    <svg width="400" height="200">
+                        <rect width="400" height="200" style="fill:red;stroke-width:10;stroke:rgb(0,0,0)" />
+                    </svg>
+                    <svg width="180" height="180">
+                        <rect x="15" y="15" rx="40" ry="40" width="150" height="150"
+                        style="fill:yellow;stroke:red;stroke-width:5;" />
+                    </svg>
+                    <svg width="200" height="200">
+                        <polygon points="100,10 40,198 190,78 10,78 160,198"
+                        style="fill:cyan;stroke:black;stroke-width:5;fill-rule:evenodd;" />
+                    </svg>
+                    <svg height="130" width="500">
+                        <defs>
+                          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                          </linearGradient>
+                        </defs>
+                        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+                    </svg>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60svg&#62</code>: conteneur pour les graphiques SVG
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>

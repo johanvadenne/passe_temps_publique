@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wolf</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function css_1(){
+            document.getElementById("html_1").style.visibility = "hidden";
+            document.getElementById("css_1").style.visibility = "visible";
+            document.getElementById("bouttonhtml_1").style.visibility = "visible";
+            document.getElementById("bouttonccs_1").style.visibility = "visible";
+        }
+        function html_1(){
+            document.getElementById("html_1").style.visibility = "visible";
+            document.getElementById("css_1").style.visibility = "hidden";
+        }
+
+
+        function css_2(){
+            document.getElementById("html_2").style.visibility = "hidden";
+            document.getElementById("css_2").style.visibility = "visible";
+            document.getElementById("bouttonhtml_2").style.visibility = "visible";
+            document.getElementById("bouttonccs_2").style.visibility = "visible";
+        }
+        function html_2(){
+            document.getElementById("html_2").style.visibility = "visible";
+            document.getElementById("css_2").style.visibility = "hidden";
+        }
+
+
+        function css_3(){
+            document.getElementById("html_3").style.visibility = "hidden";
+            document.getElementById("css_3").style.visibility = "visible";
+            document.getElementById("bouttonhtml_3").style.visibility = "visible";
+            document.getElementById("bouttonccs_3").style.visibility = "visible";
+        }
+        function html_3(){
+            document.getElementById("html_3").style.visibility = "visible";
+            document.getElementById("css_3").style.visibility = "hidden";
+        }
+    </script>
+</head>
+
+<body id="informatique">
+    <header>
+        <a href="index.html"><img src="image/Wolf.jpg" alt="logo loup"></a>
+        <ul>
+            <li><a href="mesprogrammes.html">mesprogrammes</a></li>
+            <li><a href="mestestes.html">mestestes</a></li>
+            <li><a href="html.html">html</a></li>
+            <li><a href="css.html">css</a></li>
+            <li><a href="js.html">js</a></li>
+            <li><a href="php.html">php</a></li>
+            <li><a href="python.html">python</a></li>
+            <li><a href="sql.html">sql</a></li>
+        </ul>
+    </header>
+
+    
+<!-- début de ma page html -->
+
+    <section class="langage">
+        <div class="cadre">
+            <h1 class="titre1">CSS</h1>
+
+<!-- les bases -->
+
+            <h2 class="titre2">Les bases</h2>
+            <div class="blocscript">
+                <div id="html_1" class="script">
+                    <input type="button" class="titre4-html" value="HTML" id="bouttonhtml_1" onclick="html_1()">
+                    <input type="button" class="titre4-css" value="CSS" id="bouttonccs_1" onclick="css_1()">
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <p>Bonjour, je suis de couleur rouge!</p>
+        <p>Bonjour, je suis de couleur rouge!</p>
+        <p>Bonjour, je suis de couleur rouge!</p>
+        <p class="green">Bonjour, je suis de couleur vert!</p>
+        <p class="green">Bonjour, je suis de couleur vert!</p>
+        <p id="violet">Bonjour, je suis de couleur violet!</p>
+    </body>
+</html>
+                    </xmp>
+                </div>
+                <div id="css_1" class="script-css">
+                    <xmp>
+*{
+    color: red;
+    text-align: center;
+}
+.green
+{
+    color: green;
+}
+#violet
+{
+    color: violet;
+}
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4>
+                    <p class="red" style="text-align: center;">Bonjour, je suis de couleur rouge!</p>              
+                    <p class="red" style="text-align: center;">Bonjour, je suis de couleur rouge!</p>              
+                    <p class="red" style="text-align: center;">Bonjour, je suis de couleur rouge!</p>              
+                    <p class="green" style="text-align: center;">Bonjour, je suis de couleur vert!</p>
+                    <p class="green" style="text-align: center;">Bonjour, je suis de couleur vert!</p>
+                    <p id="violet" style="text-align: center;">Bonjour, je suis de couleur violet!</p>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60link rel="stylesheet" type="text/css" href="style.css"&#62</code>: permet de relié un fichier css à un fichier html<br>
+                <code class="css">color</code>: permet de changer de couleur le texte (<code class="css">couleur</code>, <code class="css">rgb</code>, <code class="css">rgba</code>, <code class="css">hex</code>, <code class="css">hls</code>, <code class="css">hlsa</code>)<br>
+                <code class="css">text-aligne</code>: permet de positionner le texte, <code class="css">center</code> centre le texte<br>
+                <code>class=""</code>: utilisé pour pointer vers un nom de classe (créer un groupe), <code class="css">.green</code><br>
+                <code>id=""</code>: spécifie un identifiant unique, <code class="css">#violet</code><br>
+                <code class="css">*</code>: selection tous les éléments
+            </p>
+
+<!-- commentaire -->
+
+            <h2 class="titre2">Commentaire</h2>
+            <div class="blocscript">
+                <div id="html_2" class="script">
+                    <input type="button" class="titre4-html" value="HTML" id="bouttonhtml_2" onclick="html_2()">
+                    <input type="button" class="titre4-css" value="CSS" id="bouttonccs_2" onclick="css_2()">
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- texte -->
+        <p>Bonjour, je suis de couleur rouge!</p>
+    </body>
+</html>
+                    </xmp>
+                </div>
+
+                <div id="css_2" class="script-css">
+                    <xmp>
+/* couleur */
+*{
+    color: red;
+    text-align: center;
+}
+                    </xmp>
+                </div>
+                <div class="page">
+                    <h4 class="titre4">page html</h4>
+                    <p class="red">Bonjour, je suis de couleur rouge!</p>
+                </div>
+            </div>
+            <p class="paragraphe">
+                <code>&#60-- commentaire --&#62</code>: commentaire html<br>
+                <code>/* commentaire */</code>: commentaire css
+            </p>
+
+<!-- background -->
+
+            <h2 class="titre2">Background</h2>
+            <div class="blocscript">
+                <div id="html_3" class="script">
+                    <input type="button" class="titre4-html" value="HTML" id="bouttonhtml_3" onclick="html_3()">
+                    <input type="button" class="titre4-css" value="CSS" id="bouttonccs_3" onclick="css_3()">
+                    <xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <p>Bonjour, j'ai un fond rouge!</p>
+    </body>
+</html>
+                    </xmp>
+                </div>
+
+                <div id="css_3" class="script-css">
+                    <xmp>
+body{
+    background-color: lightblue;
+    background-image: url('image/css.png');
+}
+p{
+    background-color: red;
+}
+                    </xmp>
+                </div>
+                <div class="page_1">
+                    <h4 class="titre4">page html</h4>
+                    <p style="background: red;">Bonjour, j'ai un fond rouge!</p>
+                </div>
+            </div>
+            <p class="paragraphe">
+            </p>
+        </div>
+    </section>
+</body>
