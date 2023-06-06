@@ -1,0 +1,27 @@
+IP: 127.0.0.1
+hote: 127.0.0.1
+
+Port 1: 	 Fermé 	 0:00:00.106660
+Port 2: 	 Fermé 	 0:00:00.108613
+Port 3: 	 Fermé 	 0:00:00.107893
+Port 4: 	 Fermé 	 0:00:00.109152
+Port 5: 	 Fermé 	 0:00:00.109872
+Port 6: 	 Fermé 	 0:00:00.110089
+Port 7: 	 Fermé 	 0:00:00.111345
+Port 8: 	 Fermé 	 0:00:00.110475
+Port 9: 	 Fermé 	 0:00:00.109008
+Port 10: 	 Fermé 	 0:00:00.108993
+Port 11: 	 Fermé 	 0:00:00.108027
+Port 12: 	 Fermé 	 0:00:00.110032
+Port 13: 	 Fermé 	 0:00:00.109998
+Port 14: 	 Fermé 	 0:00:00.107992
+Port 15: 	 Fermé 	 0:00:00.110001
+Port 16: 	 Fermé 	 0:00:00.108014
+Port 17: 	 Fermé 	 0:00:00.110560
+Port 18: 	 Fermé 	 0:00:00.108647
+Port 19: 	 Fermé 	 0:00:00.107165
+
+scan 127.0.0.1 teminé
+    duréé d'analyse 0:00:02.074420
+    port ouvert 0
+    port fermer 19

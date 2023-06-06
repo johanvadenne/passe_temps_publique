@@ -1,0 +1,12 @@
+IP: google.fr
+hote: 216.58.215.35
+
+Port 78: 	 Fermé 	 0:00:00.502024
+Port 79: 	 Fermé 	 0:00:00.514167
+Port 80: 	 Ouvert 	 0:00:00.061806
+Port 81: 	 Fermé 	 0:00:00.515048
+
+scan google.fr teminé
+duréé d'analyse 0:00:01.596012
+port ouvert 1
+port fermer 3

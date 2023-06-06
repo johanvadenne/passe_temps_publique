@@ -1,0 +1,42 @@
+
+
+Algo
+GRAPH 35+ Manager PLUS (30 Day Trial).msi
+GRAPH85emulator.exe
+SIGMA_BTS_SIO_2015_OK.pdf
+A1 P197.py
+A1 P202.py
+a1p223.py
+A1P232.py
+A2 bis P206.py
+A2 P197.py
+A2 P202.py
+A2 P206.py
+A2 P216.py
+A2 p223.py
+A3 P202.py
+A3 P206.py
+A3 P216.py
+A3 p223-224.py
+A4 p224.py
+A5 p208.py
+A5 P224.py
+A6 P208.py
+A7 P208.py
+A8 P208.py
+Ex1bis p200.py
+ex28 p28 1).py
+ex28 p28 2).py
+exemple 1 p213.py
+Exemple structure conditionnelle.py
+johanVadenne.py
+Memento Python.docx
+module1.py
+module23.py
+module3.py
+PortablePython_3.2.5.1.exe
+recursivité_pieces.py
+somme recurcive.py
+TP 1) A3 P203.py
+Tp p197.py
+TP1 p235.py

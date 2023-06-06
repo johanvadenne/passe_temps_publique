@@ -1,0 +1,34 @@
+module python à installer:
+ouvrez votre terminal et écrivez ceci:
+
+python -m pip install rich
+
+et
+
+python -m rich
+
+
+si cela à bien fonctionné lancé le fichier "Recherche devoir.bat - Raccourci"
+si le prof n'a pas rajouté de devoir ceci devrait s'afficher:
+
+Mon repertoire: C:/Users/Johan/Desktop/code/python/derniere modification de fichier/2.2/recherche devoir PT
+connection serveur NAS réussie
+connection dossier AP réussie
+connection dossier BLOC 1 réussie
+connection dossier BLOC 3 réussie
+Le fichier [SLAM1] AP CahierDeTexte.md est à jour
+Le fichier [SLAM1] B1 CahierDeTexte.md est à jour
+Le fichier [SLAM1] B3 CahierDeTexte.md est à jour
+appuyer sur entée pour quitté l'invite de commande
+
+si cela  s'affiche c'est que sa fonctionne bien.
+
+
+les trois fichiers du prof sont enregistré en local dans le dossier "copy fichier prof"
+les devoirs que le prof rajoute sont enregistré dans le dossier "devoir"
+et le reste dans programme
+
+pour vérifié que le programme marche bien supprimé un morceau de texte d'un des trois fichiers du prof.
+enregistré et lancé le programme.
+normalement le fichier se mettra à jour et la partie qui est modifié se sauvegarde 
+dans un nouveau fichier dans le dossier "devoir"

@@ -1,0 +1,48 @@
+IP: 127.0.0.1
+hote: 127.0.0.1
+
+Port 50: 	 Fermé 	 0:00:00.104064
+Port 51: 	 Fermé 	 0:00:00.108237
+Port 52: 	 Fermé 	 0:00:00.107998
+Port 53: 	 Fermé 	 0:00:00.109053
+Port 54: 	 Fermé 	 0:00:00.108021
+Port 55: 	 Fermé 	 0:00:00.107675
+Port 56: 	 Fermé 	 0:00:00.108360
+Port 57: 	 Fermé 	 0:00:00.109002
+Port 58: 	 Fermé 	 0:00:00.111592
+Port 59: 	 Fermé 	 0:00:00.108056
+Port 60: 	 Fermé 	 0:00:00.109273
+Port 61: 	 Fermé 	 0:00:00.107096
+Port 62: 	 Fermé 	 0:00:00.107896
+Port 63: 	 Fermé 	 0:00:00.108162
+Port 64: 	 Fermé 	 0:00:00.110030
+Port 65: 	 Fermé 	 0:00:00.111779
+Port 66: 	 Fermé 	 0:00:00.107186
+Port 67: 	 Fermé 	 0:00:00.107720
+Port 68: 	 Fermé 	 0:00:00.110051
+Port 69: 	 Fermé 	 0:00:00.109992
+Port 70: 	 Fermé 	 0:00:00.109251
+Port 71: 	 Fermé 	 0:00:00.107092
+Port 72: 	 Fermé 	 0:00:00.108935
+Port 73: 	 Fermé 	 0:00:00.110005
+Port 74: 	 Fermé 	 0:00:00.109779
+Port 75: 	 Fermé 	 0:00:00.108211
+Port 76: 	 Fermé 	 0:00:00.108979
+Port 77: 	 Fermé 	 0:00:00.110131
+Port 78: 	 Fermé 	 0:00:00.108460
+Port 79: 	 Fermé 	 0:00:00.108289
+Port 80: 	 Fermé 	 0:00:00.109035
+Port 81: 	 Fermé 	 0:00:00.107118
+Port 82: 	 Fermé 	 0:00:00.109028
+Port 83: 	 Fermé 	 0:00:00.108983
+Port 84: 	 Fermé 	 0:00:00.109023
+Port 85: 	 Fermé 	 0:00:00.110001
+Port 86: 	 Fermé 	 0:00:00.109252
+Port 87: 	 Fermé 	 0:00:00.109492
+Port 88: 	 Fermé 	 0:00:00.108506
+Port 89: 	 Fermé 	 0:00:00.107678
+
+scan 127.0.0.1 teminé
+    duréé d'analyse 0:00:04.360244
+    port ouvert 0
+    port fermer 40

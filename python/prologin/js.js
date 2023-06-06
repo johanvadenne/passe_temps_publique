@@ -1,0 +1,2 @@
+
+(function pikalul(){return'('+pikalul+')()';})()

@@ -1,0 +1,17 @@
+IP: amazon.com
+hote: 54.239.28.85
+
+Port 1: 	 Fermé 	 0:00:00.507997
+Port 2: 	 Fermé 	 0:00:00.501101
+Port 3: 	 Fermé 	 0:00:00.502899
+Port 4: 	 Fermé 	 0:00:00.501012
+Port 5: 	 Fermé 	 0:00:00.503858
+Port 6: 	 Fermé 	 0:00:00.503181
+Port 7: 	 Fermé 	 0:00:00.516066
+Port 8: 	 Fermé 	 0:00:00.515843
+Port 9: 	 Fermé 	 0:00:00.512167
+
+scan amazon.com teminé
+duréé d'analyse 0:00:04.572015
+port ouvert 0
+port fermer 9

@@ -1,0 +1,265 @@
+
+
+01-AP
+
+02-B1
+
+03-B2
+
+04-B3
+.DS_Store
+
+01-Cours
+
+02-TP
+.DS_Store
+[SLAM1] AP CahierDeTexte.md
+
+01-Présentation
+
+02-Web
+
+03-Recherche-de-stage
+01-AP-Présentation.pdf
+01-Mémo HTML.pdf
+02-Complément du cours CSS.pdf
+03_IHM.pdf
+04_JS-intro.pdf
+05_JS-suite.pdf
+99-Ressources pour intégration.pdf
+Annexe1 - Infographie recherche de stage.pdf
+Annexe2 - Suivi-recherche-stages.xlsx
+Conseils CV.pdf
+Démarche de recherche de stages.pdf
+
+01-TP1 - Traitement de texte
+
+02-TP2 - Les métiers de l'informatique
+
+03-TP3 - HTML
+
+04-TP4 - CSS
+
+05-TP5 - Formulaire
+
+06-TP6 - RevueDePresse
+
+07-TP7 - Profil linkedin
+
+08-TP8 - Javascript
+.DS_Store
+1-consignes Word.docx
+2-consignes pour document type.doc
+texte brut les acteurs de linformatique.docx
+TP Interview métier.pdf
+MaPremierePageInternet.png
+TP Découverte du HTML-V1.1.pdf
+TP Découverte du HTML.pdf
+01-Découverte de la CSS.pdf
+02-Mise en pratique CSS.pdf
+black.png
+Thumbs.db
+white.png
+exemple1.html
+TP-formulaire.doc
+TP_Revue-de-Presse.pdf
+Profil-Linkedin_Exemples d'erreurs.pdf
+TP_Profil-Linkedin.pdf
+
+Correction
+
+Ressources
+.DS_Store
+TP-JS.doc
+inscription.html
+
+inscription
+
+types_de_bouton
+.DS_Store
+inscription.rar
+types_de_bouton.rar
+
+css
+
+HTML
+style3.css
+inscription_3.html
+
+CSS
+exemple.html
+page2.html
+style.css
+
+00-Docs
+
+01-Cours
+
+02-TPs
+.DS_Store
+[SLAM1] B1 CahierDeTexte.md
+
+01-Linux
+.DS_Store
+Administration des utilisateurs.pdf
+UNIX_commandes-base.pdf
+UNIX_gnu-linux.pdf
+UNIX_shells.pdf
+
+03-SystèmeExploitation
+.DS_Store
+01-B1-Présentation.pdf
+02-B1-CPU-Bus-RAM.pdf
+Le sytème d'exploitation.pdf
+
+01-Composants-PC
+
+02-CPU-Bus-RAM
+
+03-SystèmeExploitation
+
+04-TP-Admin-linux
+
+05-TP-Partage-SAMBA
+
+06_TP-ActiveDirectory
+Composants-PC.pdf
+CPU-Bus-RAM.pdf
+TP-OS1 Virtual box.pdf
+TP-OS2 A la découverte d'un OS.docx
+TP-OS3 Demarrer avec une debian linux.docx
+TP-OS4 Demarrer avec une debian linux-suite.docx
+TP_Authentification_autorisation_et_journalisation_MAJ.pdf
+TP-SMB01_Windows.docx
+TP-SMB02_Linux.docx
+
+Documents
+TP Active Directory sous Windows.docx
+Gestion des comptes d’utilisateurs.pdf
+Gestion des groupes de sécurité.pdf
+Le compte ordinateur.pdf
+Le système de fichiers NTFS.pdf
+Présentation des services de l’Active Directory.pdf
+Présentation d’Active Directory.pdf
+Service DHCP.pdf
+Service DNS.pdf
+Windows 2012 -  Promotion d’un contrôleur de domaine.pdf
+Windows 2016 - Promotion d’un contrôleur de domaine.pdf
+
+00-Docs
+
+01-Cours
+
+03-TP
+[SLAM1] B2 CahierDeTexte.md
+
+02-Installation-VM-Debian
+Etape1 Demarrer avec une debian linux.docx
+Etape2 installation apache - MARIADB.docx
+
+02-UML
+
+04-C#
+01-UML-Introduction.pdf
+02-UML-CasDUtilisation - CORR.docx
+02-UML-CasDUtilisation.docx
+02a-UML-Scenario-et-diagrammes-de-séquence.pdf
+03-UML-DiagrammesDeSequence CORR.PNG
+03-UML-DiagrammesDeSequence.docx
+03-UML-DiagrammesDeSequence.pdf
+04-UML-DiagrammesDeClasses.docx
+04-UML-DiagrammesDeClasses.pdf
+01-C#-Support-cours.pdf
+
+01-Web
+
+02-POO-C#
+
+1. HTML-CSS
+
+2. GET-POST
+Exemple Formulaire Gestion des comptes étudiants.docx
+exercice HTML-CSS.docx
+Fr-CV-Chiffres.html
+Fr-CV.html
+Fr-CV.html
+
+01-Installation-Visual-Studio
+
+02-Découverte-IDE
+Guide-install-visual-studio.pdf
+Découverte-IDE.pdf
+
+00-Docs
+
+01-Cours
+
+02-TPs
+
+03-TDs
+
+04-Labos
+
+05-Evaluations
+.DS_Store
+[SLAM1] B3 CahierDeTexte.md
+ModèleOSI.png
+Thumbs.db
+01-B3-Présentation Cybersécurité.pdf
+02-B3-Introduction Cybersécurité.pdf
+CyberEdu_notions_de_base.pdf
+
+01-TP-Introduction-à-la-Cybersécurité
+
+02_TP-Exposés-Cyber-attaques
+.DS_Store
+TP-Introduction à la Cybersécurité.pdf
+TP-Introduction à la Cybersécurité2.pdf
+TP-Exposé-Cyberattaques-V1.2.pdf
+
+T1 - La protection des données à caractère personnel
+
+T2 - Préserver l’identité numérique de l’organisation
+
+T3 - Sécuriser les équipements et les usages des utilisateurs
+
+_Corrections
+.DS_Store
+
+1.1 - Données personnelles
+
+1.2 - Principes de la sécurité
+
+1.3 - La réglementation
+.DS_Store
+01 - Les risques liés aux données à caractère personnel.doc
+02 - Les risques liés aux données à caractère personnel suite.doc
+03 - Les risques liés aux données à caractère personnel suite.doc
+04 - Les risques liés aux données à caractère personnel suite.doc
+1.2 - Principes de la sécurité.doc
+01 - 1.3 - La réglementation - Appliquer la réglementation.doc
+02 - 1.3 - La réglementation - 2 - sensibiliser .doc
+
+Ch.2.1 - Préserver l’identité numérique de l’organisation
+
+Ch.2.2 - La preuve électronique
+.DS_Store
+01 - Ch 2.1 - Préserver l’identité numérique de l’organisation.doc
+02 - suite Ch 2.1 - L’identité numérique de l’organisation.doc
+.DS_Store
+01 - Ch.2.2 - La preuve électronique.doc
+02 - suite Ch.2.2 - La preuve électronique - hachage.doc
+03 - suite Ch.2.2 - signature.doc
+04 - suite Ch.2.2 - preuve électronique.doc
+01 - Sécuriser equipements usages - authentification.doc
+CORR 01 - Sécuriser equipements usages - authentification.pdf
+CORRECTION 01 - Ch.2.2 - La preuve électronique.pdf
+CORRECTION 03 - suite Ch.2.2 - signature.pdf
+CORRECTION 04 - suite Ch.2.2 - preuve électronique.pdf
+
+01-telnetlab
+.DS_Store
+telnetlab_fr.docx
+telnetlab_fr.pdf
+20221214_BTS-Blanc-Résultats-détaillés.pdf
+BTS_BLANC_SIO1_decembre-2022_Correction-dossier-4-et-5.pdf

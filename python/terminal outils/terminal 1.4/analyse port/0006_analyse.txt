@@ -1,0 +1,28 @@
+IP: google.fr
+hote: 216.58.214.163
+
+Port 70: 	 Fermé 	 0:00:00.213866
+Port 71: 	 Fermé 	 0:00:00.202171
+Port 72: 	 Fermé 	 0:00:00.201025
+Port 73: 	 Fermé 	 0:00:00.203048
+Port 74: 	 Fermé 	 0:00:00.202001
+Port 75: 	 Fermé 	 0:00:00.201008
+Port 76: 	 Fermé 	 0:00:00.201973
+Port 77: 	 Fermé 	 0:00:00.204028
+Port 78: 	 Fermé 	 0:00:00.205008
+Port 79: 	 Fermé 	 0:00:00.204034
+Port 80: 	 Ouvert 	 0:00:00.046023
+Port 81: 	 Fermé 	 0:00:00.202980
+Port 82: 	 Fermé 	 0:00:00.202030
+Port 83: 	 Fermé 	 0:00:00.203794
+Port 84: 	 Fermé 	 0:00:00.202215
+Port 85: 	 Fermé 	 0:00:00.200040
+Port 86: 	 Fermé 	 0:00:00.204701
+Port 87: 	 Fermé 	 0:00:00.201360
+Port 88: 	 Fermé 	 0:00:00.204070
+Port 89: 	 Fermé 	 0:00:00.203848
+
+scan google.fr teminé
+    duréé d'analyse 0:00:03.921886
+    port ouvert 1
+    port fermer 19
