@@ -1,0 +1,10 @@
+<b style="background-color: #00ffbf; width:100px; height:100px; display:flex; align-items:center; justify-content:center;font-size:2em; border-radius:50%; font-family: sans-serif; margin-top:10px">100%</b>
+<b style="background-color: #40ff00; width:100px; height:100px; display:flex; align-items:center; justify-content:center;font-size:2em; border-radius:50%; font-family: sans-serif; margin-top:10px">90%</b>
+<b style="background-color: #80ff00; width:100px; height:100px; display:flex; align-items:center; justify-content:center;font-size:2em; border-radius:50%; font-family: sans-serif; margin-top:10px">80%</b>
+<b style="background-color: #bfff00; width:100px; height:100px; display:flex; align-items:center; justify-content:center;font-size:2em; border-radius:50%; font-family: sans-serif; margin-top:10px">70%</b>
+<b style="background-color: #ffff00; width:100px; height:100px; display:flex; align-items:center; justify-content:center;font-size:2em; border-radius:50%; font-family: sans-serif; margin-top:10px">60%</b>
+<b style="background-color: #ffbf00; width:100px; height:100px; display:flex; align-items:center; justify-content:center;font-size:2em; border-radius:50%; font-family: sans-serif; margin-top:10px">50%</b>
+<b style="background-color: #ff8000; width:100px; height:100px; display:flex; align-items:center; justify-content:center;font-size:2em; border-radius:50%; font-family: sans-serif; margin-top:10px">40%</b>
+<b style="background-color: #ff4000; width:100px; height:100px; display:flex; align-items:center; justify-content:center;font-size:2em; border-radius:50%; font-family: sans-serif; margin-top:10px">30%</b>
+<b style="background-color: #ff0000; width:100px; height:100px; display:flex; align-items:center; justify-content:center;font-size:2em; border-radius:50%; font-family: sans-serif; margin-top:10px">20%</b>
+<b style="background-color: #8b0000; width:100px; height:100px; display:flex; align-items:center; justify-content:center;font-size:2em; border-radius:50%; font-family: sans-serif; margin-top:10px">10%</b>
