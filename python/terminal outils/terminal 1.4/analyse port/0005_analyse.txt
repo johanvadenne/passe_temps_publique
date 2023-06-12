@@ -1,8 +1,0 @@
-IP: google.fr
-hote: 216.58.215.35
-
-
-scan google.fr teminé
-duréé d'analyse 0:00:00
-port ouvert 0
-port fermer 0
