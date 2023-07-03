@@ -9,4 +9,12 @@ def on_click(x, y, button, pressed):
 # Collect events until released
 with Listener(on_click=on_click) as listener:
     listener.join()
+
+with Listener(on_click=on_click) as listener:
+    listener.join()
     
+with Listener(on_click=on_click) as listener:
+    listener.join()
+
+with Listener(on_click=on_click) as listener:
+    listener.join()
