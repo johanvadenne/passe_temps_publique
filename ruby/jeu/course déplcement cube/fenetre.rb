@@ -69,7 +69,7 @@ class Game < Gosu::Window
         false
     end
 
-    def needs_redraw?                   # affichage de la souris
+    def needs_redraw?                   # dessin
         true
     end
 
