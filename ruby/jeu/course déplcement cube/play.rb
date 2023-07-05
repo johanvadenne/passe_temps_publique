@@ -4,6 +4,8 @@ class Game < Gosu::Window
 
   def initialize
     super(Gosu.screen_width, Gosu.screen_height)
+    self.update_interval = 1                      # L'intervalle entre les appels à mise à jour, en millisecondes.
+    
     @image_play = Gosu::Image.new("image/play.png")
     @pointer_image = Gosu::Image.new("image/pointer.png")
     @image_play_info = ImageInfo.new(@image_play, Gosu.screen_width / 2, Gosu.screen_height / 2, 0.3, 0.3)
