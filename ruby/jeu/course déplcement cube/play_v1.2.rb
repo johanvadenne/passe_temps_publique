@@ -17,11 +17,22 @@ class Game_window < Gosu::Window
 
     def update
 
+
+
         @img_souris.positionX = self.mouse_x
         @img_souris.positionY = self.mouse_y
         
-        @img_play.scaleX += 0.002 if @img_play.scaleX < 0.32 && @img_play.survole(mouse_x, mouse_y)
-        @img_play.scaleY += 0.002 if @img_play.scaleY < 0.32 && @img_play.survole(mouse_x, mouse_y)
+        @img_play.scaleX += 0.01 if @img_play.scaleX != 0.34 && @img_play.survole(mouse_x, mouse_y)
+        @img_play.scaleY += 0.01 if @img_play.scaleY != 0.34 && @img_play.survole(mouse_x, mouse_y)
+        @img_play.scaleX = 0.3 if @img_play.scaleX != 0.3 && !@img_play.survole(mouse_x, mouse_y)
+        @img_play.scaleY = 0.3 if @img_play.scaleY != 0.3 && !@img_play.survole(mouse_x, mouse_y)
+        
+        @img_souris.scaleX = 1.8 if @img_play.scaleX != 1.8 && @clique_gauche
+        @img_souris.scaleY = 1.8 if @img_play.scaleY != 1.8 && @clique_gauche
+        @img_souris.scaleX = 1 if @img_play.scaleX != 1 && !@clique_gauche
+        @img_souris.scaleY = 1 if @img_play.scaleY != 1 && !@clique_gauche
+
+        
 
     end
 
@@ -37,11 +48,15 @@ class Game_window < Gosu::Window
     end
 
     def button_down(id)
-        
+        if id == Gosu::MS_LEFT
+            @clique_gauche = true
+        end
     end
 
     def button_up(id)
-        
+        if id == Gosu::MS_LEFT
+            @clique_gauche = false
+        end
     end
 end
 
@@ -54,8 +69,10 @@ class Game_image
         @image          = Gosu::Image.new(lien)
         @scaleX         = scaleX
         @scaleY         = scaleY
-        @width          = @image.width * @scaleX
-        @height         = @image.height * @scaleY
+        @width_defaut   = @image.width
+        @height_defaut  = @image.height
+        @width          = @width_defaut * @scaleX
+        @height         = @height_defaut * @scaleY
         @positionX      = positionX - @width/2
         @positionY      = positionY - @height/2
         @dessiner       = true
@@ -75,14 +92,16 @@ class Game_image
 
     def scaleX=(value)
         @scaleX = value
-        @width = @image.width * @scaleX/2
-        @positionX = (@positionX + ancien_width/2) - @width/2
+        ancien_width = @width
+        @width = @width_defaut * @scaleX
+        @positionX = (@positionX+ancien_width/2) - @width/2
     end
 
     def scaleY=(value)
         @scaleY = value
-        @height = @image.height * @scaleY/2
-        @positionY = (@positionY + ancien_height/2) - @height/2
+        ancien_height = @height
+        @height = @height_defaut * @scaleY
+        @positionY = (@positionY+ancien_height/2) - @height/2
     end
 
     def image=(value)
@@ -95,6 +114,21 @@ class Game_image
         else
             return false
         end
+    end
+
+    def opacity(a)
+        @image.from_blob(width, height, rgba = "\0\0\0\5" * (width * height))
+    end
+
+    def log()
+        puts @scaleX
+        puts @scaleY
+        puts @width_defaut
+        puts @height_defaut
+        puts @width
+        puts @height
+        puts @positionX
+        puts @positionY
     end
 
 end
