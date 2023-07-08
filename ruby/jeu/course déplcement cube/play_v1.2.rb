@@ -46,25 +46,25 @@ class Game_window < Gosu::Window
 
     end
 
-    def draw
+    def draw # dessine
 
         @img_play.draw
         @img_souris.draw
 
     end
 
-    def needs_cursor?
+    def needs_cursor? # visiualiser le curseur
         false
     end
 
-    def button_down(id)
+    def button_down(id) # récupère le bouton presser
         if id == Gosu::MS_LEFT
             @clique_gauche = true
             @img_play.presse = true if @img_play.survole(mouse_x, mouse_y)
         end
     end
 
-    def button_up(id)
+    def button_up(id) # récupère le bouton relever
         if id == Gosu::MS_LEFT
             @clique_gauche = false
             @img_play.clique = true if @img_play.presse == true && @img_play.survole(mouse_x, mouse_y)
