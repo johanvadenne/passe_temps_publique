@@ -10,27 +10,37 @@ class Game_window < Gosu::Window
         self.update_interval = 1                        # intervalle de mise à jour en milliseconde
 
         # images
-        @img_play = Game_image.new("image/play.png", Gosu.screen_width / 2, Gosu.screen_height / 2, 0.3, 0.3)
-        @img_souris = Game_image.new("image/pointer_bleu.png", self.mouse_x / 2, self.mouse_y / 2, 1, 1)
+        @img_play = Game_image.new("image/play.png", Gosu.screen_width / 2, Gosu.screen_height / 2, 0.3, 0.3)   # bouton play
+        @img_souris = Game_image.new("image/pointer_bleu.png", self.mouse_x / 2, self.mouse_y / 2, 1, 1)        # curseur souris
 
     end
 
     def update
 
+        @img_souris.positionX = self.mouse_x    # repositionement de la souris
+        @img_souris.positionY = self.mouse_y    # repositionement de la souris
 
+        if @img_play.dessiner
 
-        @img_souris.positionX = self.mouse_x
-        @img_souris.positionY = self.mouse_y
+            @img_play.positionX = self.width / 2    # repositionement au centre
+            @img_play.positionY = self.height / 2   # repositionement au centre
+            
+            @img_play.scaleX += 0.01 if @img_play.scaleX != 0.34 && @img_play.survole(mouse_x, mouse_y) # si je survole grossire
+            @img_play.scaleY += 0.01 if @img_play.scaleY != 0.34 && @img_play.survole(mouse_x, mouse_y) # si je survole grossire
+            @img_play.scaleX = 0.3 if @img_play.scaleX != 0.3 && !@img_play.survole(mouse_x, mouse_y)   # si je survole pas taille d'origine
+            @img_play.scaleY = 0.3 if @img_play.scaleY != 0.3 && !@img_play.survole(mouse_x, mouse_y)   # si je survole pas taille d'origine
+
+            @img_play.dessiner = false if @img_play.clique  # si bouton cliquer ne plus dessiner
         
-        @img_play.scaleX += 0.01 if @img_play.scaleX != 0.34 && @img_play.survole(mouse_x, mouse_y)
-        @img_play.scaleY += 0.01 if @img_play.scaleY != 0.34 && @img_play.survole(mouse_x, mouse_y)
-        @img_play.scaleX = 0.3 if @img_play.scaleX != 0.3 && !@img_play.survole(mouse_x, mouse_y)
-        @img_play.scaleY = 0.3 if @img_play.scaleY != 0.3 && !@img_play.survole(mouse_x, mouse_y)
+        end
         
-        @img_souris.scaleX = 1.8 if @img_play.scaleX != 1.8 && @clique_gauche
-        @img_souris.scaleY = 1.8 if @img_play.scaleY != 1.8 && @clique_gauche
-        @img_souris.scaleX = 1 if @img_play.scaleX != 1 && !@clique_gauche
-        @img_souris.scaleY = 1 if @img_play.scaleY != 1 && !@clique_gauche
+        
+        @img_souris.scaleX = 1.8 if @img_play.scaleX != 1.8 && @clique_gauche   # si je clique grossire
+        @img_souris.scaleY = 1.8 if @img_play.scaleY != 1.8 && @clique_gauche   # si je clique grossire
+        @img_souris.scaleX = 1 if @img_play.scaleX != 1 && !@clique_gauche      # si je clique pas taille d'origine
+        @img_souris.scaleY = 1 if @img_play.scaleY != 1 && !@clique_gauche      # si je clique pas taille d'origine
+
+        
 
         
 
@@ -50,12 +60,14 @@ class Game_window < Gosu::Window
     def button_down(id)
         if id == Gosu::MS_LEFT
             @clique_gauche = true
+            @img_play.presse = true if @img_play.survole(mouse_x, mouse_y)
         end
     end
 
     def button_up(id)
         if id == Gosu::MS_LEFT
             @clique_gauche = false
+            @img_play.clique = true if @img_play.presse == true && @img_play.survole(mouse_x, mouse_y)
         end
     end
 end
@@ -63,7 +75,7 @@ end
 
 class Game_image
 
-    attr_accessor :positionX, :positionY, :width, :height, :scaleX, :scaleY
+    attr_accessor :positionX, :positionY, :width, :height, :scaleX, :scaleY, :dessiner, :clique, :presse
 
     def initialize(lien, positionX, positionY, scaleX, scaleY)
         @image          = Gosu::Image.new(lien)
@@ -76,6 +88,9 @@ class Game_image
         @positionX      = positionX - @width/2
         @positionY      = positionY - @height/2
         @dessiner       = true
+        @pressed        = false    
+        @clique         = false
+
     end
 
     def draw()
