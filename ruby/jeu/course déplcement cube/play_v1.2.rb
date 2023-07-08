@@ -12,6 +12,7 @@ class Game_window < Gosu::Window
         # images
         @img_play = Game_image.new("image/play.png", Gosu.screen_width / 2, Gosu.screen_height / 2, 0.3, 0.3)   # bouton play
         @img_souris = Game_image.new("image/pointer_bleu.png", self.mouse_x / 2, self.mouse_y / 2, 1, 1)        # curseur souris
+        @niv_1 = Case_niveau.new()
 
     end
 
@@ -30,7 +31,11 @@ class Game_window < Gosu::Window
             @img_play.scaleX = 0.3 if @img_play.scaleX != 0.3 && !@img_play.survole(mouse_x, mouse_y)   # si je survole pas taille d'origine
             @img_play.scaleY = 0.3 if @img_play.scaleY != 0.3 && !@img_play.survole(mouse_x, mouse_y)   # si je survole pas taille d'origine
 
-            @img_play.dessiner = false if @img_play.clique  # si bouton cliquer ne plus dessiner
+            
+            if @img_play.clique  # si bouton cliquer ne plus dessiner
+                @img_play.dessiner = false 
+                @niv_1.dessiner = true
+            end
         
         end
         
@@ -42,14 +47,13 @@ class Game_window < Gosu::Window
 
         
 
-        
-
     end
 
     def draw # dessine
 
         @img_play.draw
         @img_souris.draw
+        @niv_1.draw
 
     end
 
@@ -144,6 +148,28 @@ class Game_image
         puts @height
         puts @positionX
         puts @positionY
+    end
+
+end
+
+
+class Case_niveau
+
+    attr_accessor :dessiner
+
+    def initialize
+
+        @positionX = 10
+        @positionY = 10
+        @width     = 100
+        @height    = 100
+        @couleur = Gosu::Color::WHITE
+        @dessiner = false
+
+    end
+
+    def draw()
+        Gosu::draw_rect(@positionX, @positionY, @width, @height, @couleur, z = 0, mode = :default) if @dessiner
     end
 
 end
