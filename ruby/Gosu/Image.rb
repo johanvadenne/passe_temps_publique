@@ -22,14 +22,14 @@ class Game_window < Gosu::Window
 
   def update
     @images.each do |image|
-      @image.ancrer
-      @image.afficher = false if @image.survole
+      image.ancrer
+      image.afficher = false if image.survole
     end
   end
 
   def draw
     @images.each do |image|
-      @image.dessiner
+      image.dessiner
     end
   end
 end
