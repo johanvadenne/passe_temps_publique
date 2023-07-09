@@ -21,7 +21,7 @@ class Fenetre < Gosu::Window
 
         @img_play.positionX = self.width / 2    # repositionement au centre lors du redimentionement de l'écran
         @img_play.positionY = self.height / 2   # repositionement au centre lors du redimentionement de l'écran
-        @img_play.scale_agmente(@img_play, 0.005, 0.34) if @img_play.scale < 0.34 && @img_play.survole(mouse_x, mouse_y) # si je survole grossire
+        @img_play.scale_agmente(0.005, 0.34) if @img_play.scale < 0.34 && @img_play.survole(mouse_x, mouse_y) # si je survole grossire
 
     end
 
@@ -50,13 +50,12 @@ class Fenetre < Gosu::Window
         end
     end
 
-    def scale_agmente(image, valeur_ajoute, valeur_limite)
+    def scale_agmente(valeur_ajoute, valeur_limite)
 
-        image.scaleX += valeur_ajoute if @scaleX < valeur_limite
-        image.scaleY += valeur_ajoute if @scaleY < valeur_limite
+        @scaleX += valeur_ajoute if @scaleX < valeur_limite
+        @scaleY += valeur_ajoute if @scaleY < valeur_limite
 
     end
-
 end
 
 class Image < Gosu::Image
