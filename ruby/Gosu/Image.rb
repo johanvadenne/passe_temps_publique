@@ -66,8 +66,6 @@ class Image
     nom_ancrage = ["centrer" ,"droite" ,"gauche" ,"haut" ,"haut_gauche" ,"haut_droite" ,"bas_droite" ,"bas_gauche" ,"bas"]
     if @ancrage in nom_ancrage
       send(@ancrage)
-    else
-      puts @ancrage+" n'existe pas!"
     end
   end
 
