@@ -11,7 +11,11 @@ def pressLeft():
     mouse.release(Button.left)
 
 
-for i in range(3000):
-    time.sleep(5)
-    mouse.position = (1899, 547)
+time.sleep(3)
+for i in range(1):
+    time.sleep(3)
+    mouse.position = (16, 152)
+    pressLeft()
+    time.sleep(0.5)
+    mouse.position = (123, 1017)
     pressLeft()
