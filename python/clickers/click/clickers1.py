@@ -12,10 +12,10 @@ def pressLeft():
 
 
 time.sleep(3)
-for i in range(1):
+for i in range(35):
     time.sleep(3)
     mouse.position = (16, 152)
     pressLeft()
     time.sleep(0.5)
-    mouse.position = (123, 1017)
+    mouse.position = (121, 974)
     pressLeft()
