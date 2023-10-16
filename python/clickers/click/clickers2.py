@@ -9,12 +9,19 @@ def pressRight():
 def pressLeft():
     mouse.press(Button.left)
     mouse.release(Button.left)
+    
 
-
-for i in range(23):
-    time.sleep(0.5)
-    mouse.position = (1142, 753)
+time.sleep(0.5)
+for i in range(1757):
+    mouse.position = (932, 489)
+    pressRight()
+    time.sleep(0.1)
+    mouse.position = (1025, 695)
     pressLeft()
-    time.sleep(0.5)
-    mouse.position = (1078, 734)
+    time.sleep(2)
+    mouse.position = (784, 506)
     pressLeft()
+    time.sleep(0.3)
+    mouse.position = (1824, 486)
+    pressLeft()
+    time.sleep(1)
