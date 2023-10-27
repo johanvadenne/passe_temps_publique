@@ -30,7 +30,7 @@ while True:
     lettreTrouver = False
     
     #saisie
-    trouveMot = input("lettre fauce: {}\nTrouvé le mot cacher: {}\n".format(lettreFauce, motCacher))
+    trouveMot = input("lettre fausse: {}\nTrouvé le mot cacher: {}\n".format(lettreFauce, motCacher))
     
     #vérifie
     for i in range(lettreCacher):
