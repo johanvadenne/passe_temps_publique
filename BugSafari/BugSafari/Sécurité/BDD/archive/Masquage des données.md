@@ -1,0 +1,1 @@
+Actuellement, notre base de données est en phase de développement, et nous ne traitons pas de bases de données transportables pour le moment. Par conséquent, il n'est pas strictement nécessaire de masquer les données des utilisateurs dans nos environnements de développement et de test.

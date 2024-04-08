@@ -1,0 +1,86 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>512</x><y>48</y><w>168</w><h>376</h></coordinates><panel_attributes>Insecte
+--
+- IdInsecte: int
+- Nom: string
+- Description: string
+- Poids: float
+- UniteMasse: string
+- Taille: float
+- UniteTaille: string
+- Menace: string
+- Dangereusite: string
+- Saison: string
+- longevite: int
+- IdTypeInsecte: int
+- ModifInsect: Insect
+--
++ GetIdInsecte()
++ GetNom()
++ GetDescription()
++ GetPoids()
++ GetUniteMasse()
++ GetTaille()
++ GetUniteTaille()
++ GetMenace()
++ GetDangereusite()
++ GetSaison()
++ Getlongevite()
++ GetIdTypeInsecte()
++ afficheInsecte()
++ demandeTicket
++ annulerTicket
++ envoyerTicket</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>128</y><w>168</w><h>232</h></coordinates><panel_attributes>Biome
+--
+- IdBiome: int
+- Temperature: float
+- Nom: string
+- TauxHumidite: float
+- Descrition: string
+- Environement: string
+- modifBiome: Biome
+--
++ GetIdBiome()
++ GetTemperature()
++ GetNom()
++ GetTauxHumidite()
++ GetDescrition()
++ GetEnvironement()
++ afficheInsecte()
++ demandeTicket()
++ annulerTicket()
++ envoyerTicket()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>152</x><y>504</y><w>168</w><h>224</h></coordinates><panel_attributes>Utilisateur
+--
+- IdCompteUtilisateur
+- AddresseMail
+- Nom
+- Prenom
+- NbrDeModification
+- NomUtilisateur
+- Mdp
+--
++ GetIdCompteUtilisateur()
++ GetAddresseMail()
++ GetNom()
++ GetPrenom()
++ GetNbrDeModification()
++ GetNomUtilisateur()
++ GetMdp()
++ changerMdp()
++ ajouteFavorie(int id, int type)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>672</x><y>216</y><w>224</w><h>32</h></coordinates><panel_attributes>m1=1..n
+m2=0..n</panel_attributes><additional_attributes>10;10;260;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>208</x><y>136</y><w>168</w><h>144</h></coordinates><panel_attributes>TypeInsecte
+--
+- IdTypeInsecte
+- Nom
+- Description
+--
++ GetIdTypeInsecte()
++ GetNom()
++ GetDescription()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>368</x><y>216</y><w>160</w><h>32</h></coordinates><panel_attributes>m1=0..n
+m2=1..1</panel_attributes><additional_attributes>10;10;180;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>584</y><w>168</w><h>56</h></coordinates><panel_attributes>Favorie
+--
+- IdFavorie
+--
++ GetIdFavorie()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>592</x><y>416</y><w>40</w><h>184</h></coordinates><panel_attributes>m1=1..1
+m2=0..n</panel_attributes><additional_attributes>10;10;10;210</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>352</y><w>312</w><h>248</h></coordinates><panel_attributes>m1=0..1
+m2=0..n</panel_attributes><additional_attributes>370;10;10;290</additional_attributes></element><element><id>Relation</id><coordinates><x>312</x><y>608</y><w>224</w><h>32</h></coordinates><panel_attributes>m1=1..1
+m2=1..1</panel_attributes><additional_attributes>260;10;10;10</additional_attributes></element></diagram>

@@ -1,0 +1,51 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    background-image: url('fond.jpg'); 
+    background-size: cover; 
+    opacity: 3;
+}
+#table {
+    text-align: center;
+    width: 100%;
+}
+
+#table th, #table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    
+    text-align: center;
+}
+
+#table th {
+    background-color: #f2f2f2;
+}
+.table{
+    text-align: center;
+}
+#table td {
+    background-color: rgba(255, 255, 255, 0.7); /* Couleur blanche avec une opacité */
+}
+
+#table th:nth-child(1), #table td:nth-child(1) {
+    width: 15%; /* Largeur de la première colonne */
+}
+
+#table th:nth-child(2), #table td:nth-child(2) {
+    width: 65%; /* Largeur de la deuxième colonne */
+}
+
+#table th:nth-child(3), #table td:nth-child(3) {
+    width: 10%; /* Largeur de la troisième colonne */
+}
+
+#table th:nth-child(4), #table td:nth-child(4) {
+    width: 10%; /* Largeur de la quatrième colonne */
+}
+
+
+
+
+
+
+

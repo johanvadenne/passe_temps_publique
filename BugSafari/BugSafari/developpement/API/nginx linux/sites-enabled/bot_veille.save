@@ -1,0 +1,37 @@
+server {
+        listen 8080;
+        listen [::]:8080;
+
+        root /var/www/nginx/BugSafari;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name BugSafari www.BugSafari;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+
+	location ~ \.php$ {
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+	}
+        
+        location ~ /api/vue/([^/]+) {
+            rewrite ^/api/vue/([^/]+)$ /BDD_API.php?table=$1&vue=true last;
+            include fastcgi_params;  # Inclure les paramètres FastCGI si nécessaire
+            fastcgi_pass 127.0.0.1:8080;  # Utilisez l'adresse du serveur FastCGI appropriée
+        }
+        
+        location ~ /api/([^/]+)/(\d+) {
+            rewrite ^/api/([^/]+)/(\d+)$ /BDD_API.php?table=$1&id=$2 last;
+            include fastcgi_params;  # Inclure les paramètres FastCGI si nécessaire
+            fastcgi_pass 127.0.0.1:8080;  # Utilisez l'adresse du serveur FastCGI appropriée
+        }
+        
+        location ~ /api/([^/]+) {
+            rewrite ^/api/([^/]+)$ /BDD_API.php?table=$1 last;
+            include fastcgi_params;  # Inclure les paramètres FastCGI si nécessaire
+            fastcgi_pass 127.0.0.1:8080;  # Utilisez l'adresse du serveur FastCGI appropriée
+        }
+
+}

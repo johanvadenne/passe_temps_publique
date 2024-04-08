@@ -1,0 +1,1 @@
+Nous opterons pour le chiffrement au niveau de l'application, car les seules données sensibles ou personnelles se limitent à une unique table. Les informations relatives aux insectes et aux biomes seront, quant à elles, accessibles librement.
