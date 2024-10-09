@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Tâches - Kanban</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion de Tâches - Kanban</h1>
+        <div class="kanban">
+            <div class="column" id="todo">
+                <h2>À Faire</h2>
+                <div class="tasks"></div>
+                <input type="text" id="new-task" placeholder="Ajouter une tâche...">
+                <button onclick="addTask('todo')">Ajouter</button>
+            </div>
+            <div class="column" id="in-progress">
+                <h2>En Cours</h2>
+                <div class="tasks"></div>
+            </div>
+            <div class="column" id="done">
+                <h2>Terminées</h2>
+                <div class="tasks"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
